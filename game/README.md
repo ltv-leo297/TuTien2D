@@ -1,5 +1,8 @@
 # Tiên Hiệp Pixel — bản chơi thử Cảnh 1
 
+Publish bản chơi thử bằng GitHub Pages, tự cập nhật từ `main`, và giao task
+từ điện thoại: xem [hướng dẫn publish](../docs/PUBLISHING.md).
+
 Chạy bằng `npm install && npm run dev`. Bản thử có màn chọn 4 nhân vật và đặt tên, di chuyển bằng chuột, làng Trúc Khê, rừng, núi, đường phía bắc, NPC, quái và tài nguyên.
 
 Scene 1 dùng art direction đã duyệt **B — Bright Handheld**. Master reference, prompt và quy tắc giữ consistency cho các scene sau nằm trong `../ai-workflow/ART_BIBLE.md`.

@@ -2,6 +2,10 @@
 
 Repo: https://github.com/ltv-leo297/TuTien2D
 
+Thiết lập một lần: vào Settings → Pages → Build and deployment → Source,
+chọn **GitHub Actions**. Nếu workflow đã thất bại vì Pages chưa được bật,
+vào Actions và chạy lại workflow sau khi chọn Source.
+
 GitHub Pages được cấu hình bằng `.github/workflows/deploy-pages.yml`. Khi code
 trong `game/`, `assets/`, `tools/` hoặc workflow thay đổi trên `main`, GitHub
 chạy test, kiểm tra asset, build và publish `game/dist`. Có thể chạy lại bằng
@@ -24,7 +28,7 @@ với đường dẫn GitHub Pages:
 
 ```sh
 npm run build -- --base /TuTien2D/
-npm run preview -- --port 4181
+npm run preview -- --base /TuTien2D/ --port 4181
 ```
 
 Mở `http://localhost:4181/TuTien2D/`. Đường dẫn asset trong TypeScript đi qua
