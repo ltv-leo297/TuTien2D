@@ -1,3 +1,4 @@
+import {assetUrl} from '../assets.ts';
 import {HEIGHT,WIDTH,gateMarker,gateSignFoot,gateSignSolid,waterAt} from './scene.ts';
 import type {Actor,Point,Gate,HeroId,MapId,Scene,Prop} from './scene.ts';
 import type {Camera} from './camera.ts';
@@ -13,7 +14,7 @@ import {drawForestWater,drawVegetation} from './forest-environment.ts';
 import effects from '../../../assets/effects/ambient-v1.json';
 export type Art={environment:HTMLImageElement;terrain:HTMLImageElement;npcs:HTMLImageElement;scenery:HTMLImageElement;villagers:HTMLImageElement;signpost:HTMLImageElement;forest:HTMLImageElement;forestLandscape:HTMLImageElement;forestStructures:HTMLImageElement;forestMonsters:HTMLImageElement;forestWater:HTMLImageElement;vegetation:Record<'tree'|'bamboo'|'blossom',HTMLImageElement>;heroes:Record<HeroId,HTMLImageElement>};
 export async function loadArt():Promise<Art>{
-  const load=(name:string)=>new Promise<HTMLImageElement>((resolve,reject)=>{const img=new Image();img.onload=()=>resolve(img);img.onerror=()=>reject(new Error(name));img.src=`/assets/production/${name}.png`;});
+  const load=(name:string)=>new Promise<HTMLImageElement>((resolve,reject)=>{const img=new Image();img.onload=()=>resolve(img);img.onerror=()=>reject(new Error(name));img.src=assetUrl(`assets/production/${name}.png`);});
   const [environment,terrain,npcs,scenery,villagers,signpost,forest,forestLandscape,forestStructures,forestMonsters,forestWater,tree,bamboo,blossom,A,B,C,D]=await Promise.all(['environment','terrain','npcs','scenery','villagers','signpost-A','forest/objects','forest/ground-v3','forest/structures-v2','forest/monsters-idle-v4','forest/water-flow-v4','forest/tree-v3','forest/bamboo-v3','forest/blossom-v3','hero-A','hero-B','hero-C','hero-D'].map(load));return {environment,terrain,npcs,scenery,villagers,signpost,forest,forestLandscape,forestStructures,forestMonsters,forestWater,vegetation:{tree,bamboo,blossom},heroes:{A,B,C,D}};
 }
 const rand=(n:number)=>{const a=Math.sin(n*127.1+311.7)*43758.5453;return a-Math.floor(a);};

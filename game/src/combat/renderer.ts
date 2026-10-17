@@ -1,3 +1,4 @@
+import {assetUrl} from '../assets.ts';
 import {groundHazards} from './geometry.ts';
 import {drawProjectile,drawEruption} from './effects.ts';
 import {ARENA_W,ARENA_H,FLOOR} from './simulation.ts';
@@ -8,7 +9,7 @@ import forestFrames from '../engine/forest-frames.json';
 export type CombatArt={background:HTMLImageElement;actors:HTMLImageElement;forest:HTMLImageElement;effects:HTMLImageElement};
 let cached:Promise<CombatArt>|undefined;
 export function loadCombatArt(){
-  if(!cached){const image=(name:string)=>new Promise<HTMLImageElement>((resolve,reject)=>{const img=new Image();const timer=setTimeout(()=>reject(new Error('asset')),15000);img.onload=()=>{clearTimeout(timer);resolve(img);};img.onerror=()=>{clearTimeout(timer);reject(new Error('asset'));};img.src=`/assets/production/${name}.png`;});cached=Promise.all([image('combat-arena'),image('combat-actors'),image('forest/combat'),image('forest/skill-effects-v4')]).then(([background,actors,forest,effects])=>({background,actors,forest,effects})).catch(e=>{cached=undefined;throw e;});}return cached;
+  if(!cached){const image=(name:string)=>new Promise<HTMLImageElement>((resolve,reject)=>{const img=new Image();const timer=setTimeout(()=>reject(new Error('asset')),15000);img.onload=()=>{clearTimeout(timer);resolve(img);};img.onerror=()=>{clearTimeout(timer);reject(new Error('asset'));};img.src=assetUrl(`assets/production/${name}.png`);});cached=Promise.all([image('combat-arena'),image('combat-actors'),image('forest/combat'),image('forest/skill-effects-v4')]).then(([background,actors,forest,effects])=>({background,actors,forest,effects})).catch(e=>{cached=undefined;throw e;});}return cached;
 }
 export function arenaTransform(width:number,height:number){const scale=Math.min(width/ARENA_W,height/ARENA_H);return {scale,x:(width-ARENA_W*scale)/2,y:(height-ARENA_H*scale)/2};}
 export function drawCombat(ctx:CanvasRenderingContext2D,s:CombatSimulation,art:CombatArt,hero:HeroId,width:number,height:number,dpr:number,reduced:boolean){
