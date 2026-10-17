@@ -1,0 +1,425 @@
+{
+  "config": {
+    "argv": [
+      "/Users/vinhle/.nvm/versions/node/v24.19.0/bin/node",
+      "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/playwright.config.ts",
+    "rootDir": "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/test/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/test/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run preview -- --port 4181 --strictPort",
+      "url": "http://127.0.0.1:4181",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "game.spec.ts",
+      "file": "game.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "name, NPC approach, Vietnamese/English, real inventory and motion settings",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12035,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:58:53.864Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-ad799cb9b35e15acd482",
+          "file": "game.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "physical click goes around the clinic, scene animates, and live FPS is recorded",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13278,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:59:06.238Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "performance",
+                      "contentType": "application/json",
+                      "body": "eyJmcHMiOjYwLCJmcmFtZXMiOjYwMCwicDk1IjoxNi43MDAwMDAwMDAwMDA3Mjh9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-acab2709de7a8a2b5720",
+          "file": "game.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "viewport 1280x720 DPR 1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1920,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:59:19.524Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "viewport",
+                      "contentType": "application/json",
+                      "body": "eyJ3aWR0aCI6MTI4MCwiaGVpZ2h0Ijo3MjAsImRwciI6MX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-fdc30ef7735b08e8f1dc",
+          "file": "game.spec.ts",
+          "line": 20,
+          "column": 88
+        },
+        {
+          "title": "viewport 1920x1080 DPR 2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3859,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:59:21.452Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "viewport",
+                      "contentType": "application/json",
+                      "body": "eyJ3aWR0aCI6MTkyMCwiaGVpZ2h0IjoxMDgwLCJkcHIiOjJ9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-297ecb9635d6c715db83",
+          "file": "game.spec.ts",
+          "line": 20,
+          "column": 88
+        },
+        {
+          "title": "viewport 2560x1440 DPR 1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2604,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:59:25.322Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "viewport",
+                      "contentType": "application/json",
+                      "body": "eyJ3aWR0aCI6MjU2MCwiaGVpZ2h0IjoxNDQwLCJkcHIiOjF9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-da3cf64265cee501f9c0",
+          "file": "game.spec.ts",
+          "line": 20,
+          "column": 88
+        },
+        {
+          "title": "viewport 720x900 DPR 2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2400,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:59:27.938Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "viewport",
+                      "contentType": "application/json",
+                      "body": "eyJ3aWR0aCI6NzIwLCJoZWlnaHQiOjkwMCwiZHByIjoyfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-8e2d966b9053012c9fb8",
+          "file": "game.spec.ts",
+          "line": 20,
+          "column": 88
+        },
+        {
+          "title": "forest travel, single pickup, persistent bag, return and opt-in audio",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18444,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:59:30.346Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-2a9d8e069ea41304c046",
+          "file": "game.spec.ts",
+          "line": 23,
+          "column": 1
+        },
+        {
+          "title": "live resize preserves pointer coordinates and reduced motion freezes river ripples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3550,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:59:48.796Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-8ad743bc1e51e5dc557f",
+          "file": "game.spec.ts",
+          "line": 34,
+          "column": 1
+        },
+        {
+          "title": "mountain and north gates return correctly, including a resource with its front blocked",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18677,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-06T12:59:52.354Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-65cc5b549de9f11df785",
+          "file": "game.spec.ts",
+          "line": 52,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-06T12:58:53.238Z",
+    "duration": 77882.978,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

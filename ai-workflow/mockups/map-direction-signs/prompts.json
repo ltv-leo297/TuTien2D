@@ -1,0 +1,19 @@
+{
+  "generator": "built-in ImageGen",
+  "createdAt": "2026-10-07",
+  "references": [
+    "Ảnh bảng gỗ người dùng đính kèm: tham khảo hình khối",
+    "ai-workflow/mockups/pixel-art-asset-directions/B-bright-handheld.png: tham khảo style đã duyệt"
+  ],
+  "sharedConstraints": [
+    "Bright Handheld pixel art, top-down 3/4, hard pixel clusters",
+    "transparent background",
+    "empty board face for localized runtime text",
+    "no text, logo, watermark, or franchise element"
+  ],
+  "assets": {
+    "sign-a.png": "Single warm-brown plank on one post with a carved arrowhead tab projecting right; jade cord accent.",
+    "sign-b.png": "Hanging rectangular destination board with a separate wooden arrow plaque below.",
+    "sign-c.png": "Forked/two-tier wayfinding post with a large destination plaque and a bold arrow arm."
+  }
+}

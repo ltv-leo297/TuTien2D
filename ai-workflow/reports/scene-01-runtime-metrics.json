@@ -1,0 +1,56 @@
+{
+  "browser": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+  "viewport": {
+    "width": 1920,
+    "height": 1080
+  },
+  "dpr": 1,
+  "canvas": {
+    "width": 1920,
+    "height": 1080
+  },
+  "pos": {
+    "x": 193,
+    "y": 520
+  },
+  "fps": 60,
+  "p95": 16.700000000000728,
+  "loadedAssets": [
+    {
+      "name": "environment.png",
+      "bytes": 2374842,
+      "loadMs": 19.80000001192093
+    },
+    {
+      "name": "npcs.png",
+      "bytes": 1476019,
+      "loadMs": 10
+    },
+    {
+      "name": "hero-A.png",
+      "bytes": 1456104,
+      "loadMs": 16.100000023841858
+    },
+    {
+      "name": "terrain.png",
+      "bytes": 2532095,
+      "loadMs": 19.100000023841858
+    },
+    {
+      "name": "hero-B.png",
+      "bytes": 1464480,
+      "loadMs": 11.300000011920929
+    },
+    {
+      "name": "hero-C.png",
+      "bytes": 1693809,
+      "loadMs": 17.19999998807907
+    },
+    {
+      "name": "hero-D.png",
+      "bytes": 1894407,
+      "loadMs": 18
+    }
+  ],
+  "errors": []
+}

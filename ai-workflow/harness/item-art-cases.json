@@ -1,0 +1,48 @@
+{
+  "version": 2,
+  "spec": "ai-workflow/ITEM_ART.md",
+  "status": "implemented-B-selected",
+  "runtimeStatus": "19-individual-alpha-png-icons",
+  "cases": [
+    {
+      "id": "ART-01",
+      "expect": "5 board cùng master B, nhận ra kiếm/áo/choàng/giày/ngọc/hồ lô",
+      "coverage": "selected-B-production-visually-reviewed"
+    },
+    {
+      "id": "ART-02",
+      "expect": "PNG alpha thật, silhouette không bị cắt, không chữ/khung/nền nhúng",
+      "coverage": "passed-browser-pixel-alpha-bounds-plus-visual-review"
+    },
+    {
+      "id": "ART-03",
+      "expect": "Catalog resolve asset ổn định, source/runtime hash trùng, manifest không thiếu, không 404",
+      "coverage": "passed-unit-manifest-source-runtime-hash"
+    },
+    {
+      "id": "ART-04",
+      "expect": "Phân biệt chất liệu gỗ/tre/sắt và các món khi thu nhỏ 24–48px DPR1/2",
+      "coverage": "visually-reviewed-contact-sheet-120-48-24px-and-runtime"
+    },
+    {
+      "id": "ART-05",
+      "expect": "Vi/en; selected/empty/equipped/count/level không che hình; unknown asset báo lỗi rõ",
+      "coverage": "passed-browser-loading-missing-image-unknown-item-vi-en-selection"
+    },
+    {
+      "id": "ART-06",
+      "expect": "Equip/swap/unequip/reload và stats/save không đổi do thay icon",
+      "coverage": "passed-unit-and-browser-equip-reload-stats-preserved"
+    },
+    {
+      "id": "ART-07",
+      "expect": "Không nhầm icon túi với layer trên nhân vật; visualId null vẫn báo chưa hỗ trợ",
+      "coverage": "confirmed-current-code-no-appearance-layers"
+    }
+  ],
+  "report": "ai-workflow/reports/item-B-2026-10-14.md",
+  "suites": {
+    "unit": "game/test/item-art.test.mjs",
+    "browser": "game/test/browser/item-art.spec.ts"
+  }
+}

@@ -1,0 +1,436 @@
+{
+  "config": {
+    "argv": [
+      "/Users/vinhle/.nvm/versions/node/v24.19.0/bin/node",
+      "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/node_modules/.bin/playwright",
+      "test",
+      "test/browser/combat.spec.ts"
+    ],
+    "configFile": "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/playwright.config.ts",
+    "rootDir": "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/test/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/test/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run preview -- --port 4181 --strictPort",
+      "url": "http://127.0.0.1:4181",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "combat.spec.ts",
+      "file": "combat.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "full forest gate → encounter → battle → victory → exact return; count only outside, saved once",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 17538,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T05:36:34.782Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "combat-performance",
+                      "contentType": "application/json",
+                      "body": "eyJ2aWV3cG9ydCI6WzE5MjAsMTA4MF0sImRwciI6MSwic2FtcGxlcyI6MzAzLCJwOTUiOjE2LjcwMDAwMDAwMDAwMDcyOCwiZnBzIjo2MC4wMDExODgxNDIzMzk0NX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b51ea54a95aff327696-ba7fc51a9476049bcb9e",
+          "file": "combat.spec.ts",
+          "line": 24,
+          "column": 1
+        },
+        {
+          "title": "recharge updates outside silently, 0/10 disables battle, other monster stays independent",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8044,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T05:36:52.770Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b51ea54a95aff327696-cccaca069398ab769504",
+          "file": "combat.spec.ts",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "pause clears input, skill/guard/retreat work and interrupted reload keeps bag and charge",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3339,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T05:37:00.821Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b51ea54a95aff327696-c65f774d5a5bfe7d49c6",
+          "file": "combat.spec.ts",
+          "line": 32,
+          "column": 1
+        },
+        {
+          "title": "failed arena load does not spend a charge; retry enters once",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1637,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T05:37:04.167Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b51ea54a95aff327696-9fe0077bf20a8077ed3b",
+          "file": "combat.spec.ts",
+          "line": 35,
+          "column": 1
+        },
+        {
+          "title": "another tab cannot spend or recover the running encounter; spore has its own combat",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14432,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T05:37:05.811Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b51ea54a95aff327696-cb12b45abba311284694",
+          "file": "combat.spec.ts",
+          "line": 38,
+          "column": 1
+        },
+        {
+          "title": "storage write failure is visible and does not enter a battle or erase inventory",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1459,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T05:37:20.257Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b51ea54a95aff327696-3c0804d916a196e5c36e",
+          "file": "combat.spec.ts",
+          "line": 42,
+          "column": 1
+        },
+        {
+          "title": "combat B 1280x720 DPR1 heroB",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1885,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T05:37:21.726Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b51ea54a95aff327696-9cfef823c9972e80b41d",
+          "file": "combat.spec.ts",
+          "line": 45,
+          "column": 118
+        },
+        {
+          "title": "combat B 1920x1080 DPR2 heroC",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2469,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T05:37:23.619Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b51ea54a95aff327696-2b4156c86a87a31a2fd8",
+          "file": "combat.spec.ts",
+          "line": 45,
+          "column": 118
+        },
+        {
+          "title": "combat B 2560x1440 DPR1 heroD",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1999,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T05:37:26.098Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b51ea54a95aff327696-1d1d1dfbec7c0fd05b75",
+          "file": "combat.spec.ts",
+          "line": 45,
+          "column": 118
+        },
+        {
+          "title": "combat B 720x900 DPR2 heroA",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2321,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-11T05:37:28.106Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b51ea54a95aff327696-2719487773d6b8aa952b",
+          "file": "combat.spec.ts",
+          "line": 45,
+          "column": 118
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-11T05:36:34.495Z",
+    "duration": 56023.06,
+    "expected": 10,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

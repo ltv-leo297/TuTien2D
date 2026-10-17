@@ -1,0 +1,75 @@
+{
+  "version": 2,
+  "selection": "User-confirmed E: assets/references/forest-selected-2026-10-16.png",
+  "report": "ai-workflow/reports/forest-rebuild-2026-10-17.md",
+  "cases": [
+    {
+      "id": "FOREST-01",
+      "expect": "Every actor, resource and return gate reachable; no water/scenery penetration",
+      "coverage": "passed-unit-and-production-browser"
+    },
+    {
+      "id": "FOREST-02",
+      "expect": "Only surveyed wooden bridge deck crosses stream; tree roots/house/rocks block and crowns sort at feet",
+      "coverage": "passed-unit-and-production-browser-and-visual"
+    },
+    {
+      "id": "FOREST-03",
+      "expect": "Six new herb nodes map to four catalog items; cooldown per node and inventory persists",
+      "coverage": "passed-unit-and-production-browser"
+    },
+    {
+      "id": "FOREST-04",
+      "expect": "Both new monsters enter combat, warn skill, retreat, restore exact map position and spend one charge",
+      "coverage": "passed-production-browser"
+    },
+    {
+      "id": "FOREST-05",
+      "expect": "Every new monster skill pays once, locks aim, applies shared damage formula",
+      "coverage": "passed-unit-and-renderer-fixture-visual"
+    },
+    {
+      "id": "FOREST-06",
+      "expect": "VI/EN, four viewports, DPR1/2, live resize and physical clicks",
+      "coverage": "passed-production-browser"
+    },
+    {
+      "id": "FOREST-07",
+      "expect": "Waterfall animates; reduced motion freezes waterfall region",
+      "coverage": "passed-production-browser-animation-regions"
+    },
+    {
+      "id": "FOREST-08",
+      "expect": "Registered alpha art, source/runtime hashes, item thumbnails and loaded PNGs",
+      "coverage": "passed-asset-audit-and-visual"
+    },
+    {
+      "id": "FOREST-09",
+      "expect": "Tree crown, bamboo, waterfall and each of four monster idle regions change >1% RGB samples; all freeze under reduced motion",
+      "coverage": "passed-production-browser-over-full-loop-and-reduced"
+    },
+    {
+      "id": "FOREST-10",
+      "expect": "Wave travel/jump, three eruption timing sites, fang slow/expiry/guard/iframe",
+      "coverage": "passed-unit"
+    }
+  ],
+  "limits": [
+    "New monster balance is provisional; no monster XP/loot.",
+    "Herb cooldown retains existing session-based 20 seconds; not an offline wall-clock economy.",
+    "Real mobile touch, Safari/Firefox and long-term heap profiling not verified."
+  ],
+  "verification": {
+    "date": "2026-10-17",
+    "command": "npm --prefix game run verify",
+    "unitPassed": 74,
+    "browserPassed": 46,
+    "flaky": 0,
+    "skipped": 0,
+    "build": "pass",
+    "assetFinalAudit": 77,
+    "pendingReview": 0,
+    "animationRepeatPassed": 3,
+    "performance": "Chrome production, effects on, four viewports: ~60 FPS, p95 16.7–16.8 ms; forest-rebuild-performance.json"
+  }
+}

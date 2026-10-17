@@ -1,0 +1,118 @@
+{
+  "version": 4,
+  "featureStatus": "implemented-A-selected-2026-10-13",
+  "runtimeTestStatus": "passed-desktop-chrome-with-explicit-gaps",
+  "spec": "ai-workflow/EQUIPMENT.md",
+  "cases": [
+    {
+      "id": "EQ-01",
+      "expect": "100 ô; slot trang bị bên trái túi; mở/đóng đúng map, không xuyên input",
+      "coverage": "partial-browser-layout-and-close"
+    },
+    {
+      "id": "EQ-02",
+      "expect": "Catalog ID duy nhất, cấp nguyên 1–9, bonus hữu hạn, locale vi/en, slot đúng",
+      "coverage": "passed-unit"
+    },
+    {
+      "id": "EQ-03",
+      "expect": "Đeo/thay/tháo bảo toàn item instance; click lặp không nhân đôi",
+      "coverage": "passed-unit-and-browser"
+    },
+    {
+      "id": "EQ-04",
+      "expect": "100/100 vẫn swap; unequip bị chặn; không âm thầm mất đồ khi nhận thêm",
+      "coverage": "passed-unit-and-browser"
+    },
+    {
+      "id": "EQ-05",
+      "expect": "Base attack18 + gỗ3=21; thay kiếm9=27/accuracy19; tháo hết=18/17; đồ túi không cộng",
+      "coverage": "passed-unit-and-browser"
+    },
+    {
+      "id": "EQ-06",
+      "expect": "Snapshot effective stats vào trận; damage/defense dùng công thức chung; return giữ đồ",
+      "coverage": "passed-unit-and-browser"
+    },
+    {
+      "id": "EQ-07",
+      "expect": "Đổi max HP/stamina/linh lực không cho hồi miễn phí; clamp current",
+      "coverage": "not-applicable-no-persistent-outside-combat-vitals"
+    },
+    {
+      "id": "EQ-08",
+      "expect": "Reload giữ đồ/slot/count, không cộng bonus hai lần; nhiều tab không ghi đè snapshot cũ",
+      "coverage": "passed-unit-and-browser"
+    },
+    {
+      "id": "EQ-09",
+      "expect": "Migration bag resource/visited/lượt cũ một lần; bảo toàn cả số lượng vượt 100 ô",
+      "coverage": "passed-unit-and-browser"
+    },
+    {
+      "id": "EQ-10",
+      "expect": "Save lỗi JSON/quota/blocked/ID cũ không reset hoặc ghi đè bản gốc; phản hồi trung thực",
+      "coverage": "partial-unit-and-browser"
+    },
+    {
+      "id": "EQ-11",
+      "expect": "Tìm/lọc/empty/detail/so sánh và mọi trang E nếu chọn đều hoạt động bằng chuột/bàn phím",
+      "coverage": "partial-search-and-select-browser"
+    },
+    {
+      "id": "EQ-12",
+      "expect": "vi/en; resize/DPR; không tràn; input pointercancel/blur; console không lỗi",
+      "coverage": "partial-browser-listed-viewports"
+    },
+    {
+      "id": "EQ-13",
+      "conditional": "nếu triển khai ngoại hình",
+      "expect": "4 hero: kiếm/áo choàng/giày đúng map và combat, đủ hướng/pose; chân trần khi feet trống; collider không đổi",
+      "coverage": "not-implemented-optional-visual-layers"
+    },
+    {
+      "id": "EQ-14",
+      "expect": "Build/unit/production browser thực thi; ghi FPS khi layer mới, không gọi mockup là runtime",
+      "coverage": "passed-full-verify"
+    },
+    {
+      "id": "EQ-15",
+      "expect": "Một nút Hành trang / Equipment; không cuộn toàn dialog ở 1280×720, 1920×1080, 900×700, 720×900, 672×786, 390×844; 100 ô trong pane túi; phone chuyển tab nội bộ",
+      "coverage": "passed-browser-six-viewports-and-live-in-app-tab"
+    }
+  ],
+  "previewChecks": {
+    "command": "node ai-workflow/mockups/equipment-inventory/render.mjs",
+    "status": "passed-2026-10-12",
+    "scope": "A–E: 100 DOM bag slots, 10 equip slots, visible 100 A–D / 25 E, no panel overflow, mock equip/close, E pagination; không kiểm thử game"
+  },
+  "report": "ai-workflow/reports/item-B-2026-10-14.md",
+  "suites": {
+    "unit": "game/test/equipment.test.mjs",
+    "browser": "game/test/browser/equipment.spec.ts"
+  },
+  "verification": {
+    "date": "2026-10-14",
+    "command": "npm run verify; then npm run build && npx playwright test test/browser/equipment.spec.ts test/browser/item-art.spec.ts after final 672px fix",
+    "unitPassed": 59,
+    "fullBrowserPassed": 35,
+    "finalTargetedBrowserPassed": 13,
+    "uniqueBrowserCasesAcrossRuns": 36,
+    "skipped": 0,
+    "flaky": 0,
+    "build": "pass",
+    "assets": "54 checked; 0 pending",
+    "equipmentUnitCases": 12,
+    "equipmentBrowserCases": 11,
+    "itemArtUnitCases": 2,
+    "itemArtBrowserCases": 2
+  },
+  "gaps": [
+    "Paper-doll / appearance layers not implemented; current baked sprites remain.",
+    "No persistent world HP/stamina/mana: fresh battles still start full as before; clamp policy applies to future persistence.",
+    "Real mobile touch, Firefox/Safari, standalone offline boot, heap audit not verified.",
+    "Browser exercises quota, malformed inventory, migration and two tabs; blocked storage reads tested by code path, not dedicated browser case.",
+    "Search/select/equip/close covered; keyboard-only traversal/filter selection lack dedicated browser cases; unknown-item UI now covered in item-art browser suite."
+  ],
+  "itemArtHarness": "ai-workflow/harness/item-art-cases.json"
+}

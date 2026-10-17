@@ -1,0 +1,56 @@
+{
+  "width": 1774,
+  "height": 887,
+  "rects": [
+    [
+      0,
+      0,
+      443,
+      443
+    ],
+    [
+      443,
+      0,
+      444,
+      443
+    ],
+    [
+      887,
+      0,
+      443,
+      443
+    ],
+    [
+      1330,
+      0,
+      444,
+      443
+    ],
+    [
+      0,
+      443,
+      443,
+      444
+    ],
+    [
+      443,
+      443,
+      444,
+      444
+    ],
+    [
+      887,
+      443,
+      443,
+      444
+    ],
+    [
+      1330,
+      443,
+      444,
+      444
+    ]
+  ],
+  "fps": 6,
+  "note": "Visually inspected division coordinates, surface row then vertical waterfall row. Runtime matching rectangles in forest-environment.ts; no alpha needed because shoreline uses measured clip mask."
+}

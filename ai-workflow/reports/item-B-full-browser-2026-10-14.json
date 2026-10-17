@@ -1,0 +1,1345 @@
+{
+  "config": {
+    "argv": [
+      "/Users/vinhle/.nvm/versions/node/v24.19.0/bin/node",
+      "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/node_modules/.bin/playwright",
+      "test"
+    ],
+    "configFile": "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/playwright.config.ts",
+    "rootDir": "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/test/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/test/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run preview -- --port 4181 --strictPort",
+      "url": "http://127.0.0.1:4181",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "combat.spec.ts",
+      "file": "combat.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "full forest gate → encounter → battle → victory → exact return; count only outside, saved once",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16727,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:37:57.580Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "combat-performance",
+                      "contentType": "application/json",
+                      "body": "eyJ2aWV3cG9ydCI6WzE5MjAsMTA4MF0sImRwciI6MSwic2FtcGxlcyI6MjY1LCJwOTUiOjE2LjcwMDAwMDAwMDAwMDcyOCwiZnBzIjo2MC4wMDIyNjQyMzYzODYyOH0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b51ea54a95aff327696-ba7fc51a9476049bcb9e",
+          "file": "combat.spec.ts",
+          "line": 34,
+          "column": 1
+        },
+        {
+          "title": "recharge updates outside silently, 0/10 disables battle, other monster stays independent",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8950,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:38:14.635Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b51ea54a95aff327696-cccaca069398ab769504",
+          "file": "combat.spec.ts",
+          "line": 39,
+          "column": 1
+        },
+        {
+          "title": "pause clears input, skill/guard/retreat work and interrupted reload keeps bag and charge",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3080,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:38:23.595Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b51ea54a95aff327696-c65f774d5a5bfe7d49c6",
+          "file": "combat.spec.ts",
+          "line": 42,
+          "column": 1
+        },
+        {
+          "title": "failed arena load does not spend a charge; retry enters once",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1413,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:38:26.687Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b51ea54a95aff327696-9fe0077bf20a8077ed3b",
+          "file": "combat.spec.ts",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "another tab cannot spend or recover the running encounter; spore has its own combat",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14114,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:38:28.110Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b51ea54a95aff327696-cb12b45abba311284694",
+          "file": "combat.spec.ts",
+          "line": 48,
+          "column": 1
+        },
+        {
+          "title": "storage write failure is visible and does not enter a battle or erase inventory",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1347,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:38:42.230Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b51ea54a95aff327696-3c0804d916a196e5c36e",
+          "file": "combat.spec.ts",
+          "line": 52,
+          "column": 1
+        },
+        {
+          "title": "spore AI casts a real warned skill, shares stats, and can be defeated with normal controls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11710,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:38:43.584Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b51ea54a95aff327696-d810f32a182382629e72",
+          "file": "combat.spec.ts",
+          "line": 55,
+          "column": 1
+        },
+        {
+          "title": "idle player loses to actual monster AI and returns without another charge or inventory loss",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 100000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 31505,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:38:55.304Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b51ea54a95aff327696-5e51cb2f2db5a41e4b42",
+          "file": "combat.spec.ts",
+          "line": 64,
+          "column": 1
+        },
+        {
+          "title": "combat B 1280x720 DPR1 heroB",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1563,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:39:26.819Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b51ea54a95aff327696-9cfef823c9972e80b41d",
+          "file": "combat.spec.ts",
+          "line": 70,
+          "column": 118
+        },
+        {
+          "title": "combat B 1920x1080 DPR2 heroC",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2628,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:39:28.393Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b51ea54a95aff327696-2b4156c86a87a31a2fd8",
+          "file": "combat.spec.ts",
+          "line": 70,
+          "column": 118
+        },
+        {
+          "title": "combat B 2560x1440 DPR1 heroD",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1987,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:39:31.030Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b51ea54a95aff327696-1d1d1dfbec7c0fd05b75",
+          "file": "combat.spec.ts",
+          "line": 70,
+          "column": 118
+        },
+        {
+          "title": "combat B 720x900 DPR2 heroA",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2000,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:39:33.028Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "6b51ea54a95aff327696-2719487773d6b8aa952b",
+          "file": "combat.spec.ts",
+          "line": 70,
+          "column": 118
+        }
+      ]
+    },
+    {
+      "title": "equipment.spec.ts",
+      "file": "equipment.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "A: equip, compare, derived stats, unequip, search, locale, close and reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2596,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:39:35.052Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1991ef99b92b8776b436-e94849cfdac7ca8c6822",
+          "file": "equipment.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "full bag blocks unequip, allows swap, and quota error does not apply changes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1706,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:39:37.655Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1991ef99b92b8776b436-9fb520cf92d2e0296f00",
+          "file": "equipment.spec.ts",
+          "line": 18,
+          "column": 1
+        },
+        {
+          "title": "old progress migrates once, overflow stays recoverable and malformed save stays untouched",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1769,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:39:39.371Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1991ef99b92b8776b436-bec946d23de1496f4827",
+          "file": "equipment.spec.ts",
+          "line": 24,
+          "column": 1
+        },
+        {
+          "title": "two tabs equip different slots without losing the other transaction",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1947,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:39:41.147Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1991ef99b92b8776b436-46a99a7ac596f5b71c91",
+          "file": "equipment.spec.ts",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "equipped stats enter combat snapshot and persist after retreat",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1811,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:39:43.101Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1991ef99b92b8776b436-f1a29c4971e701724f52",
+          "file": "equipment.spec.ts",
+          "line": 31,
+          "column": 1
+        },
+        {
+          "title": "equipment layout 1280x720 DPR1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1593,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:39:44.921Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1991ef99b92b8776b436-a0dfcb25d0603ebd089f",
+          "file": "equipment.spec.ts",
+          "line": 36,
+          "column": 98
+        },
+        {
+          "title": "equipment layout 1920x1080 DPR2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4137,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:39:46.521Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1991ef99b92b8776b436-c5b3085a1521cd732957",
+          "file": "equipment.spec.ts",
+          "line": 36,
+          "column": 98
+        },
+        {
+          "title": "equipment layout 900x700 DPR1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1470,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:39:50.666Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1991ef99b92b8776b436-fdd4a989e64237d16b9c",
+          "file": "equipment.spec.ts",
+          "line": 36,
+          "column": 98
+        },
+        {
+          "title": "equipment layout 720x900 DPR2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2214,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:39:52.146Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1991ef99b92b8776b436-ea1919ee6a7d11bf0740",
+          "file": "equipment.spec.ts",
+          "line": 36,
+          "column": 98
+        },
+        {
+          "title": "equipment layout 390x844 DPR1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1448,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:39:54.368Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1991ef99b92b8776b436-639c638bdfbb61269644",
+          "file": "equipment.spec.ts",
+          "line": 36,
+          "column": 98
+        }
+      ]
+    },
+    {
+      "title": "game.spec.ts",
+      "file": "game.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "name, NPC approach, Vietnamese/English, real inventory and motion settings",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12273,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:39:55.844Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-ad799cb9b35e15acd482",
+          "file": "game.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "localized direction sign stays visible and highlights when hovered",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1208,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:40:08.122Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-977463a72ed0209a6e28",
+          "file": "game.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "physical click goes around the clinic, scene animates, and live FPS is recorded",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13203,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:40:09.338Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "performance",
+                      "contentType": "application/json",
+                      "body": "eyJmcHMiOjYwLjAwOTgzNzY3ODMwNzkyLCJmcmFtZXMiOjYwMCwicDk1IjoxNi43OTk5OTk5OTk5OTkyNzJ9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-acab2709de7a8a2b5720",
+          "file": "game.spec.ts",
+          "line": 21,
+          "column": 1
+        },
+        {
+          "title": "viewport 1280x720 DPR 1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1968,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:40:22.548Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "viewport",
+                      "contentType": "application/json",
+                      "body": "eyJ3aWR0aCI6MTI4MCwiaGVpZ2h0Ijo3MjAsImRwciI6MX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-fdc30ef7735b08e8f1dc",
+          "file": "game.spec.ts",
+          "line": 25,
+          "column": 88
+        },
+        {
+          "title": "viewport 1920x1080 DPR 2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3867,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:40:24.524Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "viewport",
+                      "contentType": "application/json",
+                      "body": "eyJ3aWR0aCI6MTkyMCwiaGVpZ2h0IjoxMDgwLCJkcHIiOjJ9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-297ecb9635d6c715db83",
+          "file": "game.spec.ts",
+          "line": 25,
+          "column": 88
+        },
+        {
+          "title": "viewport 2560x1440 DPR 1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2525,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:40:28.404Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "viewport",
+                      "contentType": "application/json",
+                      "body": "eyJ3aWR0aCI6MjU2MCwiaGVpZ2h0IjoxNDQwLCJkcHIiOjF9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-da3cf64265cee501f9c0",
+          "file": "game.spec.ts",
+          "line": 25,
+          "column": 88
+        },
+        {
+          "title": "viewport 720x900 DPR 2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2419,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:40:30.935Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "viewport",
+                      "contentType": "application/json",
+                      "body": "eyJ3aWR0aCI6NzIwLCJoZWlnaHQiOjkwMCwiZHByIjoyfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-8e2d966b9053012c9fb8",
+          "file": "game.spec.ts",
+          "line": 25,
+          "column": 88
+        },
+        {
+          "title": "forest travel, single pickup, persistent bag, return and opt-in audio",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18569,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:40:33.361Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-2a9d8e069ea41304c046",
+          "file": "game.spec.ts",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "live resize preserves pointer coordinates and reduced motion freezes river ripples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3527,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:40:51.940Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-8ad743bc1e51e5dc557f",
+          "file": "game.spec.ts",
+          "line": 39,
+          "column": 1
+        },
+        {
+          "title": "mountain and north gates return correctly, including a resource with its front blocked",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18746,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:40:55.477Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-65cc5b549de9f11df785",
+          "file": "game.spec.ts",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "all five villagers walk and can be approached and spoken to in the scene",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14028,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:41:14.229Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-9793059c370d49f24485",
+          "file": "game.spec.ts",
+          "line": 66,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "item-art.spec.ts",
+      "file": "item-art.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "all B icons load, have genuine cutout alpha and remain identifiable at thumbnail sizes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2819,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:41:28.272Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "item-alpha-audit",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJpZCI6ICJ3b29kLXN3b3JkIiwKICAgICJyYXRpbyI6IDAuMTc5NDgxMTYyNjcxNzk0NzYsCiAgICAiZWRnZSI6IDAsCiAgICAiYm91bmRzIjogWwogICAgICA2OSwKICAgICAgODAsCiAgICAgIDEyMjUsCiAgICAgIDExOTUKICAgIF0sCiAgICAid2lkdGgiOiAxMjU0LAogICAgImhlaWdodCI6IDEyNTQKICB9LAogIHsKICAgICJpZCI6ICJiYW1ib28tc3dvcmQiLAogICAgInJhdGlvIjogMC4xNzczMjI4MzgwNTA2MTQ0NCwKICAgICJlZGdlIjogMCwKICAgICJib3VuZHMiOiBbCiAgICAgIDYzLAogICAgICA5MiwKICAgICAgMTIyMywKICAgICAgMTE2NwogICAgXSwKICAgICJ3aWR0aCI6IDEyNTQsCiAgICAiaGVpZ2h0IjogMTI1NAogIH0sCiAgewogICAgImlkIjogImdyZWVuLXdpbmQtY2xvYWsiLAogICAgInJhdGlvIjogMC40NzI2NjQxODkxMDg0MDk3LAogICAgImVkZ2UiOiAwLAogICAgImJvdW5kcyI6IFsKICAgICAgMzEsCiAgICAgIDE1MywKICAgICAgMTIzMywKICAgICAgMTExNgogICAgXSwKICAgICJ3aWR0aCI6IDEyNTQsCiAgICAiaGVpZ2h0IjogMTI1NAogIH0sCiAgewogICAgImlkIjogImNsb3VkLXN0ZXAtYm9vdHMiLAogICAgInJhdGlvIjogMC40Nzg3NjA3ODg0NDM0ODgsCiAgICAiZWRnZSI6IDAsCiAgICAiYm91bmRzIjogWwogICAgICA0MSwKICAgICAgMTQ5LAogICAgICAxMjMxLAogICAgICAxMTIxCiAgICBdLAogICAgIndpZHRoIjogMTI1NCwKICAgICJoZWlnaHQiOiAxMjU0CiAgfSwKICB7CiAgICAiaWQiOiAidHJ1Yy1raGUtcm9iZSIsCiAgICAicmF0aW8iOiAwLjUzNzQ3NDM0MDQ4MzY1OCwKICAgICJlZGdlIjogMCwKICAgICJib3VuZHMiOiBbCiAgICAgIDQxLAogICAgICAxMTgsCiAgICAgIDEyMzcsCiAgICAgIDExNjcKICAgIF0sCiAgICAid2lkdGgiOiAxMjU0LAogICAgImhlaWdodCI6IDEyNTQKICB9LAogIHsKICAgICJpZCI6ICJuYW0tbGluaC1wYW50cyIsCiAgICAicmF0aW8iOiAwLjUwNTY2OTg5NDYxNDc0NDgsCiAgICAiZWRnZSI6IDAsCiAgICAiYm91bmRzIjogWwogICAgICA4MywKICAgICAgNzMsCiAgICAgIDExODIsCiAgICAgIDExNzkKICAgIF0sCiAgICAid2lkdGgiOiAxMjU0LAogICAgImhlaWdodCI6IDEyNTQKICB9LAogIHsKICAgICJpZCI6ICJjYWxtLWphZGUiLAogICAgInJhdGlvIjogMC4zNzg2NTk0MjIyMjUyNzQ2NiwKICAgICJlZGdlIjogMCwKICAgICJib3VuZHMiOiBbCiAgICAgIDg1LAogICAgICA4NiwKICAgICAgMTIyNiwKICAgICAgMTE4NQogICAgXSwKICAgICJ3aWR0aCI6IDEyNTQsCiAgICAiaGVpZ2h0IjogMTI1NAogIH0sCiAgewogICAgImlkIjogImJhbWJvby1oZWFkYmFuZCIsCiAgICAicmF0aW8iOiAwLjM1MzMwODMyODgxODI3NTk1LAogICAgImVkZ2UiOiAwLAogICAgImJvdW5kcyI6IFsKICAgICAgODYsCiAgICAgIDE4NCwKICAgICAgMTE5MiwKICAgICAgMTA5NQogICAgXSwKICAgICJ3aWR0aCI6IDEyNTQsCiAgICAiaGVpZ2h0IjogMTI1NAogIH0sCiAgewogICAgImlkIjogImxlYXRoZXItYnJhY2VycyIsCiAgICAicmF0aW8iOiAwLjQ4NDc4ODcwODAzMjIyMzUsCiAgICAiZWRnZSI6IDAsCiAgICAiYm91bmRzIjogWwogICAgICA2NCwKICAgICAgMTEyLAogICAgICAxMTk2LAogICAgICAxMTcxCiAgICBdLAogICAgIndpZHRoIjogMTI1NCwKICAgICJoZWlnaHQiOiAxMjU0CiAgfSwKICB7CiAgICAiaWQiOiAicWktYmVsdCIsCiAgICAicmF0aW8iOiAwLjQzNDA1NDA4OTExNTc4NjQsCiAgICAiZWRnZSI6IDAsCiAgICAiYm91bmRzIjogWwogICAgICA0NCwKICAgICAgMTkxLAogICAgICAxMjM3LAogICAgICAxMjAzCiAgICBdLAogICAgIndpZHRoIjogMTI1NCwKICAgICJoZWlnaHQiOiAxMjU0CiAgfSwKICB7CiAgICAiaWQiOiAic3Bpcml0LWdvdXJkIiwKICAgICJyYXRpbyI6IDAuNDc4MDc5NzE0MjkyMjU1MiwKICAgICJlZGdlIjogMCwKICAgICJib3VuZHMiOiBbCiAgICAgIDM0LAogICAgICA3NCwKICAgICAgMTI0MCwKICAgICAgMTIwMQogICAgXSwKICAgICJ3aWR0aCI6IDEyNTQsCiAgICAiaGVpZ2h0IjogMTI1NAogIH0sCiAgewogICAgImlkIjogImRhcmstaXJvbi1zd29yZCIsCiAgICAicmF0aW8iOiAwLjIxMTY0MjM2MTY2NzU0NDI0LAogICAgImVkZ2UiOiAwLAogICAgImJvdW5kcyI6IFsKICAgICAgMzcsCiAgICAgIDUwLAogICAgICAxMjIzLAogICAgICAxMTk5CiAgICBdLAogICAgIndpZHRoIjogMTI1NCwKICAgICJoZWlnaHQiOiAxMjU0CiAgfSwKICB7CiAgICAiaWQiOiAibmluZS1jbG91ZC1yb2JlIiwKICAgICJyYXRpbyI6IDAuNjAwNzc4NjI0ODI3OTgyNywKICAgICJlZGdlIjogMCwKICAgICJib3VuZHMiOiBbCiAgICAgIDMxLAogICAgICA3NCwKICAgICAgMTIzNSwKICAgICAgMTE5OQogICAgXSwKICAgICJ3aWR0aCI6IDEyNTQsCiAgICAiaGVpZ2h0IjogMTI1NAogIH0sCiAgewogICAgImlkIjogImhlcmIiLAogICAgInJhdGlvIjogMC40NTY4MjUyNDA1Njk4ODkyNywKICAgICJlZGdlIjogMCwKICAgICJib3VuZHMiOiBbCiAgICAgIDYxLAogICAgICA5NCwKICAgICAgMTE5OCwKICAgICAgMTE1OAogICAgXSwKICAgICJ3aWR0aCI6IDEyNTQsCiAgICAiaGVpZ2h0IjogMTI1NAogIH0sCiAgewogICAgImlkIjogImJhbWJvbyIsCiAgICAicmF0aW8iOiAwLjQ2NDY1OTE4MzExODAwOTYzLAogICAgImVkZ2UiOiAwLAogICAgImJvdW5kcyI6IFsKICAgICAgNTUsCiAgICAgIDY5LAogICAgICAxMjI1LAogICAgICAxMTg0CiAgICBdLAogICAgIndpZHRoIjogMTI1NCwKICAgICJoZWlnaHQiOiAxMjU0CiAgfSwKICB7CiAgICAiaWQiOiAibXVzaHJvb20iLAogICAgInJhdGlvIjogMC40NTk3OTM3MzE4Mjg0ODM3NiwKICAgICJlZGdlIjogMCwKICAgICJib3VuZHMiOiBbCiAgICAgIDY1LAogICAgICAxNTYsCiAgICAgIDExODksCiAgICAgIDExODgKICAgIF0sCiAgICAid2lkdGgiOiAxMjU0LAogICAgImhlaWdodCI6IDEyNTQKICB9LAogIHsKICAgICJpZCI6ICJvcmUiLAogICAgInJhdGlvIjogMC40OTY2MTU2MTQ3MjE4ODUyLAogICAgImVkZ2UiOiAwLAogICAgImJvdW5kcyI6IFsKICAgICAgNzgsCiAgICAgIDE1OSwKICAgICAgMTE4OSwKICAgICAgMTE1NAogICAgXSwKICAgICJ3aWR0aCI6IDEyNTQsCiAgICAiaGVpZ2h0IjogMTI1NAogIH0sCiAgewogICAgImlkIjogInN0b25lIiwKICAgICJyYXRpbyI6IDAuNTI2MDAzNTUwOTk3MjU1NCwKICAgICJlZGdlIjogMCwKICAgICJib3VuZHMiOiBbCiAgICAgIDc5LAogICAgICAxMjcsCiAgICAgIDExODUsCiAgICAgIDExNzYKICAgIF0sCiAgICAid2lkdGgiOiAxMjU0LAogICAgImhlaWdodCI6IDEyNTQKICB9LAogIHsKICAgICJpZCI6ICJzb2lsIiwKICAgICJyYXRpbyI6IDAuMzM4MjI2NzY1MjYwMjU4MSwKICAgICJlZGdlIjogMCwKICAgICJib3VuZHMiOiBbCiAgICAgIDM2LAogICAgICAyNDksCiAgICAgIDEyMjQsCiAgICAgIDEwMTgKICAgIF0sCiAgICAid2lkdGgiOiAxMjU0LAogICAgImhlaWdodCI6IDEyNTQKICB9Cl0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2aa53da4be1719c41148-7ccb6a283a4d0c546aab",
+          "file": "item-art.spec.ts",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "failed image and unknown saved item show explicit localized fallback without losing ownership",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1178,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:41:31.096Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2aa53da4be1719c41148-39331990d14f73d1f32d",
+          "file": "item-art.spec.ts",
+          "line": 51,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-13T18:37:56.925Z",
+    "duration": 215461.83000000002,
+    "expected": 35,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

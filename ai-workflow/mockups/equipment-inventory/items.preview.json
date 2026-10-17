@@ -1,0 +1,23 @@
+{
+  "status": "draft-not-runtime-not-granted-to-player",
+  "levelRange": [1,9],
+  "capacity": 100,
+  "visualStatus": "proposed-ids-assets-not-created",
+  "items": [
+    {"id":"wood-sword","name":{"vi":"Kiếm gỗ","en":"Wooden Sword"},"description":{"vi":"Kiếm gỗ tập luyện của người mới nhập môn.","en":"A wooden training sword for beginners."},"level":1,"slot":"weapon","stackMax":1,"bonuses":{"attack":3},"icon":"sword","visualId":"weapon.wood-sword"},
+    {"id":"bamboo-sword","name":{"vi":"Thanh Trúc Kiếm","en":"Green Bamboo Sword"},"description":{"vi":"Thân kiếm nhẹ, thuận tay khi xuất chiêu.","en":"A light blade made for precise strikes."},"level":3,"slot":"weapon","stackMax":1,"bonuses":{"attack":9,"accuracy":2},"icon":"sword","visualId":"weapon.bamboo-sword"},
+    {"id":"green-wind-cloak","name":{"vi":"Áo choàng Thanh Phong","en":"Green Wind Cloak"},"description":{"vi":"Áo choàng nhẹ của khách lữ hành.","en":"A light cloak worn by travelers."},"level":2,"slot":"cloak","stackMax":1,"bonuses":{"magicResistance":2,"speed":1},"icon":"cape","visualId":"cloak.green-wind"},
+    {"id":"cloud-step-boots","name":{"vi":"Giày Vân Bộ","en":"Cloudstep Boots"},"description":{"vi":"Giày mềm thích hợp đường rừng.","en":"Soft boots suited to woodland paths."},"level":2,"slot":"feet","stackMax":1,"bonuses":{"speed":2,"defense":1},"icon":"boots","visualId":"feet.cloud-step"},
+    {"id":"truc-khe-robe","name":{"vi":"Pháp bào Trúc Khê","en":"Truc Khe Robe"},"description":{"vi":"Pháp bào giản dị được may tại Trúc Khê.","en":"A simple robe sewn in Truc Khe."},"level":1,"slot":"body","stackMax":1,"bonuses":{"defense":2,"life":8},"icon":"robe","visualId":null},
+    {"id":"nam-linh-pants","name":{"vi":"Quần vải Nam Lĩnh","en":"Nam Linh Trousers"},"description":{"vi":"Quần vải bền cho hành trình dài.","en":"Durable trousers for long journeys."},"level":1,"slot":"legs","stackMax":1,"bonuses":{"defense":1,"stamina":4},"icon":"pants","visualId":null},
+    {"id":"calm-jade","name":{"vi":"Ngọc bội An Tâm","en":"Calming Jade"},"description":{"vi":"Miếng ngọc giúp tâm trí vững vàng.","en":"A jade pendant that steadies the mind."},"level":2,"slot":"jade","stackMax":1,"bonuses":{"willpower":3,"magicResistance":1},"icon":"jade","visualId":null},
+    {"id":"bamboo-headband","name":{"vi":"Khăn Thanh Trúc","en":"Bamboo Headband"},"description":{"vi":"Khăn buộc tóc đơn giản của đệ tử mới.","en":"A simple headband for new disciples."},"level":1,"slot":"head","stackMax":1,"bonuses":{"life":4,"willpower":1},"icon":"cap","visualId":null},
+    {"id":"leather-bracers","name":{"vi":"Hộ uyển da","en":"Leather Bracers"},"description":{"vi":"Da thuộc bảo vệ cổ tay khi luyện võ.","en":"Leather guards that protect the wrists."},"level":1,"slot":"wrists","stackMax":1,"bonuses":{"defense":1,"accuracy":1},"icon":"bracer","visualId":null},
+    {"id":"qi-belt","name":{"vi":"Đai Luyện Khí","en":"Qi Training Belt"},"description":{"vi":"Đai thắt chắc chắn dùng khi tu luyện.","en":"A sturdy belt worn during training."},"level":2,"slot":"waist","stackMax":1,"bonuses":{"stamina":8,"spiritualPower":4},"icon":"belt","visualId":null},
+    {"id":"spirit-gourd","name":{"vi":"Hồ lô Tụ Linh","en":"Spirit Gathering Gourd"},"description":{"vi":"Pháp bảo tích linh lực; bản đầu chỉ cộng chỉ số.","en":"A spirit vessel; initially grants stats only."},"level":4,"slot":"artifact","stackMax":1,"bonuses":{"spiritualPower":15,"magicResistance":3},"icon":"orb","visualId":null},
+    {"id":"dark-iron-sword","name":{"vi":"Huyền Thiết Kiếm","en":"Dark Iron Sword"},"description":{"vi":"Kiếm huyền thiết nặng, thiên về sát phạt.","en":"A heavy dark-iron blade built for offense."},"level":6,"slot":"weapon","stackMax":1,"bonuses":{"attack":18,"killingIntent":4},"icon":"sword","visualId":"weapon.dark-iron"},
+    {"id":"nine-cloud-robe","name":{"vi":"Cửu Vân Pháp Bào","en":"Nine Clouds Robe"},"description":{"vi":"Pháp bào cấp cao, số liệu chỉ để minh họa.","en":"A high-level robe with illustrative balance values."},"level":9,"slot":"body","stackMax":1,"bonuses":{"defense":18,"magicResistance":12,"life":40},"icon":"robe","visualId":null},
+    {"id":"preview-spirit-herb","name":{"vi":"Linh thảo","en":"Spirit Herb"},"description":{"vi":"Nguyên liệu minh họa; không tự ánh xạ ID tài nguyên cũ.","en":"Preview material; does not replace legacy resource IDs."},"level":1,"slot":null,"stackMax":99,"bonuses":{},"icon":"herb","visualId":null},
+    {"id":"preview-red-ore","name":{"vi":"Xích thiết","en":"Red Iron Ore"},"description":{"vi":"Quặng minh họa; không tự ánh xạ ID tài nguyên cũ.","en":"Preview ore; does not replace legacy resource IDs."},"level":1,"slot":null,"stackMax":99,"bonuses":{},"icon":"ore","visualId":null}
+  ]
+}

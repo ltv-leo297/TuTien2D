@@ -1,0 +1,77 @@
+[
+  {
+    "id": "A",
+    "name": "Vòng rừng bên thác",
+    "tool": "built-in image_gen",
+    "source": "/Users/vinhle/.codex/generated_images/01a13ae1-870a-7622-8062-9f4bab94cac1/exec-ffde95a3-fef6-42ad-8345-f217c009319d.png",
+    "art": "A-art.png",
+    "review": "A.png",
+    "hudSource": "render-mockups.mjs",
+    "status": "awaiting-user-selection",
+    "sha256": "b487ab96ea1b1bba0b50293c6d8943c8aed809a95ad3e8b754535070b0428c50",
+    "reviewSize": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "id": "B",
+    "name": "Suối chia đôi rừng",
+    "tool": "built-in image_gen",
+    "source": "/Users/vinhle/.codex/generated_images/01a13ae1-870a-7622-8062-9f4bab94cac1/exec-0d86bfd9-918c-48e7-bae9-fb4ded977a8f.png",
+    "art": "B-art.png",
+    "review": "B.png",
+    "hudSource": "render-mockups.mjs",
+    "status": "awaiting-user-selection",
+    "sha256": "78b40660cd3f27dfc016675ca4f06b69470984e2222babb9e48fa5105d15aca3",
+    "reviewSize": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "id": "C",
+    "name": "Phế xá giữa rừng",
+    "tool": "built-in image_gen",
+    "source": "/Users/vinhle/.codex/generated_images/01a13ae1-870a-7622-8062-9f4bab94cac1/exec-ea98f270-0f97-4b4c-975d-43731c147802.png",
+    "art": "C-art.png",
+    "review": "C.png",
+    "hudSource": "render-mockups.mjs",
+    "status": "awaiting-user-selection",
+    "sha256": "92baed50310a63ed7e11093dc7594f79140db2fdee98800ed94ef3a273301b8f",
+    "reviewSize": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "id": "D",
+    "name": "Trúc lâm nhiều ngách",
+    "tool": "built-in image_gen",
+    "source": "/Users/vinhle/.codex/generated_images/01a13ae1-870a-7622-8062-9f4bab94cac1/exec-f25d9448-714b-4fb9-8f93-60ab7d89f7b1.png",
+    "art": "D-art.png",
+    "review": "D.png",
+    "hudSource": "render-mockups.mjs",
+    "status": "awaiting-user-selection",
+    "sha256": "e5f420b77d283d434c7657dd8a43765ef3a33a7339faf0a66745a23d2a10477b",
+    "reviewSize": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "id": "E",
+    "name": "Thung lũng bậc đá",
+    "tool": "built-in image_gen",
+    "source": "/Users/vinhle/.codex/generated_images/01a13ae1-870a-7622-8062-9f4bab94cac1/exec-b5bd579f-d68e-46c8-a715-f643bdb2d9d2.png",
+    "art": "E-art.png",
+    "review": "E.png",
+    "hudSource": "render-mockups.mjs",
+    "status": "awaiting-user-selection",
+    "sha256": "399b5a94a5118478bced23e58d35dc0aa9b0f13f41a5507bd2568d1dadb61fc5",
+    "reviewSize": [
+      1920,
+      1080
+    ]
+  }
+]

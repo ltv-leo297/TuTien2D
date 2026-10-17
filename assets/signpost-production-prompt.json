@@ -1,0 +1,11 @@
+{
+  "generator": "built-in ImageGen",
+  "createdAt": "2026-10-07",
+  "selectedMockup": "A",
+  "references": [
+    "User-provided wooden signboard image: shape reference only",
+    "ai-workflow/mockups/pixel-art-asset-directions/B-bright-handheld.png: approved style reference"
+  ],
+  "prompt": "Use case: stylized-concept. Asset type: transparent game UI/world-component asset for a 2D web RPG mockup. Primary request: Create one ORIGINAL compact Vietnamese xianxia roadside direction sign, variant A: a single warm-brown wooden plank mounted on one sturdy post, with a small carved arrowhead tab projecting from the RIGHT edge to indicate direction. The board face must have a clean empty central area for runtime HTML/canvas destination text. Style/medium: bright handheld-era pixel art, deliberate hard pixel clusters, top-down 3/4 world-object view, readable dark outline, warm wood and restrained jade-green accent, matching the approved reference. Composition/framing: isolated full object, centered, straight readable face, game-scale silhouette, enough transparent padding, no ground scene. Constraints: genuinely transparent background; no text, no letters, no symbols, no logos, no watermark; no smooth vector/3D look; do not copy any exact board from the reference; one sign only.",
+  "runtimeText": "Destination names and arrows are rendered from locale-aware canvas text, not embedded in the raster asset."
+}

@@ -1,0 +1,6 @@
+{
+  "tool": "built-in ImageGen",
+  "source": "E-v1.png",
+  "output": "E.png",
+  "prompt": "Use case: text-localization. Edit only the bottom-right HUD action bar in this mockup. Replace that bar with three matching dark-jade buttons whose exact Vietnamese labels, left to right, are \"Túi đồ\", \"Nhiệm vụ\", \"Nhân vật\". Use clean readable Vietnamese typography with correct diacritics. Small simple bag, scroll and person icons above labels, no Chinese/Japanese/Korean letters. Preserve absolutely everything else: all map scenery, buildings, character positions and scales, colors, pixel style, top HUD, composition and image dimensions. Do not add any new text. Return the complete corrected screenshot."
+}

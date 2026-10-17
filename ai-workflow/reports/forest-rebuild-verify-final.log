@@ -1,0 +1,166 @@
+
+> tien-hiep-chibi-demo@0.1.0 verify
+> npm run test && npm run check:assets && npm run build && npm run test:browser
+
+
+> tien-hiep-chibi-demo@0.1.0 test
+> node --test test/scene.test.mjs test/combat.test.mjs test/monsters.test.mjs test/equipment.test.mjs test/item-art.test.mjs ../tools/game-quality.test.mjs
+
+✔ asset integrity rejects missing files and modified runtime copies (2.435791ms)
+✔ locale contract detects missing strings and renamed interpolation variables (0.273792ms)
+✔ PNG inspector refuses an invalid image (0.815542ms)
+✔ changed assets require review and increment versions; registering does not approve art (0.220958ms)
+✔ charges: view is free, entry spends once, active slot never refills early (0.903083ms)
+✔ charges: independent exact 5-minute boundary and idempotent finish (0.232ms)
+✔ charges: empty pool prevents entry, offline/reload restores due slots, other monster independent (0.376541ms)
+✔ charges: abandoned encounters recover once, malformed/future saves do not silently reset (0.401292ms)
+✔ combat: direction, bounded double jump, landing and arena walls (6.22875ms)
+✔ combat: pause/clear cancels held input and freezes simulation, no stuck guard (0.429708ms)
+✔ combat: attack is directional, one melee hit per swing, skill costs/cooldown (0.907834ms)
+✔ combat: frontal guard reduces damage, rear and root attacks bypass it; dodge costs bounded stamina (0.38075ms)
+✔ combat: warnings precede root/shot and motion physically avoids projectiles (0.887833ms)
+✔ combat: a real encounter can be won, defeated or retreated, terminal state freezes damage (2.009ms)
+✔ catalog levels 1–9, slots, bonuses and both locales are validated (1.113167ms)
+✔ legacy migration preserves materials, only grants starter set once, leaves source intact (2.549375ms)
+✔ migration overflow and unknown IDs are retained without unbounded slot allocation (0.345708ms)
+✔ equip/swap/unequip preserve unique instance identities across 100 cycles (8.822834ms)
+✔ full bag swap succeeds, unequip and overflow pickup fail without mutating input (0.863333ms)
+✔ stacking fills existing stacks then empty slots; partial fit is rolled back (0.483875ms)
+✔ claim migration overflow is bounded by free capacity and conserves quantity (0.444125ms)
+✔ stats only count equipped gear; reload does not double bonuses (0.422834ms)
+✔ equipped combat snapshot uses original outgoing/incoming damage formulas, does not mutate base (0.722042ms)
+✔ invalid save version, duplicate IDs, wrong equipment, bad quantity are rejected (0.657834ms)
+✔ malformed and future saves are not overwritten; quota leaves prior save intact (0.3245ms)
+✔ latest-state transactions reject stale equip instead of duplicating or overwriting (0.222209ms)
+✔ every catalog item resolves a registered alpha icon with identical source/runtime bytes (47.769208ms)
+✔ icon references reject paths, URLs and missing metadata instead of guessing an image (0.376542ms)
+✔ formulas: physical, magic, sword match original arithmetic, minimum and half coefficients (0.659ms)
+✔ catalog: every monster has ten shared stats, 3–5 skills, finite resources and valid art (0.800167ms)
+✔ AI: range, cooldown and affordability are hard gates; no repeat bias overrides eligibility (0.212291ms)
+✔ AI: many seeds produce variety, reproducible choices, anti-repeat and situational preferences (0.9825ms)
+✔ executor: wood-yao/seed-volley warns, pays once, locks aim and uses formula (1.435ms)
+✔ executor: wood-yao/root-snare warns, pays once, locks aim and uses formula (0.92025ms)
+✔ executor: wood-yao/branch-sweep warns, pays once, locks aim and uses formula (0.829917ms)
+✔ executor: wood-yao/trunk-rush warns, pays once, locks aim and uses formula (0.844542ms)
+✔ executor: spore-yao/spore-volley warns, pays once, locks aim and uses formula (0.472333ms)
+✔ executor: spore-yao/spore-field warns, pays once, locks aim and uses formula (0.872625ms)
+✔ executor: spore-yao/spore-fan warns, pays once, locks aim and uses formula (0.338625ms)
+✔ executor: spore-yao/cap-slam warns, pays once, locks aim and uses formula (0.276583ms)
+✔ executor: bamboo-serpent/leaf-darts warns, pays once, locks aim and uses formula (0.305958ms)
+✔ executor: bamboo-serpent/tail-sweep warns, pays once, locks aim and uses formula (0.366ms)
+✔ executor: bamboo-serpent/fang-bite warns, pays once, locks aim and uses formula (0.274667ms)
+✔ executor: bamboo-serpent/serpent-rush warns, pays once, locks aim and uses formula (0.764875ms)
+✔ executor: jade-beast/crag-wave warns, pays once, locks aim and uses formula (0.6435ms)
+✔ executor: jade-beast/crag-eruption warns, pays once, locks aim and uses formula (0.476083ms)
+✔ executor: jade-beast/stone-sweep warns, pays once, locks aim and uses formula (0.820958ms)
+✔ executor: jade-beast/boulder-charge warns, pays once, locks aim and uses formula (0.635208ms)
+✔ telegraphs: player can leave locked ground/aim, jump a sweep and dash through a rush (1.447667ms)
+✔ stats: actual monster hit respects player defense; speed, willpower and accuracy have bounded mappings (0.672833ms)
+✔ swept projectile collision includes diagonal crossings and rejects non-intersections (0.048792ms)
+✔ AI state and resources freeze on pause, replay with same seed, terminal cleans active hazards (11.008042ms)
+✔ ledger: missing new catalog IDs initialize without erasing old or retired monster charges (0.298375ms)
+✔ new ground patterns: wave travels through its warned corridor and can be jumped; eruption locks three timed sites (1.089333ms)
+✔ fang slow changes actual movement, expires, and is prevented by guard and invulnerability (2.300958ms)
+✔ sequence geometry uses the same locked three sites and activation times as collision (1.1305ms)
+✔ every spawn, main NPC approach and gate has a collision-free route (542.339125ms)
+✔ walking around a house never tunnels through its footprint, even with a large step (177.115625ms)
+✔ diagonal corner cannot squeeze through touching obstacles (0.1315ms)
+✔ a grazing corner between path samples is rejected before movement starts (0.23125ms)
+✔ both winding rivers remain solid except for their actual bridge decks (26.373417ms)
+✔ a narrow concave gap between navigation samples cannot trap variable frame movement (1.61075ms)
+✔ forest plants on opposite banks remain reachable across varying frame times (302.68075ms)
+✔ an enclosed destination remains unreachable and repeated retargeting never crosses solids (1028.928666ms)
+✔ interactions require approach and gathering happens once per cooldown (4.428041ms)
+✔ all three village gates transfer and return safely (407.746416ms)
+✔ direction signs sit beside their transition gates without blocking the route (186.782583ms)
+✔ every villager patrol is reachable, actually moves, and stays outside solids (887.921459ms)
+✔ player routes around an NPC body instead of passing through it (25.119584ms)
+✔ resource and monster bodies also block movement while remaining approachable (2.679042ms)
+✔ camera pointer inverse is exact at every viewport and DPR (0.226667ms)
+✔ all dynamic scene, actor, dialogue, gate and hero keys exist in both languages (2.021083ms)
+✔ selected forest: only the measured wooden deck permits crossing the central stream (5.060167ms)
+✔ forest E: every new plant is harvested once, duplicate species share inventory but not cooldown (244.757083ms)
+ℹ tests 74
+ℹ suites 0
+ℹ pass 74
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3967.024959
+
+> tien-hiep-chibi-demo@0.1.0 check:assets
+> node ../tools/check-game-quality.mjs
+
+76 asset; 0 asset cần review hình ảnh.
+PASS: metadata/file checks. Gameplay và chất lượng hình ảnh cần kiểm tra riêng.
+
+> tien-hiep-chibi-demo@0.1.0 build
+> tsc -b && vite build
+
+vite v7.3.6 building client environment for production...
+transforming...
+✓ 68 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                   0.79 kB │ gzip:   0.45 kB
+dist/assets/index-CulVx8fc.css   27.25 kB │ gzip:   6.68 kB
+dist/assets/index-CnTd5b2S.js   389.13 kB │ gzip: 126.64 kB
+✓ built in 1.11s
+
+> tien-hiep-chibi-demo@0.1.0 test:browser
+> playwright test
+
+
+Running 46 tests using 1 worker
+
+(node:61713) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 test/browser/combat.spec.ts:34:1 › full forest gate → encounter → battle → victory → exact return; count only outside, saved once (18.9s)
+  ✓   2 test/browser/combat.spec.ts:39:1 › recharge updates outside silently, 0/10 disables battle, other monster stays independent (6.8s)
+  ✓   3 test/browser/combat.spec.ts:42:1 › pause clears input, skill/guard/retreat work and interrupted reload keeps bag and charge (3.2s)
+  ✓   4 test/browser/combat.spec.ts:45:1 › failed arena load does not spend a charge; retry enters once (1.5s)
+  ✓   5 test/browser/combat.spec.ts:48:1 › another tab cannot spend or recover the running encounter; spore has its own combat (14.1s)
+  ✓   6 test/browser/combat.spec.ts:52:1 › storage write failure is visible and does not enter a battle or erase inventory (1.3s)
+  ✓   7 test/browser/combat.spec.ts:55:1 › spore AI casts a real warned skill, shares stats, and can be defeated with normal controls (9.8s)
+  ✓   8 test/browser/combat.spec.ts:64:1 › idle player loses to actual monster AI and returns without another charge or inventory loss (23.4s)
+  ✓   9 test/browser/combat.spec.ts:70:118 › combat B 1280x720 DPR1 heroB (1.7s)
+  ✓  10 test/browser/combat.spec.ts:70:118 › combat B 1920x1080 DPR2 heroC (2.4s)
+  ✓  11 test/browser/combat.spec.ts:70:118 › combat B 2560x1440 DPR1 heroD (2.0s)
+  ✓  12 test/browser/combat.spec.ts:70:118 › combat B 720x900 DPR2 heroA (2.1s)
+  ✓  13 test/browser/equipment.spec.ts:8:1 › A: equip, compare, derived stats, unequip, search, locale, close and reload (2.5s)
+  ✓  14 test/browser/equipment.spec.ts:18:1 › full bag blocks unequip, allows swap, and quota error does not apply changes (1.3s)
+  ✓  15 test/browser/equipment.spec.ts:24:1 › old progress migrates once, overflow stays recoverable and malformed save stays untouched (1.7s)
+  ✓  16 test/browser/equipment.spec.ts:28:1 › two tabs equip different slots without losing the other transaction (1.9s)
+  ✓  17 test/browser/equipment.spec.ts:31:1 › equipped stats enter combat snapshot and persist after retreat (1.8s)
+  ✓  18 test/browser/equipment.spec.ts:36:110 › equipment layout 1280x720 DPR1 (1.6s)
+  ✓  19 test/browser/equipment.spec.ts:36:110 › equipment layout 1920x1080 DPR2 (4.0s)
+  ✓  20 test/browser/equipment.spec.ts:36:110 › equipment layout 900x700 DPR1 (1.4s)
+  ✓  21 test/browser/equipment.spec.ts:36:110 › equipment layout 720x900 DPR2 (2.0s)
+  ✓  22 test/browser/equipment.spec.ts:36:110 › equipment layout 672x786 DPR1 (1.5s)
+  ✓  23 test/browser/equipment.spec.ts:36:110 › equipment layout 390x844 DPR1 (1.4s)
+  ✓  24 test/browser/forest.spec.ts:12:1 › forest E plants: approach, inventory species/levels, cooldown, persistence and return gate (48.5s)
+  ✓  25 test/browser/forest.spec.ts:23:49 › forest E bamboo-serpent: approach → combat skill → retreat → same location and charge (5.2s)
+  ✓  26 test/browser/forest.spec.ts:23:49 › forest E jade-beast: approach → combat skill → retreat → same location and charge (10.3s)
+  ✓  27 test/browser/forest.spec.ts:28:88 › forest E viewport 1280x720 DPR1: click and resize (2.9s)
+  ✓  28 test/browser/forest.spec.ts:28:88 › forest E viewport 1920x1080 DPR2: click and resize (4.2s)
+  ✓  29 test/browser/forest.spec.ts:28:88 › forest E viewport 2560x1440 DPR1: click and resize (3.2s)
+  ✓  30 test/browser/forest.spec.ts:28:88 › forest E viewport 720x900 DPR2: click and resize (3.6s)
+  ✓  31 test/browser/forest.spec.ts:37:1 › forest E waterfall animates and reduced motion freezes its actual region (7.0s)
+  ✓  32 test/browser/forest.spec.ts:43:1 › selected forest: walks across wooden bridge and remains on its deck (4.4s)
+  ✓  33 test/browser/forest.spec.ts:52:1 › forest layers: crowns, bamboo, stream and all four monster poses move independently and freeze with reduced motion (4.7s)
+  ✓  34 test/browser/game.spec.ts:7:1 › name, NPC approach, Vietnamese/English, real inventory and motion settings (12.2s)
+  ✓  35 test/browser/game.spec.ts:16:1 › localized direction sign stays visible and highlights when hovered (1.2s)
+  ✓  36 test/browser/game.spec.ts:21:1 › physical click goes around the clinic, scene animates, and live FPS is recorded (13.2s)
+  ✓  37 test/browser/game.spec.ts:25:88 › viewport 1280x720 DPR 1 (1.9s)
+  ✓  38 test/browser/game.spec.ts:25:88 › viewport 1920x1080 DPR 2 (3.7s)
+  ✓  39 test/browser/game.spec.ts:25:88 › viewport 2560x1440 DPR 1 (2.5s)
+  ✓  40 test/browser/game.spec.ts:25:88 › viewport 720x900 DPR 2 (2.4s)
+  ✓  41 test/browser/game.spec.ts:28:1 › forest travel, single pickup, persistent bag, return and opt-in audio (12.4s)
+  ✓  42 test/browser/game.spec.ts:39:1 › live resize preserves pointer coordinates and reduced motion freezes river ripples (3.5s)
+  ✓  43 test/browser/game.spec.ts:57:1 › mountain and north gates return correctly, including a resource with its front blocked (18.8s)
+  ✓  44 test/browser/game.spec.ts:66:1 › all five villagers walk and can be approached and spoken to in the scene (15.3s)
+  ✓  45 test/browser/item-art.spec.ts:6:1 › all B icons load, have genuine cutout alpha and remain identifiable at thumbnail sizes (2.8s)
+  ✓  46 test/browser/item-art.spec.ts:51:1 › failed image and unknown saved item show explicit localized fallback without losing ownership (1.2s)
+
+  46 passed (4.9m)

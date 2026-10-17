@@ -1,0 +1,28 @@
+[WebServer] (node:53691) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 19 tests using 1 worker
+
+(node:53693) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   1 test/browser/forest.spec.ts:12:1 › forest E plants: approach, inventory species/levels, cooldown, persistence and return gate (28.9s)
+  ✓   2 test/browser/forest.spec.ts:23:49 › forest E bamboo-serpent: approach → combat skill → retreat → same location and charge (4.7s)
+  ✓   3 test/browser/forest.spec.ts:23:49 › forest E jade-beast: approach → combat skill → retreat → same location and charge (5.8s)
+  ✓   4 test/browser/forest.spec.ts:28:88 › forest E viewport 1280x720 DPR1: click and resize (3.0s)
+  ✓   5 test/browser/forest.spec.ts:28:88 › forest E viewport 1920x1080 DPR2: click and resize (4.3s)
+  ✓   6 test/browser/forest.spec.ts:28:88 › forest E viewport 2560x1440 DPR1: click and resize (3.3s)
+  ✓   7 test/browser/forest.spec.ts:28:88 › forest E viewport 720x900 DPR2: click and resize (3.5s)
+  ✓   8 test/browser/forest.spec.ts:37:1 › forest E waterfall animates and reduced motion freezes its actual region (7.0s)
+  ✓   9 test/browser/game.spec.ts:7:1 › name, NPC approach, Vietnamese/English, real inventory and motion settings (12.3s)
+  ✓  10 test/browser/game.spec.ts:16:1 › localized direction sign stays visible and highlights when hovered (1.2s)
+  ✓  11 test/browser/game.spec.ts:21:1 › physical click goes around the clinic, scene animates, and live FPS is recorded (13.3s)
+  ✓  12 test/browser/game.spec.ts:25:88 › viewport 1280x720 DPR 1 (1.9s)
+  ✓  13 test/browser/game.spec.ts:25:88 › viewport 1920x1080 DPR 2 (3.8s)
+  ✓  14 test/browser/game.spec.ts:25:88 › viewport 2560x1440 DPR 1 (2.5s)
+  ✓  15 test/browser/game.spec.ts:25:88 › viewport 720x900 DPR 2 (2.4s)
+  ✓  16 test/browser/game.spec.ts:28:1 › forest travel, single pickup, persistent bag, return and opt-in audio (18.6s)
+  ✓  17 test/browser/game.spec.ts:39:1 › live resize preserves pointer coordinates and reduced motion freezes river ripples (3.7s)
+  ✓  18 test/browser/game.spec.ts:57:1 › mountain and north gates return correctly, including a resource with its front blocked (18.8s)
+  ✓  19 test/browser/game.spec.ts:66:1 › all five villagers walk and can be approached and spoken to in the scene (14.1s)
+
+  19 passed (2.6m)

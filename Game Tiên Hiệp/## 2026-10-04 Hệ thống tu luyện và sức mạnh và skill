@@ -1,0 +1,39 @@
+## 2026-10-04
+Mục đích: Hệ thống tu luyện và sức mạnh và skill
+
+- Hệ thống sức mạnh
+ + Sinh mệnh: lượng sát thương nhân vật có thể chịu trước khi gục.
+ + Thể lực: tài nguyên dùng cho né, đỡ, chạy, đánh thường và kỹ năng thể tu.
+ + Linh lực: tài nguyên dùng để thi triển pháp thuật, điều khiển phi kiếm và vận hành pháp bảo.
+ + Công kích: sức mạnh tấn công cơ bản, dùng làm nền để tính sát thương.
+ + Sát phạt: thuộc tính đặc trưng của kiếm tu; tăng khả năng xuyên phá phòng ngự, khai thác sơ hở và gây áp lực kết liễu đối thủ.
+ + Phòng ngự: giảm sát thương vật lý nhận vào.
+ + Kháng pháp: giảm sát thương pháp thuật nhận vào.
+ + Ý chí: giúp chống sợ hãi, mê hoặc, áp chế cảnh giới và các hiệu ứng gây gián đoạn.
+ + Tốc độ: ảnh hưởng đến thứ tự hành động, tốc độ ra đòn và khả năng né tránh.
+ + Chính xác: ảnh hưởng đến khả năng đánh trúng mục tiêu, đặc biệt khi mục tiêu có tốc độ hoặc khả năng né cao.
+
+- Ba hệ thống tu luyện: Mỗi hệ thống có 15 cấp
+ + Luyện khí sĩ: Linh lực cao; công kích pháp thuật và kháng pháp khá; sinh mệnh, thể lực, phòng ngự, tốc độ, ý chí và chính xác ở mức trung bình.
+ + Kiếm tu: Sát phạt cao; tốc độ và chính xác khá; các thuộc tính còn lại ở mức trung bình. Sát phạt giúp kiếm tu xuyên phá phòng ngự, tận dụng sơ hở và tăng áp lực kết liễu.
+ + Thể tu: Sinh mệnh, thể lực và phòng ngự cao; linh lực thấp hơn hai hệ còn lại; các thuộc tính khác ở mức trung bình. Thiên về cận chiến, chịu đòn và giao tranh kéo dài.
+
+- tốc độ tu luyện sẽ dựa vào 3 yếu tố sau
++ Ngộ tính: tốc độ học công pháp, mở nhánh kỹ năng hoặc lĩnh ngộ chiêu thức.
++ Căn cốt: ảnh hưởng khả năng chịu đựng quá trình tu luyện và tiềm năng phát triển.
++ Tâm cảnh: độ ổn định khi đột phá; có thể liên quan đến kháng tẩu hỏa hoặc kỹ năng cần tập trung.
++ mỗi yếu tố sẽ chia làm: hạ phẩm, trung phẩm, thượng phẩm, cực phẩm, tuyệt phẩm.
+
+- skills: 
+	+ sẽ có skill cho thể tu, luyện khí, kiêm tu, mỗi hệ thống chỉ dc học skill cho hệ thống đó, (thể tu thì công kích vật lí), luyện khí thì công kích phép thuật (linh lực),
+	+ mỗi skill sẽ có hệ số riêng từ 1 -> 10 (cho lẻ 0.5), có thể coi là độ phức tạp của skill
+	+ có thể có nhiều bộ cho 1 skill manh, vd như skill có hệ số 6 có thể chia ra làm 3 quyển, 1 quyển đầu thì khi thi triển là hệ số 2, 1 quyển giữa thì hệ số 4, 1 quyển cuối sẽ là hệ số 6, đưa nhiên là random về nó.
+
+
+- công thức tính sát thương cho 2 hệ thể tu và luyện khí: 
+	Sát thương = max(1, (Công kích) × Hệ số kỹ năng − Phòng thủ mục tiêu)
+	Trong đó Phòng thủ mục tiêu được xác định như sau:
+		+ Đòn vật lý: dùng Phòng ngự (thể tu gây ra đòn vật lí).
+		+ Đòn pháp thuật: dùng Kháng pháp (luyện khí sĩ gây ra đòn phép).	
+
+- công thức tính sát thương kiếm tu: Sát thương = max(1, (Công kích + Sát phạt) × Hệ số kỹ năng − Phòng ngự mục tiêu − Kháng pháp mục tiêu)

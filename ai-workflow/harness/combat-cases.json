@@ -1,0 +1,171 @@
+{
+  "version": 3,
+  "status": "implemented-desktop-chrome-tested-with-explicit-gaps",
+  "spec": "ai-workflow/COMBAT_FLOW.md",
+  "report": "ai-workflow/reports/forest-combat-B-2026-10-11.md",
+  "latestReport": "ai-workflow/reports/forest-rebuild-2026-10-17.md",
+  "monsterHarness": "ai-workflow/harness/monster-cases.json",
+  "latestVerification": {
+    "date": "2026-10-17",
+    "unitPassed": 74,
+    "browserPassed": 46,
+    "build": "pass",
+    "assets": 77,
+    "pendingReview": 0,
+    "note": "Full project suites; previous verification objects retained as historical records."
+  },
+  "suites": {
+    "unit": "game/test/combat.test.mjs",
+    "browser": "game/test/browser/combat.spec.ts"
+  },
+  "policy": {
+    "capacity": 10,
+    "rechargeMsAfterFinish": 300000,
+    "scope": "per-monster",
+    "recharge": "independent",
+    "countVisible": "outside-encounter-only",
+    "rechargeUI": "none"
+  },
+  "verification": {
+    "date": "2026-10-11",
+    "fullVerify": {
+      "unitPassed": 28,
+      "browserPassed": 21,
+      "assets": 35,
+      "pendingAssetReview": 0,
+      "build": "pass"
+    },
+    "afterLastRuntimeFix": {
+      "command": "npm run build && npx playwright test test/browser/combat.spec.ts",
+      "browserPassed": 10,
+      "build": "pass"
+    }
+  },
+  "cases": [
+    {
+      "id": "charges.initial",
+      "coverage": "passed-unit+browser",
+      "expect": "New monster 10/10; opening/closing card spends nothing."
+    },
+    {
+      "id": "charges.commit-once",
+      "coverage": "passed-unit+browser",
+      "expect": "Encounter ID reserves once; load/save failures do not spend; active cross-tab start is blocked.",
+      "gap": "Rapid double-click UI not a separate browser case; idempotence tested in unit."
+    },
+    {
+      "id": "charges.boundary-independent",
+      "coverage": "passed-unit",
+      "finishTimes": [
+        1000000,
+        1120000
+      ],
+      "checks": [
+        {
+          "now": 1299999,
+          "available": 8
+        },
+        {
+          "now": 1300000,
+          "available": 9
+        },
+        {
+          "now": 1419999,
+          "available": 9
+        },
+        {
+          "now": 1420000,
+          "available": 10
+        }
+      ]
+    },
+    {
+      "id": "charges.active",
+      "coverage": "passed-unit",
+      "expect": "Active slot cannot refill before finish; pause does not complete encounter."
+    },
+    {
+      "id": "charges.empty",
+      "coverage": "passed-unit+browser",
+      "expect": "0/10 disables start; due charge silently changes count to 1/10 and enables start; bounded at 10."
+    },
+    {
+      "id": "charges.monster-scope",
+      "coverage": "passed-unit+browser",
+      "expect": "wood-yao and spore-yao pools independent, stable IDs across locale."
+    },
+    {
+      "id": "charges.offline",
+      "coverage": "passed-unit",
+      "expect": "Serialized/reloaded timestamps restore due slots after elapsed wall time.",
+      "gap": "Offline duration simulated by timestamps, not a five-minute closed-browser wait."
+    },
+    {
+      "id": "charges.abandon",
+      "coverage": "passed-unit+browser",
+      "expect": "Interrupted reload recovers once; retreat starts recharge, bag preserved, no extra charge."
+    },
+    {
+      "id": "save.integrity",
+      "coverage": "passed-unit+browser",
+      "expect": "Malformed/future schema rejected without reset (unit); quota failure visible and bag intact (browser); second tab cannot recover active encounter.",
+      "gap": "Version 1 initial schema, no prior combat migration or reward system."
+    },
+    {
+      "id": "flow.approach",
+      "coverage": "passed-browser",
+      "expect": "Creator → village gate → forest → real approach → card → combat; existing scene suite checks navigation/collision."
+    },
+    {
+      "id": "flow.return",
+      "coverage": "passed-browser",
+      "expect": "Victory and actual AI defeat return to exact forest position; retreat/reload preserve bag and charges. Latest 2026-10-12 includes spore victory."
+    },
+    {
+      "id": "combat.inputs",
+      "coverage": "partial",
+      "expect": "Keyboard move/attack/double-jump/guard/skill/pause; pointer drag outside releases; pause clears held input.",
+      "gap": "Real touchscreen multi-touch and OS pointercancel not separately exercised."
+    },
+    {
+      "id": "combat.collision",
+      "coverage": "passed-unit",
+      "expect": "Floor/wall boundaries, directional melee once per swing, fast projectile sweep and airborne avoidance.",
+      "gap": "Arena flat; raised platforms not implemented."
+    },
+    {
+      "id": "combat.resources",
+      "coverage": "passed-unit+browser",
+      "expect": "Directional guard, bounded dodge immunity/stamina cost, skill cost/cooldown; browser exercises guard and skill."
+    },
+    {
+      "id": "combat.telegraph",
+      "coverage": "partial",
+      "expect": "All 16 skills warn before activation; new wave/sequence/slow logic covered in unit; four monsters in catalog and production encounter suites; warning/active fixture reviewed with reduced effects.",
+      "gap": "Visual fixture is not a production automated pixel comparison of every skill."
+    },
+    {
+      "id": "combat.result",
+      "coverage": "partial",
+      "expect": "Win/lose/retreat terminate simulation, stop further damage; result save idempotent; victory and retreat browser flows pass.",
+      "gap": "No rewards yet; simultaneous fatal-hit policy lacks dedicated test."
+    },
+    {
+      "id": "ui.count-only-outside",
+      "coverage": "passed-browser",
+      "expect": "Count only on outside monster card; no count in HUD/result; no recharge text/countdown in player UI."
+    },
+    {
+      "id": "ui.locale-layout",
+      "coverage": "passed-browser+visual",
+      "expect": "Vietnamese full flow; English 1280x720 DPR1, 1920x1080 DPR2, 2560x1440 DPR1, 720x900 DPR2; all four heroes; live resize to 900x700 and no horizontal overflow.",
+      "gap": "Listed combinations, not full Cartesian viewport/DPR/locale matrix; real mobile unverified."
+    },
+    {
+      "id": "lifecycle.performance",
+      "coverage": "partial",
+      "expect": "Production warmed frame timing recorded; repeated entry/retreat/reload tested; full-flow pageerror list empty.",
+      "gap": "No heap leak audit, real-mobile profiling or Firefox/Safari verification."
+    }
+  ]
+}

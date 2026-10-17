@@ -1,0 +1,54 @@
+{
+  "scope": "Static mockup rendering only, not combat gameplay tests",
+  "viewport": {
+    "width": 1920,
+    "height": 1200
+  },
+  "review": [
+    {
+      "variant": "A",
+      "title": "A — Hành động cổ điển",
+      "overflow": false,
+      "smallButtons": 0,
+      "hasEntry": true,
+      "hasEmpty": true,
+      "hasReturn": true
+    },
+    {
+      "variant": "B",
+      "title": "B — Sân đấu thoáng",
+      "overflow": false,
+      "smallButtons": 0,
+      "hasEntry": true,
+      "hasEmpty": true,
+      "hasReturn": true
+    },
+    {
+      "variant": "C",
+      "title": "C — Đối đầu yêu thú",
+      "overflow": false,
+      "smallButtons": 0,
+      "hasEntry": true,
+      "hasEmpty": true,
+      "hasReturn": true
+    },
+    {
+      "variant": "D",
+      "title": "D — Hai cụm điều khiển",
+      "overflow": false,
+      "smallButtons": 0,
+      "hasEntry": true,
+      "hasEmpty": true,
+      "hasReturn": true
+    },
+    {
+      "variant": "E",
+      "title": "E — Tân thủ có hướng dẫn",
+      "overflow": false,
+      "smallButtons": 0,
+      "hasEntry": true,
+      "hasEmpty": true,
+      "hasReturn": true
+    }
+  ]
+}

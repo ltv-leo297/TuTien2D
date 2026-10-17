@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mockup bảng chỉ đường chuyển map</title>
+  <style>
+    :root{font-family:"Be Vietnam Pro","Arial",sans-serif;color:#fff4d6;--panel:#153c32eb;--line:#b7ce9488;--gold:#f2d58c;--muted:#bcd0b7}*{box-sizing:border-box}body{margin:0;background:#163c32;overflow:hidden}.screen{width:1920px;height:1080px;position:relative;background:url('scene-clean.png') center/cover no-repeat}.player{position:absolute;left:20px;top:18px;width:214px;height:74px;display:flex;align-items:center;gap:10px;padding:6px 14px 6px 6px;border:1px solid var(--line);border-radius:14px;background:var(--panel);box-shadow:0 5px 18px #09241d55;z-index:8}.portrait{width:48px;height:60px;flex:0 0 auto;background:url('../../../assets/production/hero-A.png') 50% 2%/300% 400% no-repeat;image-rendering:pixelated}.player strong{font-size:14px}.player small{display:block;font-size:10px;color:var(--muted);margin:5px 0 7px}.hp{height:5px;width:130px;border-radius:4px;background:#0b2922;overflow:hidden}.hp:after{content:"";display:block;width:100%;height:100%;background:#a7d878}.badge{position:absolute;left:50%;top:18px;transform:translateX(-50%);z-index:8;padding:9px 15px;border:1px solid var(--line);border-radius:10px;background:var(--panel);box-shadow:0 5px 18px #09241d55;font-size:12px;color:#f5dfa3;letter-spacing:.04em}.map{position:absolute;left:20px;bottom:28px;width:194px;padding:8px;border:1px solid var(--line);border-radius:12px;background:var(--panel);z-index:8}.map-head{display:flex;justify-content:space-between;font-size:10px;color:var(--muted);margin:0 2px 7px}.mini{height:99px;border-radius:4px;background:url('scene-clean.png') 10% 70%/460% auto no-repeat;position:relative;overflow:hidden}.mini:after{content:"";position:absolute;left:49%;top:52%;width:6px;height:6px;transform:rotate(45deg);background:#fff2b5;border:2px solid #244735}.place{text-align:center;color:#fff1bd;font-size:10px;margin:7px 0 1px}.place small{display:block;color:#a9c3a8;font-size:8px;margin-top:3px}.quickbar{position:absolute;right:20px;bottom:28px;display:flex;gap:7px;z-index:8}.quick{width:75px;height:66px;border:1px solid var(--line);border-radius:11px;background:var(--panel);color:#fff4d6;font:inherit;font-size:10px}.quick b{display:block;font-size:22px;font-weight:400;margin-bottom:4px}.hint{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);z-index:9;padding:7px 15px;border-radius:18px;background:#153c32b8;border:1px solid #b6cc8966;font-size:10px;color:#f0eed1}.sign{position:absolute;z-index:6;width:270px;height:270px;left:-18px;top:382px;filter:drop-shadow(0 8px 5px #12351f66);image-rendering:pixelated;transform-origin:50% 92%}.sign img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;image-rendering:pixelated}.sign-text{position:absolute;display:flex;align-items:center;justify-content:center;text-align:center;color:#3b2316;text-shadow:0 1px #f5c976;font-weight:900;line-height:1.12;white-space:nowrap;letter-spacing:-.01em}.direction{position:absolute;color:#fff0b8;font-weight:900;text-shadow:0 2px #59351e,1px 0 #59351e,-1px 0 #59351e}.cursor{position:absolute;z-index:10;width:18px;height:24px;left:172px;top:515px;filter:drop-shadow(0 2px 1px #0008)}.cursor:before{content:"";position:absolute;border-left:9px solid #fff;border-top:14px solid transparent;border-bottom:3px solid transparent;transform:rotate(-28deg)}.callout{position:absolute;left:262px;top:462px;z-index:7;padding:8px 11px;border:1px solid #c6d59a88;border-radius:8px;background:#14382edf;color:#f8e6ac;font-size:10px;box-shadow:0 5px 18px #09241d55}.chevrons{display:none;position:absolute;left:5px;top:567px;width:155px;height:34px;z-index:5}.chevrons i{position:absolute;width:26px;height:26px;border-left:7px solid #f3d77e;border-bottom:7px solid #f3d77e;transform:rotate(45deg);filter:drop-shadow(0 0 4px #fff3a0);opacity:.9}.chevrons i:nth-child(1){left:86px}.chevrons i:nth-child(2){left:51px;opacity:.65}.chevrons i:nth-child(3){left:16px;opacity:.35}
+
+    .a .sign{width:100px;height:100px;left:230px;top:468px}.a .sign img{transform:scaleX(-1)}.a .sign-text{left:24px;top:26px;width:56px;height:22px;font-size:7px}
+    .b .sign{width:110px;height:110px;left:225px;top:458px;filter:drop-shadow(0 3px 2px #12351f55) drop-shadow(0 0 3px #e8d88644)}.b .sign-text{left:16px;top:39px;width:60px;height:24px;font-size:7px}
+    .c .sign{width:110px;height:110px;left:225px;top:458px}.c .sign img{transform:scaleX(-1)}.c .sign-text{left:16px;top:20px;width:70px;height:28px;font-size:7px}
+    .d .sign{width:88px;height:88px;left:236px;top:480px}.d .sign img{transform:scaleX(-1)}.d .sign-text{left:21px;top:23px;width:49px;height:19px;font-size:6px}
+    .e .sign{width:100px;height:100px;left:230px;top:468px;filter:drop-shadow(0 3px 2px #12351f55) drop-shadow(0 0 4px #f6dd7a44)}.e .sign img{transform:scaleX(-1)}.e .sign-text{left:15px;top:18px;width:64px;height:25px;font-size:7px}.badge,.hint,.direction,.callout,.cursor,.chevrons{display:none!important}
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    const variant=new URLSearchParams(location.search).get('variant')||'A';
+    const names={A:'Bảng liền mũi tên',B:'Bảng treo tương tác',C:'Trụ hai tầng',D:'Biển thấp mép đường',E:'Bảng sáng nhẹ khi tương tác'};
+    const assets={A:'sign-a.png',B:'sign-b.png',C:'sign-c.png',D:'sign-a.png',E:'sign-c.png'};
+    const notes={A:'Bảng nhỏ cắm trên đất sau đầu cầu',B:'Hover làm sáng nhẹ bảng · nhấp để đi',C:'Mũi tên tách tầng nhưng giữ đúng tỉ lệ môi trường',D:'Biển thấp, ít che cảnh nhất',E:'Bảng nhỏ chỉ sáng nhẹ khi có thể tương tác'};
+    const cursor=(variant==='B'||variant==='D')?'<i class="cursor"></i>':'';
+    const callout=(variant==='A'||variant==='C')?'':`<span class="callout">${notes[variant]}</span>`;
+    document.getElementById('app').innerHTML=`
+      <main class="screen ${variant.toLowerCase()}">
+        <div class="player"><div class="portrait"></div><div><strong>Vô Danh</strong><small>Phàm nhân · Cấp 1</small><div class="hp"></div></div></div>
+        <div class="badge">${variant} · ${names[variant]}</div>
+        <div class="sign" role="button" aria-label="Đi tới Rừng Thanh Trúc"><img src="assets/${assets[variant]}" alt=""><span class="sign-text">Rừng Thanh<br>Trúc</span></div>
+        <div class="chevrons"><i></i><i></i><i></i></div>${cursor}${callout}
+        <aside class="map"><div class="map-head"><b>Bản đồ</b><span>Làng Trúc Khê</span></div><div class="mini"></div><div class="place">Làng Trúc Khê<small>Nam Lĩnh · Nắng sớm</small></div></aside>
+        <nav class="quickbar"><button class="quick"><b>♧</b>Túi đồ</button><button class="quick"><b>▤</b>Nhiệm vụ</button><button class="quick"><b>♙</b>Nhân vật</button></nav>
+        <div class="hint">${notes[variant]} · chữ Việt/Anh là UI thật, không nằm trong ảnh</div>
+      </main>`;
+  </script>
+</body>
+</html>

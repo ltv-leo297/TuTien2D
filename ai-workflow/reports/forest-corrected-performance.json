@@ -1,0 +1,50 @@
+{
+  "browser": "Chrome headless, production build, effects on; 4s warmup + 4s sample, no screenshots or resizing during sample",
+  "results": [
+    {
+      "width": 1280,
+      "height": 720,
+      "dpr": 1,
+      "samples": 240,
+      "averageFps": 60.00300015000751,
+      "p95": 16.800000000000182,
+      "max": 16.800000000000182
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "dpr": 2,
+      "samples": 240,
+      "averageFps": 60.00300015000751,
+      "p95": 16.800000000000182,
+      "max": 16.800000000000182
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "dpr": 1,
+      "samples": 241,
+      "averageFps": 60.002489729864315,
+      "p95": 16.800000000000182,
+      "max": 16.800000000000182
+    },
+    {
+      "width": 720,
+      "height": 900,
+      "dpr": 2,
+      "samples": 240,
+      "averageFps": 60.00300015000748,
+      "p95": 16.800000000000182,
+      "max": 16.800000000000182
+    }
+  ],
+  "load": {
+    "elapsedMs": 662,
+    "scope": "Fresh browser context; localhost navigation, automatic enter click, assets ready and two game frames; no network throttling."
+  },
+  "machine": {
+    "os": "darwin",
+    "arch": "arm64",
+    "cpu": "Apple M1 Max"
+  }
+}

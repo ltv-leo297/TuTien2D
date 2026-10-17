@@ -1,0 +1,212 @@
+{
+  "config": {
+    "argv": [
+      "/Users/vinhle/.nvm/versions/node/v24.19.0/bin/node",
+      "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/node_modules/.bin/playwright",
+      "test",
+      "--grep",
+      "forest layers",
+      "--repeat-each=3"
+    ],
+    "configFile": "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/playwright.config.ts",
+    "rootDir": "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/test/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/test-results",
+        "repeatEach": 3,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/test/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run preview -- --port 4181 --strictPort",
+      "url": "http://127.0.0.1:4181",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "forest.spec.ts",
+      "file": "forest.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "forest layers: crowns, bamboo, stream and all four monster poses move independently and freeze with reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4755,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T17:31:52.167Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "independent-animation-regions",
+                      "contentType": "application/json",
+                      "body": "W3siaWQiOiJjcm93biIsImNoYW5nZWQiOjAuMzUxNTMzMzMzMzMzMzMzMywic3RhcnQiOjEuMzI0MzMxOTk5OTk5OTk5NCwiZW5kIjoyLjkyNDIzMTk5OTk5OTk5NTV9LHsiaWQiOiJiYW1ib28iLCJjaGFuZ2VkIjowLjYxNjI2MjYyNjI2MjYyNjMsInN0YXJ0IjoxLjMyNDMzMTk5OTk5OTk5OTQsImVuZCI6Mi45MjQyMzE5OTk5OTk5OTU1fSx7ImlkIjoid2F0ZXIiLCJjaGFuZ2VkIjowLjY2NDA3NDA3NDA3NDA3NCwic3RhcnQiOjEuMzI0MzMxOTk5OTk5OTk5NCwiZW5kIjoyLjkyNDIzMTk5OTk5OTk5NTV9LHsiaWQiOiJ3b29kIiwiY2hhbmdlZCI6MC42MTc0MTk2MTc0MTk2MTc0LCJzdGFydCI6MS4zMjQzMzE5OTk5OTk5OTk0LCJlbmQiOjIuOTI0MjMxOTk5OTk5OTk1NX0seyJpZCI6InNwb3JlIiwiY2hhbmdlZCI6MC4zNzAwNDY2MjAwNDY2MjAwMywic3RhcnQiOjEuMzI0MzMxOTk5OTk5OTk5NCwiZW5kIjoyLjkyNDIzMTk5OTk5OTk5NTV9LHsiaWQiOiJzbmFrZSIsImNoYW5nZWQiOjAuNDkwNDU3NTE2MzM5ODY5Mywic3RhcnQiOjEuMzI0MzMxOTk5OTk5OTk5NCwiZW5kIjoyLjkyNDIzMTk5OTk5OTk5NTV9LHsiaWQiOiJiZWFzdCIsImNoYW5nZWQiOjAuNjY4NDY4NDY4NDY4NDY4NCwic3RhcnQiOjEuMzI0MzMxOTk5OTk5OTk5NCwiZW5kIjoyLjkyNDIzMTk5OTk5OTk5NTV9XQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7f77ac90c7ab2ec7c07-816108dff54c7d8a5d46",
+          "file": "forest.spec.ts",
+          "line": 52,
+          "column": 1
+        },
+        {
+          "title": "forest layers: crowns, bamboo, stream and all four monster poses move independently and freeze with reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4713,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T17:31:57.556Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "independent-animation-regions",
+                      "contentType": "application/json",
+                      "body": "W3siaWQiOiJjcm93biIsImNoYW5nZWQiOjAuMzUxMzgzMzMzMzMzMzMzMywic3RhcnQiOjEuMzI1NDMxOTk5OTY0MjM2OCwiZW5kIjoyLjkyNTMzMTk5OTk2NDIzNTh9LHsiaWQiOiJiYW1ib28iLCJjaGFuZ2VkIjowLjYxNjUzMTk4NjUzMTk4NjUsInN0YXJ0IjoxLjMyNTQzMTk5OTk2NDIzNjgsImVuZCI6Mi45MjUzMzE5OTk5NjQyMzU4fSx7ImlkIjoid2F0ZXIiLCJjaGFuZ2VkIjowLjY2MjE2MDQ5MzgyNzE2MDUsInN0YXJ0IjoxLjMyNTQzMTk5OTk2NDIzNjgsImVuZCI6Mi45MjUzMzE5OTk5NjQyMzU4fSx7ImlkIjoid29vZCIsImNoYW5nZWQiOjAuNjE3NDE5NjE3NDE5NjE3NCwic3RhcnQiOjEuMzI1NDMxOTk5OTY0MjM2OCwiZW5kIjoyLjkyNTMzMTk5OTk2NDIzNTh9LHsiaWQiOiJzcG9yZSIsImNoYW5nZWQiOjAuMzcwMDQ2NjIwMDQ2NjIwMDMsInN0YXJ0IjoxLjMyNTQzMTk5OTk2NDIzNjgsImVuZCI6Mi45MjUzMzE5OTk5NjQyMzU4fSx7ImlkIjoic25ha2UiLCJjaGFuZ2VkIjowLjQ5MDQ1NzUxNjMzOTg2OTMsInN0YXJ0IjoxLjMyNTQzMTk5OTk2NDIzNjgsImVuZCI6Mi45MjUzMzE5OTk5NjQyMzU4fSx7ImlkIjoiYmVhc3QiLCJjaGFuZ2VkIjowLjY2ODMyODIwODQ0Nzk2ODksInN0YXJ0IjoxLjMyNTQzMTk5OTk2NDIzNjgsImVuZCI6Mi45MjUzMzE5OTk5NjQyMzU4fV0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7f77ac90c7ab2ec7c07-875006d0d7a9145651d1",
+          "file": "forest.spec.ts",
+          "line": 52,
+          "column": 1
+        },
+        {
+          "title": "forest layers: crowns, bamboo, stream and all four monster poses move independently and freeze with reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4659,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-16T17:32:02.804Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "independent-animation-regions",
+                      "contentType": "application/json",
+                      "body": "W3siaWQiOiJjcm93biIsImNoYW5nZWQiOjAuMzcxMiwic3RhcnQiOjEuMjU3MjMxOTk5OTc2MTU3OSwiZW5kIjoyLjg1NzEzMTk5OTk3NjE1NTV9LHsiaWQiOiJiYW1ib28iLCJjaGFuZ2VkIjowLjYxMDQ3MTM4MDQ3MTM4MDUsInN0YXJ0IjoxLjI1NzIzMTk5OTk3NjE1NzksImVuZCI6Mi44NTcxMzE5OTk5NzYxNTU1fSx7ImlkIjoid2F0ZXIiLCJjaGFuZ2VkIjowLjY1MTY2NjY2NjY2NjY2NjYsInN0YXJ0IjoxLjI1NzIzMTk5OTk3NjE1NzksImVuZCI6Mi44NTcxMzE5OTk5NzYxNTU1fSx7ImlkIjoid29vZCIsImNoYW5nZWQiOjAuNjE3NDE5NjE3NDE5NjE3NCwic3RhcnQiOjEuMjU3MjMxOTk5OTc2MTU3OSwiZW5kIjoyLjg1NzEzMTk5OTk3NjE1NTV9LHsiaWQiOiJzcG9yZSIsImNoYW5nZWQiOjAuMzcwMDQ2NjIwMDQ2NjIwMDMsInN0YXJ0IjoxLjI1NzIzMTk5OTk3NjE1NzksImVuZCI6Mi44NTcxMzE5OTk5NzYxNTU1fSx7ImlkIjoic25ha2UiLCJjaGFuZ2VkIjowLjQ5MDQ1NzUxNjMzOTg2OTMsInN0YXJ0IjoxLjI1NzIzMTk5OTk3NjE1NzksImVuZCI6Mi44NTcxMzE5OTk5NzYxNTU1fSx7ImlkIjoiYmVhc3QiLCJjaGFuZ2VkIjowLjY2ODExMjQyMzgwMTA0NjUsInN0YXJ0IjoxLjI1NzIzMTk5OTk3NjE1NzksImVuZCI6Mi44NTcxMzE5OTk5NzYxNTU1fV0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7f77ac90c7ab2ec7c07-24cb56d90b5742800636",
+          "file": "forest.spec.ts",
+          "line": 52,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-16T17:31:51.832Z",
+    "duration": 15936.608,
+    "expected": 3,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

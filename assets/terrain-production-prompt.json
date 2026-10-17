@@ -1,0 +1,5 @@
+{
+  "tool": "built-in ImageGen",
+  "prompt": "Use case: stylized-concept. A production TERRAIN TEXTURE atlas for the attached Bright Handheld pixel RPG style. Exactly 2 columns by 2 rows, four seamless square textures filling their quadrant edge to edge, no borders/gutters/labels. Top-left: lush light mint-green meadow grass with varied delicate tiny grass tufts and subtle organic patches, sunny Vietnamese village, ground texture ONLY viewed straight down. Top-right: warm pale ochre dirt path with scattered tiny grains and pebbles, fine natural texture not featureless solid fill. Bottom-left: shallow clear cyan stream water with small turquoise ripples, viewed straight down, no shore. Bottom-right: grey-green mossy mountain ground, small fine stone texture. These are repeatable tile materials, absolutely no trees, buildings, characters, large plants, UI, text, mountains or scenery. Crisp small pixel clusters, texture detail appropriate for 32px-tile world, subtle contrast so sprites read clearly. 2048x2048 square high native resolution.",
+  "reference": "assets/references/B-bright-handheld-v1.png"
+}

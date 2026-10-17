@@ -1,0 +1,73 @@
+{
+  "version": 1,
+  "status": "implemented-desktop-chrome-tested",
+  "spec": "ai-workflow/MONSTERS.md",
+  "report": "ai-workflow/reports/monster-ai-2026-10-12.md",
+  "suites": {
+    "unit": "game/test/monsters.test.mjs",
+    "browser": "game/test/browser/combat.spec.ts"
+  },
+  "verification": {
+    "date": "2026-10-12",
+    "unitPassed": 45,
+    "fullBrowserBeforeAddedCases": 21,
+    "latestCombatBrowserPassed": 12,
+    "build": "pass",
+    "assets": "35, 0 pending review",
+    "p95ms": 16.8,
+    "fps": 60.0032
+  },
+  "cases": [
+    {
+      "id": "damage.formulas",
+      "coverage": "passed-unit",
+      "expect": "Exact physical, magic, sword formulas; minimum one; defense and fractional coefficients."
+    },
+    {
+      "id": "catalog.skills",
+      "coverage": "passed-unit",
+      "expect": "Every monster has ten stats, 3-5 valid skills, unique IDs and shared executors."
+    },
+    {
+      "id": "ai.decisions",
+      "coverage": "passed-unit",
+      "expect": "Seed replay, variety across 200 seeds, contextual weights, resources/cooldowns, anti-repeat, target lock."
+    },
+    {
+      "id": "combat.skills",
+      "coverage": "passed-unit+visual",
+      "expect": "All 16 skills execute with warnings, formula damage, costs and bounded hits; dodge/guard/pause. Renderer warning/active inspected with reduced effects."
+    },
+    {
+      "id": "flow.compatibility",
+      "coverage": "passed-unit+browser",
+      "expect": "Old saves and added catalog IDs preserve entries; production victory against both monsters and actual defeat-to-map; bag and charge intact."
+    },
+    {
+      "id": "forest.distinct-patterns",
+      "coverage": "passed-unit+renderer-visual+production-flow",
+      "expect": "Ground wave travels with jump counterplay; eruption three locked timed sites; fang slow affects movement, expires, blocked by guard/iframe."
+    },
+    {
+      "id": "forest.animation",
+      "coverage": "passed-production-browser",
+      "expect": "All four map monsters use four-frame alpha atlas; per-region movement through full loop and reduced-motion freeze."
+    }
+  ],
+  "gaps": [
+    "No long-term human balance study or real-mobile QA.",
+    "Sword formula tested, but no sword skill in current monster catalog and no player cultivation-class selection.",
+    "Sixteen-skill visual fixture uses Vite source; production browser covers real fights, not a forced run of every individual skill.",
+    "No Firefox/Safari run, heap audit, reward/economy system, or new-map combat."
+  ],
+  "latestReport": "ai-workflow/reports/forest-rebuild-2026-10-17.md",
+  "latestVerification": {
+    "date": "2026-10-17",
+    "unitPassed": 74,
+    "browserPassed": 46,
+    "build": "pass",
+    "assets": 77,
+    "pendingReview": 0,
+    "note": "Full project suites; previous verification objects retained as historical records."
+  }
+}

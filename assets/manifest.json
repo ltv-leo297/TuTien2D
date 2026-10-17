@@ -1,0 +1,1666 @@
+{
+  "schemaVersion": 1,
+  "style": "B — Bright Handheld",
+  "notes": "prompt null: prompt chính xác của bản cũ chưa được lưu; không bịa lại. Alpha cho biết có kênh transparency, không xác nhận cutout sạch.",
+  "assets": [
+    {
+      "id": "style.bright-handheld",
+      "file": "assets/references/B-bright-handheld-v1.png",
+      "category": "reference",
+      "qa": "approved-style",
+      "provenance": "Built-in ImageGen; bộ B được người dùng chọn.",
+      "prompt": null,
+      "version": 1,
+      "importedFrom": "ai-workflow/mockups/pixel-art-asset-directions/B-bright-handheld.png",
+      "width": 1672,
+      "height": 941,
+      "alpha": false,
+      "sha256": "e66d43e80d7960126d1b029b73d031f687de279d08481ab244b72e90e95e6171",
+      "usedBy": [],
+      "animation": null
+    },
+    {
+      "id": "hero.A",
+      "file": "assets/characters/hero-A-v1.png",
+      "category": "character",
+      "qa": "archived",
+      "provenance": "Cutout cũ từ board B; chưa có animation nhiều hướng.",
+      "prompt": null,
+      "requiresAlpha": true,
+      "runtime": "game/public/assets/bright-handheld/hero-A.png",
+      "version": 1,
+      "importedFrom": "game/public/assets/bright-handheld/hero-A.png",
+      "width": 143,
+      "height": 175,
+      "alpha": true,
+      "sha256": "5b06813c64d031183f900bc3d26e6ca9ffff0ffa2094d6d7222679bdadc54e3a",
+      "usedBy": [
+        "archived-prototype"
+      ],
+      "animation": null
+    },
+    {
+      "id": "hero.B",
+      "file": "assets/characters/hero-B-v1.png",
+      "category": "character",
+      "qa": "archived",
+      "provenance": "Cutout cũ từ board B; chưa có animation nhiều hướng.",
+      "prompt": null,
+      "requiresAlpha": true,
+      "runtime": "game/public/assets/bright-handheld/hero-B.png",
+      "version": 1,
+      "importedFrom": "game/public/assets/bright-handheld/hero-B.png",
+      "width": 142,
+      "height": 175,
+      "alpha": true,
+      "sha256": "a6366be5a3179b58a49cb379cab36780bdf7c0c883c5c5f2720f5845ee35fcbc",
+      "usedBy": [
+        "archived-prototype"
+      ],
+      "animation": null
+    },
+    {
+      "id": "hero.C",
+      "file": "assets/characters/hero-C-v1.png",
+      "category": "character",
+      "qa": "archived",
+      "provenance": "Cutout cũ từ board B; chưa có animation nhiều hướng.",
+      "prompt": null,
+      "requiresAlpha": true,
+      "runtime": "game/public/assets/bright-handheld/hero-C.png",
+      "version": 1,
+      "importedFrom": "game/public/assets/bright-handheld/hero-C.png",
+      "width": 155,
+      "height": 173,
+      "alpha": true,
+      "sha256": "787acca3304eac770584cf35ea7d6690bffa136891b7d8447dfbedad77f7a7cf",
+      "usedBy": [
+        "archived-prototype"
+      ],
+      "animation": null
+    },
+    {
+      "id": "hero.D",
+      "file": "assets/characters/hero-D-v1.png",
+      "category": "character",
+      "qa": "archived",
+      "provenance": "Cutout cũ từ board B; chưa có animation nhiều hướng.",
+      "prompt": null,
+      "requiresAlpha": true,
+      "runtime": "game/public/assets/bright-handheld/hero-D.png",
+      "version": 1,
+      "importedFrom": "game/public/assets/bright-handheld/hero-D.png",
+      "width": 153,
+      "height": 176,
+      "alpha": true,
+      "sha256": "28f694fbf496c48edf24860d7e2d380dfd89af5eac641eade406cf41b5213455",
+      "usedBy": [
+        "archived-prototype"
+      ],
+      "animation": null
+    },
+    {
+      "id": "npc.smith",
+      "file": "assets/npcs/smith-v1.png",
+      "category": "npc",
+      "qa": "archived",
+      "provenance": "Cutout cũ từ board B; kiểm tra viền/rác/đạo cụ trước khi dùng tiếp.",
+      "prompt": null,
+      "requiresAlpha": true,
+      "runtime": "game/public/assets/bright-handheld/npc-smith.png",
+      "version": 1,
+      "importedFrom": "game/public/assets/bright-handheld/npc-smith.png",
+      "width": 160,
+      "height": 141,
+      "alpha": true,
+      "sha256": "a16883e4c67ad9aee59770215ecd657027e44b1dd082eaa95f92b8057032348a",
+      "usedBy": [
+        "archived-prototype"
+      ],
+      "animation": null
+    },
+    {
+      "id": "npc.healer",
+      "file": "assets/npcs/healer-v1.png",
+      "category": "npc",
+      "qa": "archived",
+      "provenance": "Cutout cũ từ board B; kiểm tra viền/rác/đạo cụ trước khi dùng tiếp.",
+      "prompt": null,
+      "requiresAlpha": true,
+      "runtime": "game/public/assets/bright-handheld/npc-healer.png",
+      "version": 1,
+      "importedFrom": "game/public/assets/bright-handheld/npc-healer.png",
+      "width": 183,
+      "height": 141,
+      "alpha": true,
+      "sha256": "d97909cc427ddaa6be2f9c952bb9136496772cb499f2e1649cef8968b37ff087",
+      "usedBy": [
+        "archived-prototype"
+      ],
+      "animation": null
+    },
+    {
+      "id": "npc.teacher",
+      "file": "assets/npcs/teacher-v1.png",
+      "category": "npc",
+      "qa": "archived",
+      "provenance": "Cutout cũ từ board B; kiểm tra viền/rác/đạo cụ trước khi dùng tiếp.",
+      "prompt": null,
+      "requiresAlpha": true,
+      "runtime": "game/public/assets/bright-handheld/npc-teacher.png",
+      "version": 1,
+      "importedFrom": "game/public/assets/bright-handheld/npc-teacher.png",
+      "width": 198,
+      "height": 142,
+      "alpha": true,
+      "sha256": "94b6cf91a7d84ea0b22ae79242c511d89e8d63dc43669817112c1f05e5cf6956",
+      "usedBy": [
+        "archived-prototype"
+      ],
+      "animation": null
+    },
+    {
+      "id": "scene.truc-khe.v1",
+      "file": "assets/scenes/truc-khe-map-v1.png",
+      "category": "scene",
+      "qa": "archived",
+      "provenance": "Built-in ImageGen tham chiếu B; map cũ bị người dùng yêu cầu sửa scale và chữ nhúng.",
+      "prompt": null,
+      "runtime": "game/public/assets/bright-handheld/scene-01-truc-khe-map.png",
+      "version": 1,
+      "importedFrom": "game/public/assets/bright-handheld/scene-01-truc-khe-map.png",
+      "width": 1619,
+      "height": 971,
+      "alpha": false,
+      "sha256": "b17324a01013b40404f9e620654ef2ce127d9c54259c2add3708af69e67c4f2d",
+      "usedBy": [
+        "archived-prototype"
+      ],
+      "animation": null
+    },
+    {
+      "id": "archive.chibi-A",
+      "file": "assets/archive/characters/chibi-A.png",
+      "category": "archive",
+      "qa": "archived",
+      "provenance": "Asset có sẵn của prototype trước B; không tự tích hợp lại.",
+      "prompt": null,
+      "version": 1,
+      "importedFrom": "game/public/characters/chibi-A.png",
+      "width": 1024,
+      "height": 1536,
+      "alpha": true,
+      "sha256": "a1e6ae1bd09431b715349c2732ef912b9f9f3c9f0b9f504910541b5596534275",
+      "usedBy": [],
+      "animation": null
+    },
+    {
+      "id": "archive.chibi-B",
+      "file": "assets/archive/characters/chibi-B.png",
+      "category": "archive",
+      "qa": "archived",
+      "provenance": "Asset có sẵn của prototype trước B; không tự tích hợp lại.",
+      "prompt": null,
+      "version": 1,
+      "importedFrom": "game/public/characters/chibi-B.png",
+      "width": 1024,
+      "height": 1536,
+      "alpha": true,
+      "sha256": "cefb70f88f7e7fc402a3aa139fdffa09cb59b132b226e015c942e141f188bcf8",
+      "usedBy": [],
+      "animation": null
+    },
+    {
+      "id": "archive.chibi-C",
+      "file": "assets/archive/characters/chibi-C.png",
+      "category": "archive",
+      "qa": "archived",
+      "provenance": "Asset có sẵn của prototype trước B; không tự tích hợp lại.",
+      "prompt": null,
+      "version": 1,
+      "importedFrom": "game/public/characters/chibi-C.png",
+      "width": 1024,
+      "height": 1536,
+      "alpha": true,
+      "sha256": "1c1731894f5d2fd222e4f37867ecf5dbb247f30710468565cc5d9dae97853cbf",
+      "usedBy": [],
+      "animation": null
+    },
+    {
+      "id": "archive.chibi-D",
+      "file": "assets/archive/characters/chibi-D.png",
+      "category": "archive",
+      "qa": "archived",
+      "provenance": "Asset có sẵn của prototype trước B; không tự tích hợp lại.",
+      "prompt": null,
+      "version": 1,
+      "importedFrom": "game/public/characters/chibi-D.png",
+      "width": 1024,
+      "height": 1536,
+      "alpha": true,
+      "sha256": "be0a26012b713038ccaaa39db8e6cf34cea7bde04cb0134a83c2e93c531a9444",
+      "usedBy": [],
+      "animation": null
+    },
+    {
+      "id": "archive.concept-A",
+      "file": "assets/archive/characters/concept-A.png",
+      "category": "archive",
+      "qa": "archived",
+      "provenance": "Asset có sẵn của prototype trước B; không tự tích hợp lại.",
+      "prompt": null,
+      "version": 1,
+      "importedFrom": "game/public/characters/concept-A.png",
+      "width": 1024,
+      "height": 1536,
+      "alpha": true,
+      "sha256": "59611b7a33596b400afffdd1fa6d1b5750bbb25e7585323a604257d21056fc0b",
+      "usedBy": [],
+      "animation": null
+    },
+    {
+      "id": "archive.concept-B",
+      "file": "assets/archive/characters/concept-B.png",
+      "category": "archive",
+      "qa": "archived",
+      "provenance": "Asset có sẵn của prototype trước B; không tự tích hợp lại.",
+      "prompt": null,
+      "version": 1,
+      "importedFrom": "game/public/characters/concept-B.png",
+      "width": 1024,
+      "height": 1536,
+      "alpha": true,
+      "sha256": "54f8309878f30cb6d4ebef381051ba44ba5818a673c1c6918381803338849cc7",
+      "usedBy": [],
+      "animation": null
+    },
+    {
+      "id": "archive.concept-C",
+      "file": "assets/archive/characters/concept-C.png",
+      "category": "archive",
+      "qa": "archived",
+      "provenance": "Asset có sẵn của prototype trước B; không tự tích hợp lại.",
+      "prompt": null,
+      "version": 1,
+      "importedFrom": "game/public/characters/concept-C.png",
+      "width": 1024,
+      "height": 1536,
+      "alpha": true,
+      "sha256": "7a2a797ba45ac55141e1cac53ab4c9e28df9548b835e6bd03e6c1076320b3c31",
+      "usedBy": [],
+      "animation": null
+    },
+    {
+      "id": "archive.concept-D",
+      "file": "assets/archive/characters/concept-D.png",
+      "category": "archive",
+      "qa": "archived",
+      "provenance": "Asset có sẵn của prototype trước B; không tự tích hợp lại.",
+      "prompt": null,
+      "version": 1,
+      "importedFrom": "game/public/characters/concept-D.png",
+      "width": 1024,
+      "height": 1536,
+      "alpha": true,
+      "sha256": "be0a26012b713038ccaaa39db8e6cf34cea7bde04cb0134a83c2e93c531a9444",
+      "usedBy": [],
+      "animation": null
+    },
+    {
+      "id": "reference.user-scale",
+      "category": "reference",
+      "version": 1,
+      "file": "assets/references/user-scale-reference.png",
+      "qa": "reference-only",
+      "provenance": "Ảnh người dùng cung cấp ngày 2026-10-04: tham khảo tỉ lệ nhân vật/nhà/đường; không dùng nội dung franchise trong production.",
+      "prompt": null,
+      "width": 700,
+      "height": 393,
+      "alpha": false,
+      "sha256": "40b6812a77ae333bf5bc36c7f036dbf4730b26f7dbb13e8276c64714a6dc6246",
+      "usedBy": [
+        "scene-01-layout-review"
+      ],
+      "animation": null
+    },
+    {
+      "id": "production.hero-A",
+      "category": "spritesheet",
+      "file": "assets/production/hero-A.png",
+      "runtime": "game/public/assets/production/hero-A.png",
+      "width": 1086,
+      "height": 1448,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "91d875c88e3cb9c6ff76f63bf5389e9214448fb39194d386dffaabc0b0170f07",
+      "provenance": "Built-in ImageGen with approved B style reference; E layout approved 2026-10-05.",
+      "prompt": "assets/production-prompts.json",
+      "usedBy": [
+        "scene-01-E",
+        "forest",
+        "mountain",
+        "north"
+      ],
+      "animation": {
+        "directions": [
+          "down",
+          "left",
+          "right",
+          "up"
+        ],
+        "framesPerDirection": 3,
+        "pivot": "feet",
+        "rectangles": "assets/production/sprite-frames.json",
+        "frameCount": 12
+      },
+      "version": 2,
+      "qa": "runtime-reviewed"
+    },
+    {
+      "id": "production.hero-B",
+      "category": "spritesheet",
+      "file": "assets/production/hero-B.png",
+      "runtime": "game/public/assets/production/hero-B.png",
+      "width": 1086,
+      "height": 1448,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "db124e2e99f771c01d781cd6ec37259fa778e82bba6a300b6243c49f4de5c5fe",
+      "provenance": "Built-in ImageGen with approved B style reference; E layout approved 2026-10-05.",
+      "prompt": "assets/production-prompts.json",
+      "usedBy": [
+        "scene-01-E",
+        "forest",
+        "mountain",
+        "north"
+      ],
+      "animation": {
+        "directions": [
+          "down",
+          "left",
+          "right",
+          "up"
+        ],
+        "framesPerDirection": 3,
+        "pivot": "feet",
+        "rectangles": "assets/production/sprite-frames.json",
+        "frameCount": 12
+      },
+      "version": 2,
+      "qa": "runtime-reviewed"
+    },
+    {
+      "id": "production.hero-C",
+      "category": "spritesheet",
+      "file": "assets/production/hero-C.png",
+      "runtime": "game/public/assets/production/hero-C.png",
+      "width": 1086,
+      "height": 1448,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "5b2dfb319acf92ebea34be13d23197ad573121445b2823009698e7b2f55abc98",
+      "provenance": "Built-in ImageGen with approved B style reference; E layout approved 2026-10-05.",
+      "prompt": "assets/production-prompts.json",
+      "usedBy": [
+        "scene-01-E",
+        "forest",
+        "mountain",
+        "north"
+      ],
+      "animation": {
+        "directions": [
+          "down",
+          "left",
+          "right",
+          "up"
+        ],
+        "framesPerDirection": 3,
+        "pivot": "feet",
+        "rectangles": "assets/production/sprite-frames.json",
+        "frameCount": 12
+      },
+      "version": 2,
+      "qa": "runtime-reviewed"
+    },
+    {
+      "id": "production.hero-D",
+      "category": "spritesheet",
+      "file": "assets/production/hero-D.png",
+      "runtime": "game/public/assets/production/hero-D.png",
+      "width": 1086,
+      "height": 1448,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "47ecd91d5aab31349c417bfd7ef14365a660ab82c79bb7a65402d3f4d4f32160",
+      "provenance": "Built-in ImageGen with approved B style reference; E layout approved 2026-10-05.",
+      "prompt": "assets/production-prompts.json",
+      "usedBy": [
+        "scene-01-E",
+        "forest",
+        "mountain",
+        "north"
+      ],
+      "animation": {
+        "directions": [
+          "down",
+          "left",
+          "right",
+          "up"
+        ],
+        "framesPerDirection": 3,
+        "pivot": "feet",
+        "rectangles": "assets/production/sprite-frames.json",
+        "frameCount": 12
+      },
+      "version": 2,
+      "qa": "runtime-reviewed"
+    },
+    {
+      "id": "production.npcs",
+      "category": "spritesheet",
+      "file": "assets/production/npcs.png",
+      "runtime": "game/public/assets/production/npcs.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "95de0bca673737374d0d7a9ca04505be2648e0b9072fc5c6006908b8d80121f7",
+      "provenance": "Built-in ImageGen with approved B style reference; E layout approved 2026-10-05.",
+      "prompt": "assets/npc-production-prompt.json",
+      "usedBy": [
+        "scene-01-E",
+        "forest",
+        "mountain",
+        "north"
+      ],
+      "animation": {
+        "rows": [
+          "teacher",
+          "healer",
+          "smith"
+        ],
+        "framesPerAction": 3,
+        "rectangles": "assets/production/sprite-frames.json"
+      },
+      "version": 2,
+      "qa": "runtime-reviewed"
+    },
+    {
+      "id": "production.environment",
+      "category": "tileset",
+      "file": "assets/production/environment.png",
+      "runtime": "game/public/assets/production/environment.png",
+      "width": 1448,
+      "height": 1086,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "a5b7804875fc43c00bf94fbc6c8f6392e55cfdb340c55382e3d462f4a14b567b",
+      "provenance": "Built-in ImageGen with approved B style reference; E layout approved 2026-10-05.",
+      "prompt": "assets/production-prompts.json",
+      "usedBy": [
+        "scene-01-E",
+        "forest",
+        "mountain",
+        "north"
+      ],
+      "animation": null,
+      "version": 2,
+      "qa": "runtime-reviewed"
+    },
+    {
+      "id": "production.terrain",
+      "category": "tileset",
+      "file": "assets/production/terrain.png",
+      "runtime": "game/public/assets/production/terrain.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": false,
+      "requiresAlpha": false,
+      "sha256": "504ef7bc3f9beb6e94f8a39751d7c618640518f1d31b44e4022350c585034e50",
+      "provenance": "Built-in ImageGen with approved B style reference; E layout approved 2026-10-05.",
+      "prompt": "assets/terrain-production-prompt.json",
+      "usedBy": [
+        "scene-01-E",
+        "forest",
+        "mountain",
+        "north"
+      ],
+      "animation": null,
+      "version": 2,
+      "qa": "runtime-reviewed"
+    },
+    {
+      "id": "production.scenery",
+      "category": "tileset",
+      "file": "assets/production/scenery.png",
+      "runtime": "game/public/assets/production/scenery.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "3c66162fcc30b55177742f5fcbbad32c472bbbae803f5638f29daecd62c7a65c",
+      "provenance": "Built-in ImageGen with approved B style reference; E layout approved 2026-10-05.",
+      "prompt": "assets/scene-e-detail-prompts.json",
+      "usedBy": [
+        "scene-01-E"
+      ],
+      "animation": null,
+      "version": 1,
+      "qa": "runtime-reviewed"
+    },
+    {
+      "id": "production.villagers",
+      "category": "spritesheet",
+      "file": "assets/production/villagers.png",
+      "runtime": "game/public/assets/production/villagers.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "b24d1cb4740b403af36417b1e846876fe4f521e85d9d111cb552113b08025cb7",
+      "provenance": "Built-in ImageGen with approved B style reference; E layout approved 2026-10-05.",
+      "prompt": "assets/scene-e-detail-prompts.json",
+      "usedBy": [
+        "scene-01-E"
+      ],
+      "animation": {
+        "directions": [
+          "down",
+          "left",
+          "right",
+          "up"
+        ],
+        "characters": [
+          "farmer",
+          "child"
+        ],
+        "framesPerDirection": 3,
+        "frameCount": 24,
+        "pivot": "feet",
+        "rectangles": "assets/production/sprite-frames.json"
+      },
+      "version": 1,
+      "qa": "runtime-reviewed"
+    },
+    {
+      "id": "production.signpost-A",
+      "category": "world-object",
+      "file": "assets/production/signpost-A.png",
+      "runtime": "game/public/assets/production/signpost-A.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "e1f25c59096f63f52f3a4e30b99cfb8b0c82181d3509ae9434fa5cb855c58657",
+      "provenance": "Built-in ImageGen; user selected direction-sign mockup A on 2026-10-07.",
+      "prompt": "assets/signpost-production-prompt.json",
+      "usedBy": [
+        "scene-01-E",
+        "forest",
+        "mountain",
+        "north"
+      ],
+      "animation": null,
+      "version": 1,
+      "qa": "runtime-reviewed"
+    },
+    {
+      "id": "audio.ambience",
+      "file": "assets/audio/nam-linh-ambience.wav",
+      "runtime": "game/public/assets/production/nam-linh-ambience.wav",
+      "category": "audio",
+      "sha256": "8485ab6c7ff33a26ec892820c70abe7f1713bd200cf487b83a798c94d0272d6f",
+      "provenance": "Original deterministic synthesis; tools/create-ambience.mjs, no external samples.",
+      "usedBy": [
+        "scene-01-E"
+      ],
+      "version": 1,
+      "qa": "runtime-reviewed"
+    },
+    {
+      "id": "effects.ambient",
+      "file": "assets/effects/ambient-v1.json",
+      "runtime": null,
+      "category": "effect-preset",
+      "sha256": "8f3f5da81b574953b3f424f152931ae56ca8c599aba5d0253039dce061ab9bd7",
+      "provenance": "Original procedural effect configuration; engine/renderer.ts",
+      "usedBy": [
+        "scene-01-E"
+      ],
+      "version": 1,
+      "qa": "runtime-reviewed"
+    },
+    {
+      "id": "metadata.atlas",
+      "category": "atlas-metadata",
+      "file": "assets/production/atlas.json",
+      "runtime": "game/src/engine/atlas.json",
+      "sha256": "2c9777fff95934cb7279e1a70489bb6bf5dac801f462b50c577b6cb6af4dbc11",
+      "provenance": "Measured source rectangles from existing production sprites; no image regeneration.",
+      "usedBy": [
+        "scene-01-E",
+        "forest",
+        "mountain",
+        "north"
+      ],
+      "version": 2,
+      "qa": "runtime-reviewed"
+    },
+    {
+      "id": "metadata.sprite-frames",
+      "category": "atlas-metadata",
+      "file": "assets/production/sprite-frames.json",
+      "runtime": "game/src/engine/sprite-frames.json",
+      "sha256": "8ec696b3840aa36b3f72843267d0df6151da39017e5a3b540a742a8f762e35a8",
+      "provenance": "Measured source rectangles from existing production sprites; no image regeneration.",
+      "usedBy": [
+        "scene-01-E",
+        "forest",
+        "mountain",
+        "north"
+      ],
+      "version": 2,
+      "qa": "runtime-reviewed"
+    },
+    {
+      "id": "production.combat-arena",
+      "category": "scene",
+      "file": "assets/production/combat-arena.png",
+      "runtime": "game/public/assets/production/combat-arena.png",
+      "width": 1672,
+      "height": 941,
+      "alpha": false,
+      "requiresAlpha": false,
+      "sha256": "e1a7dd123713168e7368cb07c425a1b2ec9872d4f92ac4da1fcca5e996f05505",
+      "provenance": "Built-in ImageGen, Bright Handheld reference; combat UI B approved 2026-10-11.",
+      "prompt": "assets/combat-production-prompts.json",
+      "usedBy": [
+        "forest-combat"
+      ],
+      "version": 1,
+      "qa": "runtime-reviewed"
+    },
+    {
+      "id": "production.combat-actors",
+      "category": "spritesheet",
+      "file": "assets/production/combat-actors.png",
+      "runtime": "game/public/assets/production/combat-actors.png",
+      "width": 1536,
+      "height": 1024,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "14755549fbbf6fe44fb3ae5abea711c4f1ea53666f69f1996fba7cc6501d1e34",
+      "provenance": "Built-in ImageGen, Bright Handheld reference; combat UI B approved 2026-10-11.",
+      "prompt": "assets/combat-production-prompts.json",
+      "usedBy": [
+        "forest-combat"
+      ],
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "animation": {
+        "rows": [
+          "hero-A",
+          "hero-B",
+          "hero-C",
+          "hero-D",
+          "wood-yao",
+          "spore-yao"
+        ],
+        "framesPerRow": 6,
+        "rectangles": "assets/production/combat-frames.json",
+        "pivot": "measured feet"
+      }
+    },
+    {
+      "id": "production.combat-frames",
+      "category": "atlas-metadata",
+      "file": "assets/production/combat-frames.json",
+      "runtime": "game/src/combat/frames.json",
+      "requiresAlpha": false,
+      "sha256": "34f816e2f3abc7da7fa76fd9a84d7092b2bdd3d84dbf882773df583a666dc16b",
+      "provenance": "Measured alpha bounds and foot pivots; tools/inspect-combat-atlas.py.",
+      "prompt": "assets/combat-production-prompts.json",
+      "usedBy": [
+        "forest-combat"
+      ],
+      "version": 1,
+      "qa": "runtime-reviewed"
+    },
+    {
+      "id": "item.wood-sword.b1",
+      "category": "item-icon",
+      "file": "assets/production/items/wood-sword-b1.png",
+      "runtime": "game/public/assets/production/items/wood-sword-b1.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "9aacba149fbae5fe33c28b25c77ec2685140f1c609952120b174c6ef174d4edc",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen; approved B Thanh Truc direction and Bright Handheld master reference; individual alpha icon.",
+      "prompt": "assets/prompts/items-thanh-truc-B.json",
+      "promptKey": "wood-sword",
+      "usedBy": [
+        "equipment-A"
+      ],
+      "animation": null,
+      "review": {
+        "date": "2026-10-14",
+        "by": "assistant",
+        "scope": "Individual generated images + production UI + 120/48/24px contact sheet; alpha/bounds browser audit",
+        "direction": "ai-workflow/mockups/item-art-directions/B.png"
+      }
+    },
+    {
+      "id": "item.bamboo-sword.b1",
+      "category": "item-icon",
+      "file": "assets/production/items/bamboo-sword-b1.png",
+      "runtime": "game/public/assets/production/items/bamboo-sword-b1.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "962fac3288e5b1ec5f056d80a3f91f466a105375863eeed082346b30965165af",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen; approved B Thanh Truc direction and Bright Handheld master reference; individual alpha icon.",
+      "prompt": "assets/prompts/items-thanh-truc-B.json",
+      "promptKey": "bamboo-sword",
+      "usedBy": [
+        "equipment-A"
+      ],
+      "animation": null,
+      "review": {
+        "date": "2026-10-14",
+        "by": "assistant",
+        "scope": "Individual generated images + production UI + 120/48/24px contact sheet; alpha/bounds browser audit",
+        "direction": "ai-workflow/mockups/item-art-directions/B.png"
+      }
+    },
+    {
+      "id": "item.green-wind-cloak.b1",
+      "category": "item-icon",
+      "file": "assets/production/items/green-wind-cloak-b1.png",
+      "runtime": "game/public/assets/production/items/green-wind-cloak-b1.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "4c192a025e257a1621f7342018e92b83a3bed91400df0241a6df058d83ba4513",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen; approved B Thanh Truc direction and Bright Handheld master reference; individual alpha icon.",
+      "prompt": "assets/prompts/items-thanh-truc-B.json",
+      "promptKey": "green-wind-cloak",
+      "usedBy": [
+        "equipment-A"
+      ],
+      "animation": null,
+      "review": {
+        "date": "2026-10-14",
+        "by": "assistant",
+        "scope": "Individual generated images + production UI + 120/48/24px contact sheet; alpha/bounds browser audit",
+        "direction": "ai-workflow/mockups/item-art-directions/B.png"
+      }
+    },
+    {
+      "id": "item.cloud-step-boots.b1",
+      "category": "item-icon",
+      "file": "assets/production/items/cloud-step-boots-b1.png",
+      "runtime": "game/public/assets/production/items/cloud-step-boots-b1.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "501373911e1033b77a6d567e7fb07f63caeb5bdfe7e99008493097502a7e020e",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen; approved B Thanh Truc direction and Bright Handheld master reference; individual alpha icon.",
+      "prompt": "assets/prompts/items-thanh-truc-B.json",
+      "promptKey": "cloud-step-boots",
+      "usedBy": [
+        "equipment-A"
+      ],
+      "animation": null,
+      "review": {
+        "date": "2026-10-14",
+        "by": "assistant",
+        "scope": "Individual generated images + production UI + 120/48/24px contact sheet; alpha/bounds browser audit",
+        "direction": "ai-workflow/mockups/item-art-directions/B.png"
+      }
+    },
+    {
+      "id": "item.truc-khe-robe.b1",
+      "category": "item-icon",
+      "file": "assets/production/items/truc-khe-robe-b1.png",
+      "runtime": "game/public/assets/production/items/truc-khe-robe-b1.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "309125e729cd1e06f0f7e4746f03a35f073430d557e34ea3f155575fcc420275",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen; approved B Thanh Truc direction and Bright Handheld master reference; individual alpha icon.",
+      "prompt": "assets/prompts/items-thanh-truc-B.json",
+      "promptKey": "truc-khe-robe",
+      "usedBy": [
+        "equipment-A"
+      ],
+      "animation": null,
+      "review": {
+        "date": "2026-10-14",
+        "by": "assistant",
+        "scope": "Individual generated images + production UI + 120/48/24px contact sheet; alpha/bounds browser audit",
+        "direction": "ai-workflow/mockups/item-art-directions/B.png"
+      }
+    },
+    {
+      "id": "item.nam-linh-pants.b1",
+      "category": "item-icon",
+      "file": "assets/production/items/nam-linh-pants-b1.png",
+      "runtime": "game/public/assets/production/items/nam-linh-pants-b1.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "30a4e91be7e3209ca7b015a8026282576df4705c5f8bbfb61b57615a530116b9",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen; approved B Thanh Truc direction and Bright Handheld master reference; individual alpha icon.",
+      "prompt": "assets/prompts/items-thanh-truc-B.json",
+      "promptKey": "nam-linh-pants",
+      "usedBy": [
+        "equipment-A"
+      ],
+      "animation": null,
+      "review": {
+        "date": "2026-10-14",
+        "by": "assistant",
+        "scope": "Individual generated images + production UI + 120/48/24px contact sheet; alpha/bounds browser audit",
+        "direction": "ai-workflow/mockups/item-art-directions/B.png"
+      }
+    },
+    {
+      "id": "item.calm-jade.b1",
+      "category": "item-icon",
+      "file": "assets/production/items/calm-jade-b1.png",
+      "runtime": "game/public/assets/production/items/calm-jade-b1.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "4174840a45bae0668d68e4ceb9cb03f6e8c55513fbf758633e2836a73c85e8e8",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen; approved B Thanh Truc direction and Bright Handheld master reference; individual alpha icon.",
+      "prompt": "assets/prompts/items-thanh-truc-B.json",
+      "promptKey": "calm-jade",
+      "usedBy": [
+        "equipment-A"
+      ],
+      "animation": null,
+      "review": {
+        "date": "2026-10-14",
+        "by": "assistant",
+        "scope": "Individual generated images + production UI + 120/48/24px contact sheet; alpha/bounds browser audit",
+        "direction": "ai-workflow/mockups/item-art-directions/B.png"
+      }
+    },
+    {
+      "id": "item.bamboo-headband.b1",
+      "category": "item-icon",
+      "file": "assets/production/items/bamboo-headband-b1.png",
+      "runtime": "game/public/assets/production/items/bamboo-headband-b1.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "4b97a690edca8248782e945ea2e99b46906dead7d805e31436401d3f3391c048",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen; approved B Thanh Truc direction and Bright Handheld master reference; individual alpha icon.",
+      "prompt": "assets/prompts/items-thanh-truc-B.json",
+      "promptKey": "bamboo-headband",
+      "usedBy": [
+        "equipment-A"
+      ],
+      "animation": null,
+      "review": {
+        "date": "2026-10-14",
+        "by": "assistant",
+        "scope": "Individual generated images + production UI + 120/48/24px contact sheet; alpha/bounds browser audit",
+        "direction": "ai-workflow/mockups/item-art-directions/B.png"
+      }
+    },
+    {
+      "id": "item.leather-bracers.b1",
+      "category": "item-icon",
+      "file": "assets/production/items/leather-bracers-b1.png",
+      "runtime": "game/public/assets/production/items/leather-bracers-b1.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "aa9aada52f714c649bea9a794dc15aab7518ba1b82b43dad4e7e7662b5f36260",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen; approved B Thanh Truc direction and Bright Handheld master reference; individual alpha icon.",
+      "prompt": "assets/prompts/items-thanh-truc-B.json",
+      "promptKey": "leather-bracers",
+      "usedBy": [
+        "equipment-A"
+      ],
+      "animation": null,
+      "review": {
+        "date": "2026-10-14",
+        "by": "assistant",
+        "scope": "Individual generated images + production UI + 120/48/24px contact sheet; alpha/bounds browser audit",
+        "direction": "ai-workflow/mockups/item-art-directions/B.png"
+      }
+    },
+    {
+      "id": "item.qi-belt.b1",
+      "category": "item-icon",
+      "file": "assets/production/items/qi-belt-b1.png",
+      "runtime": "game/public/assets/production/items/qi-belt-b1.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "a47f81d09d9e0c96df672ed3b6bc75ed38b403cd4f5caf1cc28f03539e3e18b7",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen; approved B Thanh Truc direction and Bright Handheld master reference; individual alpha icon.",
+      "prompt": "assets/prompts/items-thanh-truc-B.json",
+      "promptKey": "qi-belt",
+      "usedBy": [
+        "equipment-A"
+      ],
+      "animation": null,
+      "review": {
+        "date": "2026-10-14",
+        "by": "assistant",
+        "scope": "Individual generated images + production UI + 120/48/24px contact sheet; alpha/bounds browser audit",
+        "direction": "ai-workflow/mockups/item-art-directions/B.png"
+      }
+    },
+    {
+      "id": "item.spirit-gourd.b1",
+      "category": "item-icon",
+      "file": "assets/production/items/spirit-gourd-b1.png",
+      "runtime": "game/public/assets/production/items/spirit-gourd-b1.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "1ec78bcbc12becdb879464750e95559aa60428e947c4ef18fd17e5f5082d7d7d",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen; approved B Thanh Truc direction and Bright Handheld master reference; individual alpha icon.",
+      "prompt": "assets/prompts/items-thanh-truc-B.json",
+      "promptKey": "spirit-gourd",
+      "usedBy": [
+        "equipment-A"
+      ],
+      "animation": null,
+      "review": {
+        "date": "2026-10-14",
+        "by": "assistant",
+        "scope": "Individual generated images + production UI + 120/48/24px contact sheet; alpha/bounds browser audit",
+        "direction": "ai-workflow/mockups/item-art-directions/B.png"
+      }
+    },
+    {
+      "id": "item.dark-iron-sword.b1",
+      "category": "item-icon",
+      "file": "assets/production/items/dark-iron-sword-b1.png",
+      "runtime": "game/public/assets/production/items/dark-iron-sword-b1.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "5696d3f53da5a065a219156423726e73037174f20c4a75738a58231a8e7c306a",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen; approved B Thanh Truc direction and Bright Handheld master reference; individual alpha icon.",
+      "prompt": "assets/prompts/items-thanh-truc-B.json",
+      "promptKey": "dark-iron-sword",
+      "usedBy": [
+        "equipment-A"
+      ],
+      "animation": null,
+      "review": {
+        "date": "2026-10-14",
+        "by": "assistant",
+        "scope": "Individual generated images + production UI + 120/48/24px contact sheet; alpha/bounds browser audit",
+        "direction": "ai-workflow/mockups/item-art-directions/B.png"
+      }
+    },
+    {
+      "id": "item.nine-cloud-robe.b1",
+      "category": "item-icon",
+      "file": "assets/production/items/nine-cloud-robe-b1.png",
+      "runtime": "game/public/assets/production/items/nine-cloud-robe-b1.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "063014955b8c21e31e1f13850fc310c7de92ac253f745fd0697615d1309937f2",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen; approved B Thanh Truc direction and Bright Handheld master reference; individual alpha icon.",
+      "prompt": "assets/prompts/items-thanh-truc-B.json",
+      "promptKey": "nine-cloud-robe",
+      "usedBy": [
+        "equipment-A"
+      ],
+      "animation": null,
+      "review": {
+        "date": "2026-10-14",
+        "by": "assistant",
+        "scope": "Individual generated images + production UI + 120/48/24px contact sheet; alpha/bounds browser audit",
+        "direction": "ai-workflow/mockups/item-art-directions/B.png"
+      }
+    },
+    {
+      "id": "item.herb.b1",
+      "category": "item-icon",
+      "file": "assets/production/items/herb-b1.png",
+      "runtime": "game/public/assets/production/items/herb-b1.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "e3b95f83a8e0d36f83d3b4e322adaf93294049583f928ff11f1910776b3da297",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen; approved B Thanh Truc direction and Bright Handheld master reference; individual alpha icon.",
+      "prompt": "assets/prompts/items-thanh-truc-B.json",
+      "promptKey": "herb",
+      "usedBy": [
+        "equipment-A"
+      ],
+      "animation": null,
+      "review": {
+        "date": "2026-10-14",
+        "by": "assistant",
+        "scope": "Individual generated images + production UI + 120/48/24px contact sheet; alpha/bounds browser audit",
+        "direction": "ai-workflow/mockups/item-art-directions/B.png"
+      }
+    },
+    {
+      "id": "item.bamboo.b1",
+      "category": "item-icon",
+      "file": "assets/production/items/bamboo-b1.png",
+      "runtime": "game/public/assets/production/items/bamboo-b1.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "51ee0180c22ae32f8b011ae7851ebca86e7ea791e1ae2aec79379dde8dd4425f",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen; approved B Thanh Truc direction and Bright Handheld master reference; individual alpha icon.",
+      "prompt": "assets/prompts/items-thanh-truc-B.json",
+      "promptKey": "bamboo",
+      "usedBy": [
+        "equipment-A"
+      ],
+      "animation": null,
+      "review": {
+        "date": "2026-10-14",
+        "by": "assistant",
+        "scope": "Individual generated images + production UI + 120/48/24px contact sheet; alpha/bounds browser audit",
+        "direction": "ai-workflow/mockups/item-art-directions/B.png"
+      }
+    },
+    {
+      "id": "item.mushroom.b1",
+      "category": "item-icon",
+      "file": "assets/production/items/mushroom-b1.png",
+      "runtime": "game/public/assets/production/items/mushroom-b1.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "8d66763bd4905f568ac59aca3f1c443ff6275965a46420aceda11c38aee98369",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen; approved B Thanh Truc direction and Bright Handheld master reference; individual alpha icon.",
+      "prompt": "assets/prompts/items-thanh-truc-B.json",
+      "promptKey": "mushroom",
+      "usedBy": [
+        "equipment-A"
+      ],
+      "animation": null,
+      "review": {
+        "date": "2026-10-14",
+        "by": "assistant",
+        "scope": "Individual generated images + production UI + 120/48/24px contact sheet; alpha/bounds browser audit",
+        "direction": "ai-workflow/mockups/item-art-directions/B.png"
+      }
+    },
+    {
+      "id": "item.ore.b1",
+      "category": "item-icon",
+      "file": "assets/production/items/ore-b1.png",
+      "runtime": "game/public/assets/production/items/ore-b1.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "b6da3b5d9898ecbbc385abcd3037ec9b5c0d1847cb3849eda8f75c2ade001ebb",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen; approved B Thanh Truc direction and Bright Handheld master reference; individual alpha icon.",
+      "prompt": "assets/prompts/items-thanh-truc-B.json",
+      "promptKey": "ore",
+      "usedBy": [
+        "equipment-A"
+      ],
+      "animation": null,
+      "review": {
+        "date": "2026-10-14",
+        "by": "assistant",
+        "scope": "Individual generated images + production UI + 120/48/24px contact sheet; alpha/bounds browser audit",
+        "direction": "ai-workflow/mockups/item-art-directions/B.png"
+      }
+    },
+    {
+      "id": "item.stone.b1",
+      "category": "item-icon",
+      "file": "assets/production/items/stone-b1.png",
+      "runtime": "game/public/assets/production/items/stone-b1.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "6b00d1b3cfda86ae4ba6c793180dbacbacab2a5502c05712b245e483b553154b",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen; approved B Thanh Truc direction and Bright Handheld master reference; individual alpha icon.",
+      "prompt": "assets/prompts/items-thanh-truc-B.json",
+      "promptKey": "stone",
+      "usedBy": [
+        "equipment-A"
+      ],
+      "animation": null,
+      "review": {
+        "date": "2026-10-14",
+        "by": "assistant",
+        "scope": "Individual generated images + production UI + 120/48/24px contact sheet; alpha/bounds browser audit",
+        "direction": "ai-workflow/mockups/item-art-directions/B.png"
+      }
+    },
+    {
+      "id": "item.soil.b1",
+      "category": "item-icon",
+      "file": "assets/production/items/soil-b1.png",
+      "runtime": "game/public/assets/production/items/soil-b1.png",
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "requiresAlpha": true,
+      "sha256": "ce3be2c74ff95349c849bb28d051c08f69695ee3af9b04b5fe5a118384c54019",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen; approved B Thanh Truc direction and Bright Handheld master reference; individual alpha icon.",
+      "prompt": "assets/prompts/items-thanh-truc-B.json",
+      "promptKey": "soil",
+      "usedBy": [
+        "equipment-A"
+      ],
+      "animation": null,
+      "review": {
+        "date": "2026-10-14",
+        "by": "assistant",
+        "scope": "Individual generated images + production UI + 120/48/24px contact sheet; alpha/bounds browser audit",
+        "direction": "ai-workflow/mockups/item-art-directions/B.png"
+      }
+    },
+    {
+      "id": "production.forest-objects",
+      "file": "assets/production/forest/objects.png",
+      "runtime": "game/public/assets/production/forest/objects.png",
+      "category": "spritesheet",
+      "requiresAlpha": true,
+      "width": 1448,
+      "height": 1086,
+      "alpha": true,
+      "sha256": "8b0e71e80855a3c66b6d7a30677a50b6cddf8af130569f8c9c87be54d69dfe57",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen with approved forest E and master Bright Handheld; measured alpha rectangles. Material icons packed from production sprites, not a review board.",
+      "prompt": "assets/prompts/forest-E.json",
+      "usedBy": [
+        "forest-E"
+      ],
+      "animation": {
+        "rectangles": "assets/production/forest/frames.json"
+      },
+      "review": {
+        "date": "2026-10-15",
+        "scope": "Production forest, combat and inventory screenshots; source alpha/gutters inspected"
+      }
+    },
+    {
+      "id": "production.forest-combat",
+      "file": "assets/production/forest/combat.png",
+      "runtime": "game/public/assets/production/forest/combat.png",
+      "category": "spritesheet",
+      "requiresAlpha": true,
+      "width": 2172,
+      "height": 724,
+      "alpha": true,
+      "sha256": "f03e80846eeebbfab3af4890ea2395c53bdceae2febf3d9eaf52e45751ca9599",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen with approved forest E and master Bright Handheld; measured alpha rectangles. Material icons packed from production sprites, not a review board.",
+      "prompt": "assets/prompts/forest-E.json",
+      "usedBy": [
+        "forest-E"
+      ],
+      "animation": {
+        "rectangles": "assets/production/forest/frames.json"
+      },
+      "review": {
+        "date": "2026-10-15",
+        "scope": "Production forest, combat and inventory screenshots; source alpha/gutters inspected"
+      }
+    },
+    {
+      "id": "metadata.forest-frames",
+      "file": "assets/production/forest/frames.json",
+      "runtime": "game/src/engine/forest-frames.json",
+      "category": "atlas-metadata",
+      "sha256": "a1bd53ae2c7c4a967c5508ace2af19440670a16ddf5b7ac3363495a7e8422e98",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen with approved forest E and master Bright Handheld; measured alpha rectangles. Material icons packed from production sprites, not a review board.",
+      "prompt": "assets/prompts/forest-E.json",
+      "usedBy": [
+        "forest-E"
+      ],
+      "review": {
+        "date": "2026-10-15",
+        "scope": "Production forest, combat and inventory screenshots; source alpha/gutters inspected"
+      }
+    },
+    {
+      "id": "item.spirit-grass.b1",
+      "file": "assets/production/items/spirit-grass-b1.png",
+      "runtime": "game/public/assets/production/items/spirit-grass-b1.png",
+      "category": "item-icon",
+      "requiresAlpha": true,
+      "width": 256,
+      "height": 256,
+      "alpha": true,
+      "sha256": "e50c3f034dea2adacfd467e221bb2fac9f3bb29b520cdf0008192908c26c80f0",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen with approved forest E and master Bright Handheld; measured alpha rectangles. Material icons packed from production sprites, not a review board.",
+      "prompt": "assets/prompts/forest-E.json",
+      "usedBy": [
+        "forest-E"
+      ],
+      "review": {
+        "date": "2026-10-15",
+        "scope": "Production forest, combat and inventory screenshots; source alpha/gutters inspected"
+      }
+    },
+    {
+      "id": "item.dew-flower.b1",
+      "file": "assets/production/items/dew-flower-b1.png",
+      "runtime": "game/public/assets/production/items/dew-flower-b1.png",
+      "category": "item-icon",
+      "requiresAlpha": true,
+      "width": 256,
+      "height": 256,
+      "alpha": true,
+      "sha256": "3f10bbd717f3f5b7ae8b20c4130f66f257ebe11363e2233deb6a6afdbc5119be",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen with approved forest E and master Bright Handheld; measured alpha rectangles. Material icons packed from production sprites, not a review board.",
+      "prompt": "assets/prompts/forest-E.json",
+      "usedBy": [
+        "forest-E"
+      ],
+      "review": {
+        "date": "2026-10-15",
+        "scope": "Production forest, combat and inventory screenshots; source alpha/gutters inspected"
+      }
+    },
+    {
+      "id": "item.purple-lingzhi.b1",
+      "file": "assets/production/items/purple-lingzhi-b1.png",
+      "runtime": "game/public/assets/production/items/purple-lingzhi-b1.png",
+      "category": "item-icon",
+      "requiresAlpha": true,
+      "width": 256,
+      "height": 256,
+      "alpha": true,
+      "sha256": "7c673d581d0e000d1c73a4ff1da5d37b13605f78c286c0560c61b1bf9a39c1a5",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen with approved forest E and master Bright Handheld; measured alpha rectangles. Material icons packed from production sprites, not a review board.",
+      "prompt": "assets/prompts/forest-E.json",
+      "usedBy": [
+        "forest-E"
+      ],
+      "review": {
+        "date": "2026-10-15",
+        "scope": "Production forest, combat and inventory screenshots; source alpha/gutters inspected"
+      }
+    },
+    {
+      "id": "item.jade-herb.b1",
+      "file": "assets/production/items/jade-herb-b1.png",
+      "runtime": "game/public/assets/production/items/jade-herb-b1.png",
+      "category": "item-icon",
+      "requiresAlpha": true,
+      "width": 256,
+      "height": 256,
+      "alpha": true,
+      "sha256": "c5b8a9b0918d0a43c51fe9b3e363dcbf4d177c0cb6a93083d12e43ea2e8cb2f5",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "Built-in ImageGen with approved forest E and master Bright Handheld; measured alpha rectangles. Material icons packed from production sprites, not a review board.",
+      "prompt": "assets/prompts/forest-E.json",
+      "usedBy": [
+        "forest-E"
+      ],
+      "review": {
+        "date": "2026-10-15",
+        "scope": "Production forest, combat and inventory screenshots; source alpha/gutters inspected"
+      }
+    },
+    {
+      "id": "reference.forest-selected-2026-10-16",
+      "file": "assets/references/forest-selected-2026-10-16.png",
+      "category": "reference",
+      "width": 1672,
+      "height": 941,
+      "alpha": false,
+      "sha256": "31821d6f3d4f506e931a09223c1bf16b4a764a1dcd483a8460164e352bced87c",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "User attached image #1, authoritative correction on 2026-10-16",
+      "prompt": "assets/prompts/forest-correction-2026-10-16.json",
+      "usedBy": [
+        "forest-corrected-2026-10-16"
+      ],
+      "review": {
+        "date": "2026-10-16",
+        "scope": "Compared user reference with actual runtime landscape and bridge crossing screenshots; structures use explicit masks to exclude exterior halo."
+      }
+    },
+    {
+      "id": "production.forest-landscape-v2",
+      "file": "assets/production/forest/landscape-v2.png",
+      "runtime": "game/public/assets/production/forest/landscape-v2.png",
+      "category": "scene-background",
+      "width": 1672,
+      "height": 941,
+      "alpha": false,
+      "sha256": "78c47d0d634ab79f5dd980729672db68fa0ab8ba145906a435a9eb63e782803f",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "ImageGen precise edit of user attachment; landscape without actors/house/bridge; separate structures with measured runtime outline masks.",
+      "prompt": "assets/prompts/forest-correction-2026-10-16.json",
+      "usedBy": [
+        "forest-corrected-2026-10-16"
+      ],
+      "review": {
+        "date": "2026-10-16",
+        "scope": "Compared user reference with actual runtime landscape and bridge crossing screenshots; structures use explicit masks to exclude exterior halo."
+      }
+    },
+    {
+      "id": "production.forest-structures-v2",
+      "file": "assets/production/forest/structures-v2.png",
+      "runtime": "game/public/assets/production/forest/structures-v2.png",
+      "category": "spritesheet",
+      "requiresAlpha": true,
+      "animation": {
+        "rectangles": "assets/production/forest/structures-v2.json"
+      },
+      "width": 2048,
+      "height": 768,
+      "alpha": true,
+      "sha256": "5bd1d72bcbf0d220e2ea905bada7f8dcc02d5debf9f76a33fafa19a74ab6f1c2",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "ImageGen precise edit of user attachment; landscape without actors/house/bridge; separate structures with measured runtime outline masks.",
+      "prompt": "assets/prompts/forest-correction-2026-10-16.json",
+      "usedBy": [
+        "forest-corrected-2026-10-16"
+      ],
+      "review": {
+        "date": "2026-10-16",
+        "scope": "Compared user reference with actual runtime landscape and bridge crossing screenshots; structures use explicit masks to exclude exterior halo."
+      }
+    },
+    {
+      "id": "metadata.forest-structures-v2",
+      "file": "assets/production/forest/structures-v2.json",
+      "runtime": "game/src/engine/forest-structures.json",
+      "category": "atlas-metadata",
+      "sha256": "7a700fa57b16988a9e3846c393539393a710d1f9c2b7d3f97522c4481a9b46ec",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "provenance": "ImageGen precise edit of user attachment; landscape without actors/house/bridge; separate structures with measured runtime outline masks.",
+      "prompt": "assets/prompts/forest-correction-2026-10-16.json",
+      "usedBy": [
+        "forest-corrected-2026-10-16"
+      ],
+      "review": {
+        "date": "2026-10-16",
+        "scope": "Compared user reference with actual runtime landscape and bridge crossing screenshots; structures use explicit masks to exclude exterior halo."
+      }
+    },
+    {
+      "id": "production.forest-ground-v3",
+      "file": "assets/production/forest/ground-v3.png",
+      "runtime": "game/public/assets/production/forest/ground-v3.png",
+      "category": "scene-background",
+      "requiresAlpha": false,
+      "width": 1672,
+      "height": 941,
+      "alpha": false,
+      "sha256": "edd6dcf46b0fdd04f457adb89b28a27bde632e6f1fc919c72a9862a48bd93170",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "usedBy": [
+        "forest-rebuild-2026-10-16"
+      ],
+      "provenance": "Recovered ImageGen assets and measured metadata from interrupted previous chat 01a13f50-fb32-7e62-979b-3021f0456ffb, integrated and reviewed in this rebuild. Exact original prompts were not persisted by that chat."
+    },
+    {
+      "id": "production.forest-tree-v3",
+      "file": "assets/production/forest/tree-v3.png",
+      "runtime": "game/public/assets/production/forest/tree-v3.png",
+      "category": "spritesheet",
+      "requiresAlpha": true,
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "sha256": "38a00da2caa3bddc48b7dbdc38b38dd66b62d5be94cc351038ad8b43ddee8b75",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "usedBy": [
+        "forest-rebuild-2026-10-16"
+      ],
+      "provenance": "Recovered ImageGen assets and measured metadata from interrupted previous chat 01a13f50-fb32-7e62-979b-3021f0456ffb, integrated and reviewed in this rebuild. Exact original prompts were not persisted by that chat."
+    },
+    {
+      "id": "production.forest-bamboo-v3",
+      "file": "assets/production/forest/bamboo-v3.png",
+      "runtime": "game/public/assets/production/forest/bamboo-v3.png",
+      "category": "spritesheet",
+      "requiresAlpha": true,
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "sha256": "8de67d0fb022b0114ef48607a7d29792e1ea12eebf16169a25c4b70f6c1c8d8f",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "usedBy": [
+        "forest-rebuild-2026-10-16"
+      ],
+      "provenance": "Recovered ImageGen assets and measured metadata from interrupted previous chat 01a13f50-fb32-7e62-979b-3021f0456ffb, integrated and reviewed in this rebuild. Exact original prompts were not persisted by that chat."
+    },
+    {
+      "id": "production.forest-blossom-v3",
+      "file": "assets/production/forest/blossom-v3.png",
+      "runtime": "game/public/assets/production/forest/blossom-v3.png",
+      "category": "spritesheet",
+      "requiresAlpha": true,
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "sha256": "ff635ea6650c9a2af1c7323316e8b30a69d6d41b7a98c7d714037cfedc11c15a",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "usedBy": [
+        "forest-rebuild-2026-10-16"
+      ],
+      "provenance": "Recovered ImageGen assets and measured metadata from interrupted previous chat 01a13f50-fb32-7e62-979b-3021f0456ffb, integrated and reviewed in this rebuild. Exact original prompts were not persisted by that chat."
+    },
+    {
+      "id": "production.forest-monsters-idle-v4",
+      "file": "assets/production/forest/monsters-idle-v4.png",
+      "runtime": "game/public/assets/production/forest/monsters-idle-v4.png",
+      "category": "spritesheet",
+      "animation": {
+        "rectangles": "assets/production/forest/monsters-idle-v4.json"
+      },
+      "requiresAlpha": true,
+      "width": 1254,
+      "height": 1254,
+      "alpha": true,
+      "sha256": "fbb93108b66a1db359f48e0639148dbc373e7f6634bb0fd83193e831c6669fa7",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "usedBy": [
+        "forest-rebuild-2026-10-16"
+      ],
+      "provenance": "Built-in ImageGen; Bright Handheld master reference; measured source rectangles, actual runtime animation/effects.",
+      "prompt": "assets/prompts/forest-rebuild-2026-10-16.json"
+    },
+    {
+      "id": "production.forest-skill-effects-v4",
+      "file": "assets/production/forest/skill-effects-v4.png",
+      "runtime": "game/public/assets/production/forest/skill-effects-v4.png",
+      "category": "spritesheet",
+      "animation": {
+        "rectangles": "assets/production/forest/skill-effects-v4.json"
+      },
+      "requiresAlpha": true,
+      "width": 1672,
+      "height": 941,
+      "alpha": true,
+      "sha256": "a4c838e7600c72c9de33f038b822d9f73d9d7e13c919d805b4b99947c6eb02ef",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "usedBy": [
+        "forest-rebuild-2026-10-16"
+      ],
+      "provenance": "Built-in ImageGen; Bright Handheld master reference; measured source rectangles, actual runtime animation/effects.",
+      "prompt": "assets/prompts/forest-rebuild-2026-10-16.json"
+    },
+    {
+      "id": "production.forest-water-flow-v4",
+      "file": "assets/production/forest/water-flow-v4.png",
+      "runtime": "game/public/assets/production/forest/water-flow-v4.png",
+      "category": "spritesheet",
+      "animation": {
+        "rectangles": "assets/production/forest/water-flow-v4.json"
+      },
+      "requiresAlpha": false,
+      "width": 1774,
+      "height": 887,
+      "alpha": false,
+      "sha256": "f87c6858320fa0d3172c7f915f6384db3017c5324669db05476e819f5dd1b089",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "usedBy": [
+        "forest-rebuild-2026-10-16"
+      ],
+      "provenance": "Built-in ImageGen; Bright Handheld master reference; measured source rectangles, actual runtime animation/effects.",
+      "prompt": "assets/prompts/forest-water-v4.json"
+    },
+    {
+      "id": "metadata.forest-vegetation-v3",
+      "file": "assets/production/forest/vegetation-v3.json",
+      "runtime": "game/src/engine/forest-vegetation.json",
+      "category": "atlas-metadata",
+      "sha256": "a329be42f92736fba8b23020f0574cf5e6af21f0eb0638f5ca43fa3cf8123b0a",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "usedBy": [
+        "forest-rebuild-2026-10-16"
+      ],
+      "provenance": "Recovered ImageGen assets and measured metadata from interrupted previous chat 01a13f50-fb32-7e62-979b-3021f0456ffb, integrated and reviewed in this rebuild. Exact original prompts were not persisted by that chat."
+    },
+    {
+      "id": "metadata.forest-water-v3",
+      "file": "assets/production/forest/water-v3.json",
+      "runtime": "game/src/engine/forest-water.json",
+      "category": "atlas-metadata",
+      "sha256": "94c5a2a8e09466b2dee0f553a9e3b1380b2816710468bd14411349787ba01a45",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "usedBy": [
+        "forest-rebuild-2026-10-16"
+      ],
+      "provenance": "Recovered ImageGen assets and measured metadata from interrupted previous chat 01a13f50-fb32-7e62-979b-3021f0456ffb, integrated and reviewed in this rebuild. Exact original prompts were not persisted by that chat."
+    },
+    {
+      "id": "metadata.forest-monsters-idle-v4",
+      "file": "assets/production/forest/monsters-idle-v4.json",
+      "runtime": "game/src/engine/monster-idle-frames.json",
+      "category": "atlas-metadata",
+      "sha256": "7a71a044ffb825a6837e9377e99efc1ae1475db294bfcf038efd7dcb845f814e",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "usedBy": [
+        "forest-rebuild-2026-10-16"
+      ],
+      "provenance": "Built-in ImageGen; Bright Handheld master reference; measured source rectangles, actual runtime animation/effects.",
+      "prompt": "assets/prompts/forest-rebuild-2026-10-16.json"
+    },
+    {
+      "id": "metadata.forest-skill-effects-v4",
+      "file": "assets/production/forest/skill-effects-v4.json",
+      "runtime": "game/src/combat/effect-frames.json",
+      "category": "atlas-metadata",
+      "sha256": "95b9e7e6718790f4340bfc17781ee24dda08a01ea15d1fc4d26821cd2c619299",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "usedBy": [
+        "forest-rebuild-2026-10-16"
+      ],
+      "provenance": "Built-in ImageGen; Bright Handheld master reference; measured source rectangles, actual runtime animation/effects.",
+      "prompt": "assets/prompts/forest-rebuild-2026-10-16.json"
+    },
+    {
+      "id": "metadata.forest-water-flow-v4",
+      "file": "assets/production/forest/water-flow-v4.json",
+      "category": "atlas-metadata",
+      "sha256": "8799de248225f3011ed1106c2777830510326fe7ea56dfe1c62173618e9ebe10",
+      "version": 1,
+      "qa": "runtime-reviewed",
+      "usedBy": [
+        "forest-rebuild-2026-10-16"
+      ],
+      "provenance": "Built-in ImageGen; Bright Handheld master reference; measured source rectangles, actual runtime animation/effects.",
+      "prompt": "assets/prompts/forest-water-v4.json",
+      "review": {
+        "date": "2026-10-17",
+        "scope": "Actual forest runtime plus monster atlas and combat skill renderer; animation regions and reduced motion verified separately."
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+
+> tien-hiep-chibi-demo@0.1.0 test:browser
+> playwright test --grep forest layers --repeat-each=3
+
+
+Running 3 tests using 1 worker
+
+(node:61501) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 test/browser/forest.spec.ts:52:1 › forest layers: crowns, bamboo, stream and all four monster poses move independently and freeze with reduced motion (4.8s)
+(node:61520) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  2 test/browser/forest.spec.ts:52:1 › forest layers: crowns, bamboo, stream and all four monster poses move independently and freeze with reduced motion (4.7s)
+(node:61536) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  3 test/browser/forest.spec.ts:52:1 › forest layers: crowns, bamboo, stream and all four monster poses move independently and freeze with reduced motion (4.7s)
+
+  3 passed (15.9s)

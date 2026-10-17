@@ -1,0 +1,49 @@
+.body{height:620px}
+.identity{height:95px;margin-bottom:10px}
+.avatar{transform:scale(.82)}
+.realm{padding:9px 10px;margin-bottom:10px;font-size:13px}
+.stat{padding:5px 10px;min-height:30px;font-size:13px}
+.stat b{font-size:16px}
+.foundations{margin-top:10px}
+.foundations div{padding:6px 4px}
+.foundations strong{margin:4px 0}
+.bag-body{grid-template-columns:485px minmax(0,1fr)}
+.grid{grid-template-columns:repeat(10,44px);gap:5px;width:max-content}
+.cell{width:44px;height:44px;aspect-ratio:auto}
+.detail{padding:14px}
+.variant-b .body{height:660px}
+.variant-b .outfit{padding-top:195px}
+.variant-b .bag-body{grid-template-columns:485px minmax(0,1fr)}
+.variant-b .bag .stats-mini{margin-top:12px}
+.variant-b .stats-mini .stat{padding:5px;min-height:42px}
+.variant-b .bag>.tip{display:none}
+.variant-b .bag-body{grid-template-columns:445px minmax(0,1fr)}
+.variant-b .grid{grid-template-columns:repeat(10,40px)}
+.variant-b .cell{width:40px;height:40px}
+.variant-c .bag-body{grid-template-columns:1fr;gap:10px}
+.variant-c .grid{grid-template-columns:repeat(10,43px);gap:5px;width:100%}
+.variant-c .cell{width:43px;height:43px}
+.variant-c .detail{grid-template-columns:52px 1fr 140px 130px;gap:10px;padding:10px}
+.variant-c .detail .large-icon{width:48px;height:48px}
+.variant-c .bag>.tip{display:none}
+.variant-c .grid{grid-template-columns:repeat(10,1fr)}
+.variant-c .cell{width:auto;height:39px}
+.variant-c .cell svg{width:32px;height:32px}
+.halo{pointer-events:none;z-index:0}
+.equip-slot{z-index:1}
+.variant-d .bag-body{grid-template-columns:485px minmax(0,1fr)}
+.variant-d .profile .stats{top:466px}
+.variant-e .body{grid-template-columns:260px 310px 1fr;height:610px;gap:16px}
+.variant-e .pane + .pane{padding-left:16px}
+.variant-e .bag-body{grid-template-columns:1fr;gap:6px}
+.variant-e .grid{grid-template-columns:repeat(5,72px);gap:7px}
+.variant-e .cell{width:72px;height:62px}
+.variant-e .equipment{height:455px}
+.variant-e .equip-slot{width:64px;height:65px}
+.variant-e .equip-slot:nth-of-type(9){left:65px}
+.variant-e .equip-slot:nth-of-type(10){right:65px}
+.variant-e .hero{transform:translateX(-50%) scale(.75)}
+.variant-e .toolbar{flex-wrap:wrap}
+.variant-e .toolbar input{flex-basis:100%}
+.variant-e .detail{grid-template-columns:48px 1fr 112px}
+.variant-e .bag>.tip{display:none}

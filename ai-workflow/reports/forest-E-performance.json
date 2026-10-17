@@ -1,0 +1,43 @@
+{
+  "browser": "Chrome headless, production build, effects on; 4s warmup + 4s sample, no screenshots or resizing during sample",
+  "results": [
+    {
+      "width": 1280,
+      "height": 720,
+      "dpr": 1,
+      "samples": 240,
+      "averageFps": 60.00150003750093,
+      "p95": 16.799999999999272,
+      "max": 16.800000000000182
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "dpr": 2,
+      "samples": 241,
+      "averageFps": 60.0024897298643,
+      "p95": 16.700000000000728,
+      "max": 16.800000000000182
+    },
+    {
+      "width": 2560,
+      "height": 1440,
+      "dpr": 1,
+      "samples": 240,
+      "averageFps": 60.00300015000751,
+      "p95": 16.700000000000728,
+      "max": 16.800000000000182
+    },
+    {
+      "width": 720,
+      "height": 900,
+      "dpr": 2,
+      "samples": 241,
+      "averageFps": 60.002489729864315,
+      "p95": 16.700000000000728,
+      "max": 16.800000000000182
+    }
+  ],
+  "localColdStartMs": 597,
+  "localColdStartScope": "New headless browser; navigate localhost production → select default hero → visible world canvas; includes browser automation, not internet load time."
+}

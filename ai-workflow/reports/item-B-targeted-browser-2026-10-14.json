@@ -1,0 +1,547 @@
+{
+  "config": {
+    "argv": [
+      "/Users/vinhle/.nvm/versions/node/v24.19.0/bin/node",
+      "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/node_modules/.bin/playwright",
+      "test",
+      "test/browser/equipment.spec.ts",
+      "test/browser/item-art.spec.ts"
+    ],
+    "configFile": "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/playwright.config.ts",
+    "rootDir": "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/test/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/test/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run preview -- --port 4181 --strictPort",
+      "url": "http://127.0.0.1:4181",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "equipment.spec.ts",
+      "file": "equipment.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "A: equip, compare, derived stats, unequip, search, locale, close and reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2495,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:42:09.221Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1991ef99b92b8776b436-e94849cfdac7ca8c6822",
+          "file": "equipment.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "full bag blocks unequip, allows swap, and quota error does not apply changes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1263,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:42:12.126Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1991ef99b92b8776b436-9fb520cf92d2e0296f00",
+          "file": "equipment.spec.ts",
+          "line": 18,
+          "column": 1
+        },
+        {
+          "title": "old progress migrates once, overflow stays recoverable and malformed save stays untouched",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1759,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:42:13.396Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1991ef99b92b8776b436-bec946d23de1496f4827",
+          "file": "equipment.spec.ts",
+          "line": 24,
+          "column": 1
+        },
+        {
+          "title": "two tabs equip different slots without losing the other transaction",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2103,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:42:15.164Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1991ef99b92b8776b436-46a99a7ac596f5b71c91",
+          "file": "equipment.spec.ts",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "equipped stats enter combat snapshot and persist after retreat",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1837,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:42:17.276Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1991ef99b92b8776b436-f1a29c4971e701724f52",
+          "file": "equipment.spec.ts",
+          "line": 31,
+          "column": 1
+        },
+        {
+          "title": "equipment layout 1280x720 DPR1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1561,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:42:19.120Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1991ef99b92b8776b436-a0dfcb25d0603ebd089f",
+          "file": "equipment.spec.ts",
+          "line": 36,
+          "column": 110
+        },
+        {
+          "title": "equipment layout 1920x1080 DPR2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4149,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:42:20.687Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1991ef99b92b8776b436-c5b3085a1521cd732957",
+          "file": "equipment.spec.ts",
+          "line": 36,
+          "column": 110
+        },
+        {
+          "title": "equipment layout 900x700 DPR1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1440,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:42:24.854Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1991ef99b92b8776b436-fdd4a989e64237d16b9c",
+          "file": "equipment.spec.ts",
+          "line": 36,
+          "column": 110
+        },
+        {
+          "title": "equipment layout 720x900 DPR2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1945,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:42:26.300Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1991ef99b92b8776b436-ea1919ee6a7d11bf0740",
+          "file": "equipment.spec.ts",
+          "line": 36,
+          "column": 110
+        },
+        {
+          "title": "equipment layout 672x786 DPR1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1576,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:42:28.251Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1991ef99b92b8776b436-6c6cdf7061ca3871c9a8",
+          "file": "equipment.spec.ts",
+          "line": 36,
+          "column": 110
+        },
+        {
+          "title": "equipment layout 390x844 DPR1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1466,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:42:29.833Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1991ef99b92b8776b436-639c638bdfbb61269644",
+          "file": "equipment.spec.ts",
+          "line": 36,
+          "column": 110
+        }
+      ]
+    },
+    {
+      "title": "item-art.spec.ts",
+      "file": "item-art.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "all B icons load, have genuine cutout alpha and remain identifiable at thumbnail sizes",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2852,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:42:31.315Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "item-alpha-audit",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJpZCI6ICJ3b29kLXN3b3JkIiwKICAgICJyYXRpbyI6IDAuMTc5NDgxMTYyNjcxNzk0NzYsCiAgICAiZWRnZSI6IDAsCiAgICAiYm91bmRzIjogWwogICAgICA2OSwKICAgICAgODAsCiAgICAgIDEyMjUsCiAgICAgIDExOTUKICAgIF0sCiAgICAid2lkdGgiOiAxMjU0LAogICAgImhlaWdodCI6IDEyNTQKICB9LAogIHsKICAgICJpZCI6ICJiYW1ib28tc3dvcmQiLAogICAgInJhdGlvIjogMC4xNzczMjI4MzgwNTA2MTQ0NCwKICAgICJlZGdlIjogMCwKICAgICJib3VuZHMiOiBbCiAgICAgIDYzLAogICAgICA5MiwKICAgICAgMTIyMywKICAgICAgMTE2NwogICAgXSwKICAgICJ3aWR0aCI6IDEyNTQsCiAgICAiaGVpZ2h0IjogMTI1NAogIH0sCiAgewogICAgImlkIjogImdyZWVuLXdpbmQtY2xvYWsiLAogICAgInJhdGlvIjogMC40NzI2NjQxODkxMDg0MDk3LAogICAgImVkZ2UiOiAwLAogICAgImJvdW5kcyI6IFsKICAgICAgMzEsCiAgICAgIDE1MywKICAgICAgMTIzMywKICAgICAgMTExNgogICAgXSwKICAgICJ3aWR0aCI6IDEyNTQsCiAgICAiaGVpZ2h0IjogMTI1NAogIH0sCiAgewogICAgImlkIjogImNsb3VkLXN0ZXAtYm9vdHMiLAogICAgInJhdGlvIjogMC40Nzg3NjA3ODg0NDM0ODgsCiAgICAiZWRnZSI6IDAsCiAgICAiYm91bmRzIjogWwogICAgICA0MSwKICAgICAgMTQ5LAogICAgICAxMjMxLAogICAgICAxMTIxCiAgICBdLAogICAgIndpZHRoIjogMTI1NCwKICAgICJoZWlnaHQiOiAxMjU0CiAgfSwKICB7CiAgICAiaWQiOiAidHJ1Yy1raGUtcm9iZSIsCiAgICAicmF0aW8iOiAwLjUzNzQ3NDM0MDQ4MzY1OCwKICAgICJlZGdlIjogMCwKICAgICJib3VuZHMiOiBbCiAgICAgIDQxLAogICAgICAxMTgsCiAgICAgIDEyMzcsCiAgICAgIDExNjcKICAgIF0sCiAgICAid2lkdGgiOiAxMjU0LAogICAgImhlaWdodCI6IDEyNTQKICB9LAogIHsKICAgICJpZCI6ICJuYW0tbGluaC1wYW50cyIsCiAgICAicmF0aW8iOiAwLjUwNTY2OTg5NDYxNDc0NDgsCiAgICAiZWRnZSI6IDAsCiAgICAiYm91bmRzIjogWwogICAgICA4MywKICAgICAgNzMsCiAgICAgIDExODIsCiAgICAgIDExNzkKICAgIF0sCiAgICAid2lkdGgiOiAxMjU0LAogICAgImhlaWdodCI6IDEyNTQKICB9LAogIHsKICAgICJpZCI6ICJjYWxtLWphZGUiLAogICAgInJhdGlvIjogMC4zNzg2NTk0MjIyMjUyNzQ2NiwKICAgICJlZGdlIjogMCwKICAgICJib3VuZHMiOiBbCiAgICAgIDg1LAogICAgICA4NiwKICAgICAgMTIyNiwKICAgICAgMTE4NQogICAgXSwKICAgICJ3aWR0aCI6IDEyNTQsCiAgICAiaGVpZ2h0IjogMTI1NAogIH0sCiAgewogICAgImlkIjogImJhbWJvby1oZWFkYmFuZCIsCiAgICAicmF0aW8iOiAwLjM1MzMwODMyODgxODI3NTk1LAogICAgImVkZ2UiOiAwLAogICAgImJvdW5kcyI6IFsKICAgICAgODYsCiAgICAgIDE4NCwKICAgICAgMTE5MiwKICAgICAgMTA5NQogICAgXSwKICAgICJ3aWR0aCI6IDEyNTQsCiAgICAiaGVpZ2h0IjogMTI1NAogIH0sCiAgewogICAgImlkIjogImxlYXRoZXItYnJhY2VycyIsCiAgICAicmF0aW8iOiAwLjQ4NDc4ODcwODAzMjIyMzUsCiAgICAiZWRnZSI6IDAsCiAgICAiYm91bmRzIjogWwogICAgICA2NCwKICAgICAgMTEyLAogICAgICAxMTk2LAogICAgICAxMTcxCiAgICBdLAogICAgIndpZHRoIjogMTI1NCwKICAgICJoZWlnaHQiOiAxMjU0CiAgfSwKICB7CiAgICAiaWQiOiAicWktYmVsdCIsCiAgICAicmF0aW8iOiAwLjQzNDA1NDA4OTExNTc4NjQsCiAgICAiZWRnZSI6IDAsCiAgICAiYm91bmRzIjogWwogICAgICA0NCwKICAgICAgMTkxLAogICAgICAxMjM3LAogICAgICAxMjAzCiAgICBdLAogICAgIndpZHRoIjogMTI1NCwKICAgICJoZWlnaHQiOiAxMjU0CiAgfSwKICB7CiAgICAiaWQiOiAic3Bpcml0LWdvdXJkIiwKICAgICJyYXRpbyI6IDAuNDc4MDc5NzE0MjkyMjU1MiwKICAgICJlZGdlIjogMCwKICAgICJib3VuZHMiOiBbCiAgICAgIDM0LAogICAgICA3NCwKICAgICAgMTI0MCwKICAgICAgMTIwMQogICAgXSwKICAgICJ3aWR0aCI6IDEyNTQsCiAgICAiaGVpZ2h0IjogMTI1NAogIH0sCiAgewogICAgImlkIjogImRhcmstaXJvbi1zd29yZCIsCiAgICAicmF0aW8iOiAwLjIxMTY0MjM2MTY2NzU0NDI0LAogICAgImVkZ2UiOiAwLAogICAgImJvdW5kcyI6IFsKICAgICAgMzcsCiAgICAgIDUwLAogICAgICAxMjIzLAogICAgICAxMTk5CiAgICBdLAogICAgIndpZHRoIjogMTI1NCwKICAgICJoZWlnaHQiOiAxMjU0CiAgfSwKICB7CiAgICAiaWQiOiAibmluZS1jbG91ZC1yb2JlIiwKICAgICJyYXRpbyI6IDAuNjAwNzc4NjI0ODI3OTgyNywKICAgICJlZGdlIjogMCwKICAgICJib3VuZHMiOiBbCiAgICAgIDMxLAogICAgICA3NCwKICAgICAgMTIzNSwKICAgICAgMTE5OQogICAgXSwKICAgICJ3aWR0aCI6IDEyNTQsCiAgICAiaGVpZ2h0IjogMTI1NAogIH0sCiAgewogICAgImlkIjogImhlcmIiLAogICAgInJhdGlvIjogMC40NTY4MjUyNDA1Njk4ODkyNywKICAgICJlZGdlIjogMCwKICAgICJib3VuZHMiOiBbCiAgICAgIDYxLAogICAgICA5NCwKICAgICAgMTE5OCwKICAgICAgMTE1OAogICAgXSwKICAgICJ3aWR0aCI6IDEyNTQsCiAgICAiaGVpZ2h0IjogMTI1NAogIH0sCiAgewogICAgImlkIjogImJhbWJvbyIsCiAgICAicmF0aW8iOiAwLjQ2NDY1OTE4MzExODAwOTYzLAogICAgImVkZ2UiOiAwLAogICAgImJvdW5kcyI6IFsKICAgICAgNTUsCiAgICAgIDY5LAogICAgICAxMjI1LAogICAgICAxMTg0CiAgICBdLAogICAgIndpZHRoIjogMTI1NCwKICAgICJoZWlnaHQiOiAxMjU0CiAgfSwKICB7CiAgICAiaWQiOiAibXVzaHJvb20iLAogICAgInJhdGlvIjogMC40NTk3OTM3MzE4Mjg0ODM3NiwKICAgICJlZGdlIjogMCwKICAgICJib3VuZHMiOiBbCiAgICAgIDY1LAogICAgICAxNTYsCiAgICAgIDExODksCiAgICAgIDExODgKICAgIF0sCiAgICAid2lkdGgiOiAxMjU0LAogICAgImhlaWdodCI6IDEyNTQKICB9LAogIHsKICAgICJpZCI6ICJvcmUiLAogICAgInJhdGlvIjogMC40OTY2MTU2MTQ3MjE4ODUyLAogICAgImVkZ2UiOiAwLAogICAgImJvdW5kcyI6IFsKICAgICAgNzgsCiAgICAgIDE1OSwKICAgICAgMTE4OSwKICAgICAgMTE1NAogICAgXSwKICAgICJ3aWR0aCI6IDEyNTQsCiAgICAiaGVpZ2h0IjogMTI1NAogIH0sCiAgewogICAgImlkIjogInN0b25lIiwKICAgICJyYXRpbyI6IDAuNTI2MDAzNTUwOTk3MjU1NCwKICAgICJlZGdlIjogMCwKICAgICJib3VuZHMiOiBbCiAgICAgIDc5LAogICAgICAxMjcsCiAgICAgIDExODUsCiAgICAgIDExNzYKICAgIF0sCiAgICAid2lkdGgiOiAxMjU0LAogICAgImhlaWdodCI6IDEyNTQKICB9LAogIHsKICAgICJpZCI6ICJzb2lsIiwKICAgICJyYXRpbyI6IDAuMzM4MjI2NzY1MjYwMjU4MSwKICAgICJlZGdlIjogMCwKICAgICJib3VuZHMiOiBbCiAgICAgIDM2LAogICAgICAyNDksCiAgICAgIDEyMjQsCiAgICAgIDEwMTgKICAgIF0sCiAgICAid2lkdGgiOiAxMjU0LAogICAgImhlaWdodCI6IDEyNTQKICB9Cl0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2aa53da4be1719c41148-7ccb6a283a4d0c546aab",
+          "file": "item-art.spec.ts",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "failed image and unknown saved item show explicit localized fallback without losing ownership",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1459,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-13T18:42:34.173Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2aa53da4be1719c41148-39331990d14f73d1f32d",
+          "file": "item-art.spec.ts",
+          "line": 51,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-13T18:42:08.519Z",
+    "duration": 27216.601,
+    "expected": 13,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

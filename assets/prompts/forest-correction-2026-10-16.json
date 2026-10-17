@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-16",
+  "reference": "assets/references/forest-selected-2026-10-16.png",
+  "selection": "User image #1 is authoritative; supersedes previous forest E layout.",
+  "landscape": {
+    "prompt": "Use case: precise-object-edit. Edit this exact supplied game map into its production static landscape layer. ABSOLUTELY PRESERVE composition, locations, camera, pixel art, colors and every environmental detail, 16:9 landscape. Do NOT redesign or move anything. Remove ONLY: all living creatures (three orange mushroom monsters, two root-stump monsters, green snake, lower-left stone beast, blue-robed human), the large cyan harvestable plant next to stone beast, purple harvestable lingzhi on lower-right fallen trunk, the wooden directional sign on right edge, the upper-left abandoned HOUSE BUILDING (keep its surrounding fence, flowers, steps and stone foundation), and the central BRIDGE (keep banks and bridge approach ground, replace deck underneath with continuous water). Repair removed creature positions as natural dirt/grass matching surroundings. Repair house area as its empty natural dirt plot. Keep fallen logs, all trees/bamboo/bushes/flowers, cliff rocks, lower-left dry island, winding cyan stream and cascades EXACTLY in original locations. No new objects, no text, no HUD, no embedded characters or monsters. Intended for same-size overlay of separate house/bridge sprites and live creatures. Output 16:9 detailed original Bright Handheld pixel landscape with same image framing, no border.",
+    "output": "assets/production/forest/landscape-v2.png"
+  },
+  "structures": {
+    "prompt": "Use case: background-extraction. Extract precisely TWO reusable production sprites from the reference, on genuine transparent alpha: (LEFT HALF) the exact upper-left abandoned cottage with its damaged red tiled roof, beams, vines, walls, pots and small foundation step; no surrounding trees/fence/grass plot. (RIGHT HALF) the exact central wooden bridge, warm plank deck running LEFT-TO-RIGHT over stream, curved rails and four gray stone end posts; no surrounding lantern posts, trees, banks, water, or terrain. Preserve the exact identity, viewpoint, roof damage pattern, proportions, pixel clusters and palette of these two objects in the reference. DO NOT redesign, no new building, do not turn bridge diagonally. House and bridge isolated separately, generous transparent gutters and transparent margin, one row two columns, centered in each half; both entire objects uncropped. No captions, no grid, no text, no checkerboard pixels, no background color, no other assets.",
+    "output": "assets/production/forest/structures-v2.png",
+    "metadata": "assets/production/forest/structures-v2.json",
+    "note": "Runtime applies measured outline masks to remove generated exterior colored halo."
+  },
+  "unusedCleanup": {
+    "prompt": "Use case: background-extraction. Clean this two-object sprite sheet. Keep the cottage and bridge pixels, shapes, positions, sizes, colors and sharp outlines exactly unchanged. REMOVE ALL the blurry green/brown/gray colored halos and ALL ground shadows outside the actual hard outlines of the two objects. Background between and around the objects must be 100% clear alpha (alpha zero); objects fully opaque inside. No glow, no gradient, no drop shadow, no translucent cloud, no black or colored rectangle. Preserve actual vines, tiny roof tiles, pots and stairs that belong to house, stone pillars and rails that belong to bridge. This is production isolated pixel art, not a presentation board.",
+    "accepted": false,
+    "reason": "Still had exterior halo; not included in runtime."
+  }
+}

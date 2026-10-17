@@ -1,0 +1,4 @@
+interface:
+  display_name: "Chất lượng scene Tiên Hiệp"
+  short_description: "Va chạm, độ nét, tiếng Việt và asset nhất quán"
+  default_prompt: "Dùng $tien-hiep-scene-quality để sửa và kiểm tra scene theo bộ B đã duyệt."

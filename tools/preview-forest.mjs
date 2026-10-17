@@ -1,0 +1,5 @@
+import {createRequire} from 'node:module';
+const {chromium}=createRequire(new URL('../game/package.json',import.meta.url))('@playwright/test');
+const browser=await chromium.launch({channel:'chrome'}),page=await browser.newPage({viewport:{width:1920,height:1080}});
+await page.addInitScript(()=>localStorage.setItem('truc-khe.combat.v1',JSON.stringify({version:1,monsters:{},returnTo:{map:'forest',pos:{x:1225,y:550},direction:0}})));
+await page.goto('http://localhost:4174/?debug=1');await page.getByRole('button',{name:'Bước vào Trúc Khê',exact:true}).click();await page.waitForTimeout(2000);await page.screenshot({path:'ai-workflow/reports/forest-corrected-progress.png'});const box=await page.locator('.map-card canvas').boundingBox();await page.locator('.map-card canvas').click({position:{x:780/1672*box.width,y:480/941*box.height}});await page.waitForFunction(()=>Math.hypot(window.__game.snapshot().pos.x-780*1920/1672,window.__game.snapshot().pos.y-480*1080/941)<2);await page.screenshot({path:'ai-workflow/reports/forest-corrected-bridge.png'});await browser.close();

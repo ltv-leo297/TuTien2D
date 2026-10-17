@@ -1,0 +1,26 @@
+{
+  "name": "tien-hiep-chibi-demo",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test": "node --test test/scene.test.mjs test/combat.test.mjs test/monsters.test.mjs test/equipment.test.mjs test/item-art.test.mjs ../tools/game-quality.test.mjs",
+    "test:browser": "playwright test",
+    "check:assets": "node ../tools/check-game-quality.mjs",
+    "verify": "npm run test && npm run check:assets && npm run build && npm run test:browser"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/react": "^19.2.2",
+    "@types/react-dom": "^19.2.2",
+    "typescript": "~5.9.3",
+    "vite": "^7.1.12"
+  }
+}

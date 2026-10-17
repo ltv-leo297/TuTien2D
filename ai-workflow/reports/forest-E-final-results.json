@@ -1,0 +1,805 @@
+{
+  "config": {
+    "argv": [
+      "/Users/vinhle/.nvm/versions/node/v24.19.0/bin/node",
+      "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/node_modules/.bin/playwright",
+      "test",
+      "test/browser/game.spec.ts",
+      "test/browser/forest.spec.ts"
+    ],
+    "configFile": "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/playwright.config.ts",
+    "rootDir": "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/test/browser",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/Users/vinhle/Work/Project/Game Tiên Hiệp/game/test/browser",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run preview -- --port 4181 --strictPort",
+      "url": "http://127.0.0.1:4181",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "forest.spec.ts",
+      "file": "forest.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "forest E plants: approach, inventory species/levels, cooldown, persistence and return gate",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 28881,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T16:22:10.679Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7f77ac90c7ab2ec7c07-b040c934d9c230984e94",
+          "file": "forest.spec.ts",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "forest E bamboo-serpent: approach → combat skill → retreat → same location and charge",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4726,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T16:22:39.915Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7f77ac90c7ab2ec7c07-5e8ffa6aa65e967a3b04",
+          "file": "forest.spec.ts",
+          "line": 23,
+          "column": 49
+        },
+        {
+          "title": "forest E jade-beast: approach → combat skill → retreat → same location and charge",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 5830,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T16:22:44.654Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7f77ac90c7ab2ec7c07-af95fc079bb4af8aba2d",
+          "file": "forest.spec.ts",
+          "line": 23,
+          "column": 49
+        },
+        {
+          "title": "forest E viewport 1280x720 DPR1: click and resize",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2996,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T16:22:50.498Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "forest-performance",
+                      "contentType": "application/json",
+                      "body": "eyJ3aWR0aCI6MTI4MCwiaGVpZ2h0Ijo3MjAsImRwciI6MSwic2FtcGxlcyI6OTIsInA5NSI6MTYuNzAwMDAwMDAwMDAwMjczLCJmcHMiOjU5fQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7f77ac90c7ab2ec7c07-3ee07fb0693328f391d4",
+          "file": "forest.spec.ts",
+          "line": 28,
+          "column": 88
+        },
+        {
+          "title": "forest E viewport 1920x1080 DPR2: click and resize",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 4289,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T16:22:53.502Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "forest-performance",
+                      "contentType": "application/json",
+                      "body": "eyJ3aWR0aCI6MTkyMCwiaGVpZ2h0IjoxMDgwLCJkcHIiOjIsInNhbXBsZXMiOjkyLCJwOTUiOjE2LjcwMDAwMDAwMDAwMDI3MywiZnBzIjoyOS4xNzY5ODg3MTQ1NjA5N30="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7f77ac90c7ab2ec7c07-2cf59100c65c12251c18",
+          "file": "forest.spec.ts",
+          "line": 28,
+          "column": 88
+        },
+        {
+          "title": "forest E viewport 2560x1440 DPR1: click and resize",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3294,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T16:22:57.799Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "forest-performance",
+                      "contentType": "application/json",
+                      "body": "eyJ3aWR0aCI6MjU2MCwiaGVpZ2h0IjoxNDQwLCJkcHIiOjEsInNhbXBsZXMiOjExMSwicDk1IjoxNi43MDAwMDAwMDAwMDAyNzMsImZwcyI6NjAuMDAzOTM0Njg0MjQxNTl9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7f77ac90c7ab2ec7c07-6a3b502ccca9320178ab",
+          "file": "forest.spec.ts",
+          "line": 28,
+          "column": 88
+        },
+        {
+          "title": "forest E viewport 720x900 DPR2: click and resize",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3515,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T16:23:01.099Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "forest-performance",
+                      "contentType": "application/json",
+                      "body": "eyJ3aWR0aCI6NzIwLCJoZWlnaHQiOjkwMCwiZHByIjoyLCJzYW1wbGVzIjo5MCwicDk1IjoxNi43MDAwMDAwMDAwMDAyNzMsImZwcyI6NDUuODgzNzAyNDYxODM3MX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7f77ac90c7ab2ec7c07-c9b8ff4a4964dabe337f",
+          "file": "forest.spec.ts",
+          "line": 28,
+          "column": 88
+        },
+        {
+          "title": "forest E waterfall animates and reduced motion freezes its actual region",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7048,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T16:23:04.621Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "forest-steady-state",
+                      "contentType": "application/json",
+                      "body": "eyJ2aWV3cG9ydCI6WzE5MjAsMTA4MF0sImRwciI6MSwic2FtcGxlcyI6Mjc5LCJwOTUiOjE2LjcwMDAwMDAwMDAwMDcyOCwiZnBzIjo2MC4xMzgzODI5NDY5MzkyNn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b7f77ac90c7ab2ec7c07-70435f0991da03013f75",
+          "file": "forest.spec.ts",
+          "line": 37,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "game.spec.ts",
+      "file": "game.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "name, NPC approach, Vietnamese/English, real inventory and motion settings",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12308,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T16:23:11.687Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-ad799cb9b35e15acd482",
+          "file": "game.spec.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "localized direction sign stays visible and highlights when hovered",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1213,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T16:23:24.001Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-977463a72ed0209a6e28",
+          "file": "game.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "physical click goes around the clinic, scene animates, and live FPS is recorded",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 13321,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T16:23:25.222Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "performance",
+                      "contentType": "application/json",
+                      "body": "eyJmcHMiOjYwLjAwMzkzNDY4NDI0MTU3LCJmcmFtZXMiOjYwMCwicDk1IjoxNi43MDAwMDAwMDAwMDA3Mjh9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-acab2709de7a8a2b5720",
+          "file": "game.spec.ts",
+          "line": 21,
+          "column": 1
+        },
+        {
+          "title": "viewport 1280x720 DPR 1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1915,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T16:23:38.551Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "viewport",
+                      "contentType": "application/json",
+                      "body": "eyJ3aWR0aCI6MTI4MCwiaGVpZ2h0Ijo3MjAsImRwciI6MX0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-fdc30ef7735b08e8f1dc",
+          "file": "game.spec.ts",
+          "line": 25,
+          "column": 88
+        },
+        {
+          "title": "viewport 1920x1080 DPR 2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3828,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T16:23:40.477Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "viewport",
+                      "contentType": "application/json",
+                      "body": "eyJ3aWR0aCI6MTkyMCwiaGVpZ2h0IjoxMDgwLCJkcHIiOjJ9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-297ecb9635d6c715db83",
+          "file": "game.spec.ts",
+          "line": 25,
+          "column": 88
+        },
+        {
+          "title": "viewport 2560x1440 DPR 1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2502,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T16:23:44.313Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "viewport",
+                      "contentType": "application/json",
+                      "body": "eyJ3aWR0aCI6MjU2MCwiaGVpZ2h0IjoxNDQwLCJkcHIiOjF9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-da3cf64265cee501f9c0",
+          "file": "game.spec.ts",
+          "line": 25,
+          "column": 88
+        },
+        {
+          "title": "viewport 720x900 DPR 2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 2354,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T16:23:46.822Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "viewport",
+                      "contentType": "application/json",
+                      "body": "eyJ3aWR0aCI6NzIwLCJoZWlnaHQiOjkwMCwiZHByIjoyfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-8e2d966b9053012c9fb8",
+          "file": "game.spec.ts",
+          "line": 25,
+          "column": 88
+        },
+        {
+          "title": "forest travel, single pickup, persistent bag, return and opt-in audio",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18571,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T16:23:49.182Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-2a9d8e069ea41304c046",
+          "file": "game.spec.ts",
+          "line": 28,
+          "column": 1
+        },
+        {
+          "title": "live resize preserves pointer coordinates and reduced motion freezes river ripples",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3651,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T16:24:07.762Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-8ad743bc1e51e5dc557f",
+          "file": "game.spec.ts",
+          "line": 39,
+          "column": 1
+        },
+        {
+          "title": "mountain and north gates return correctly, including a resource with its front blocked",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 18751,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T16:24:11.420Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-65cc5b549de9f11df785",
+          "file": "game.spec.ts",
+          "line": 57,
+          "column": 1
+        },
+        {
+          "title": "all five villagers walk and can be approached and spoken to in the scene",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14089,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-15T16:24:30.179Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8b1bb1493a64c9fc3ab6-9793059c370d49f24485",
+          "file": "game.spec.ts",
+          "line": 66,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-15T16:22:10.047Z",
+    "duration": 154337.785,
+    "expected": 19,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
