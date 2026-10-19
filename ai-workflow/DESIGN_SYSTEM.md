@@ -16,6 +16,10 @@ Stack web và cách hiện thực UI nằm trong `TECH_STACK.md`. Định hướ
 
 ## Quyết định đã duyệt
 
+### Unity mobile — A Hai ngón cái, chọn ngày 2026-10-18
+
+Người dùng chọn **A** tại `mockups/mobile-ui-2026-10-18/A.png` và yêu cầu triển khai. Phạm vi: UI điện thoại nằm ngang trong project `unity/`, HUD khám phá gọn; combat hai nút hướng trái, cụm nhảy/lướt/giữ đỡ/đánh/linh trảm bên phải; hành trang toàn màn hình có tab Nhân vật/Túi đồ, grid lớn bên trái và chi tiết/Trang bị cố định bên phải. Giữ một điểm vào Hành trang, 100 ô/10 slot, locale vi/en và luật chơi hiện có. UI thích ứng theo vùng an toàn/chiều cao, không chỉ co bố cục desktop 1280×720 xuống điện thoại. Các màn tạo nhân vật, tùy chọn, nhiệm vụ, encounter, pause/kết quả phải có nút dễ chạm và không mất hành động ở màn thấp. Đây là lựa chọn bố cục, chưa phải kết quả kiểm thử Unity/device. Dùng asset/catalog production; số và item minh họa trong ảnh không mở rộng gameplay.
+
 ### Trang bị + túi 100 ô — A đã chọn ngày 2026-10-13
 
 Người dùng chọn **A — Ba cột cân bằng** tại `mockups/equipment-inventory/A.png`: thuộc tính trái, avatar/trang bị giữa, túi và chi tiết bên phải. Chỉnh theo yêu cầu 2026-10-13: chỉ một nút **Hành trang / Equipment** mở bảng. 10 slot, 100 ô; so sánh bonus, đeo/thay/tháo, tìm/lọc. Giữ avatar và ba nền tảng tu luyện cũ. Không đưa ba khung mô tả flow dưới mockup vào runtime. Bảng compact vừa viewport; desktop giữ ba cột, ≤680px chuyển tab Nhân vật/Túi trữ vật bên trong. Không ép người chơi cuộn toàn dialog để xem 100 ô. Xem `EQUIPMENT.md`. Ngoại hình theo đồ vẫn chưa triển khai vì cần asset tách lớp; không coi sprite cũ trong ảnh là chức năng này.

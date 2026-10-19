@@ -1,0 +1,5 @@
+{
+  "name": "TrucKhe.Editor",
+  "references": ["TrucKhe.Core", "TrucKhe.Runtime"],
+  "includePlatforms": ["Editor"]
+}

@@ -1,0 +1,11 @@
+✔ portable exporter preserves all six web keys and omits unrelated storage (6.343156ms)
+✔ missing keys are omitted instead of invented (1.210646ms)
+✔ malformed stored JSON stops export without downloading a partial save (1.569346ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 134.520876

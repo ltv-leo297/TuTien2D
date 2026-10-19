@@ -1,0 +1,12 @@
+[
+  {
+    "key": "D",
+    "source": "/workspace/generated_images/exec-f00813d6-ea5b-459f-91fd-0de1915cb9b7.png",
+    "prompt": "Edit ONLY the contents of the bottom inventory screen in this existing PORTRAIT mockup board. KEEP THE SAME PORTRAIT CANVAS, SAME WIDTH/HEIGHT, SAME THREE SCREENS STACKED VERTICALLY, and exact positions and sizes of all three screen frames. Do not rearrange the board or change the upper two screens. Inside the bottom screen: DELETE the first two columns (character profile/stat list and equipment paper doll). Expand the remaining bag grid to occupy the LEFT 60% of the available content, arranged 5 columns by 3 rows of BIG SQUARE icons with a scrollbar. The RIGHT 40% is the selected Thanh Trúc Kiếm detail with Công kích 21 → 27 and gold Trang bị button. Keep the bottom Nhân vật / Túi đồ tab bar exactly in place, with Túi đồ active. Keep close X at top right, add small Hành trang title and 10/100 occupancy at top. Character and equipment content must be fully absent from this active bag view. No other changes. Preserve jade/cream/gold styling, title D — Thanh nút phía dưới, and footer MOCKUP • CHƯA TRIỂN KHAI. The OUTPUT MUST BE A TALL PORTRAIT BOARD matching the attached image, NOT a wide landscape board."
+  },
+  {
+    "key": "E",
+    "source": "/workspace/generated_images/exec-662d2df6-e32a-4eb4-b9f0-4541c296dfd5.png",
+    "prompt": "Edit this existing TALL PORTRAIT design board. KEEP EXACTLY THE SAME PORTRAIT CANVAS, SAME THREE LANDSCAPE SCREENS STACKED VERTICALLY, same frame dimensions and positions. Do NOT put any screens side by side. ONLY change inventory content at bottom: REMOVE the entire left character/equipment column. Fill the LEFT 60% below tabs with EXACTLY TWELVE LARGE SQUARE item slots in 4 columns x 3 rows, and large previous/next arrows with 1/9 underneath. RIGHT 40% selected Thanh Trúc Kiếm details, Công kích 21 → 27, and big gold Trang bị button. Top tabs Nhân vật inactive, Túi đồ ACTIVE GOLD, occupancy 10/100, close X. No character avatar, equipment paper doll, or stat list in active bag view. Keep all controls within the bottom screen and don't shrink the screen. One small additional change: in TOP exploration panel remove duplicated quest/document icon next to gear at top; keep bottom Nhiệm vụ/Hành trang buttons. Otherwise preserve all artwork and all seven combat buttons unchanged. Preserve title E — Chữ lớn, dễ chạm and footer. OUTPUT SAME TALL PORTRAIT BOARD SHAPE AS INPUT, NOT LANDSCAPE."
+  }
+]

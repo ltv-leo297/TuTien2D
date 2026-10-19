@@ -1,0 +1,10 @@
+test_build_cannot_overwrite_source_or_use_wrong_extension (test_mobile_build.MobileBuildTests.test_build_cannot_overwrite_source_or_use_wrong_extension) ... ok
+test_dry_run_does_not_start_unity (test_mobile_build.MobileBuildTests.test_dry_run_does_not_start_unity) ... ok
+test_nonzero_unity_exit_is_reported_as_failure (test_mobile_build.MobileBuildTests.test_nonzero_unity_exit_is_reported_as_failure) ... ok
+test_three_targets_select_platform_method_and_output (test_mobile_build.MobileBuildTests.test_three_targets_select_platform_method_and_output) ... ok
+test_zero_exit_without_artifact_is_not_success (test_mobile_build.MobileBuildTests.test_zero_exit_without_artifact_is_not_success) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.019s
+
+OK

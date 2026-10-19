@@ -1,0 +1,102 @@
+PASS catalog and locale completeness
+PASS TypeScript/C# combat replay wood-yao seed 1
+PASS TypeScript/C# combat replay wood-yao seed 73
+PASS TypeScript/C# combat replay wood-yao seed 912
+PASS TypeScript/C# combat replay spore-yao seed 1
+PASS TypeScript/C# combat replay spore-yao seed 73
+PASS TypeScript/C# combat replay spore-yao seed 912
+PASS TypeScript/C# combat replay bamboo-serpent seed 1
+PASS TypeScript/C# combat replay bamboo-serpent seed 73
+PASS TypeScript/C# combat replay bamboo-serpent seed 912
+PASS TypeScript/C# combat replay jade-beast seed 1
+PASS TypeScript/C# combat replay jade-beast seed 73
+PASS TypeScript/C# combat replay jade-beast seed 912
+PASS navigation village 1220,407
+PASS navigation village 570,532
+PASS navigation village 1485,737
+PASS navigation village 530,682
+PASS navigation village 1245,752
+PASS navigation village 1060,497
+PASS navigation village 1335,862
+PASS navigation village 720,972
+PASS navigation village 21,528
+PASS navigation village 1899,928
+PASS navigation village 992,21
+PASS navigation forest 1367,553
+PASS navigation forest 1522,834
+PASS navigation forest 316,530
+PASS navigation forest 1395,332
+PASS navigation forest 505,516
+PASS navigation forest 1240,914
+PASS navigation forest 442,817
+PASS navigation forest 729,449
+PASS navigation forest 1447,886
+PASS navigation forest 408,510
+PASS navigation forest 293,469
+PASS navigation forest 1567,426
+PASS navigation forest 322,794
+PASS navigation forest 1899,538
+PASS navigation mountain 700,472
+PASS navigation mountain 1120,752
+PASS navigation mountain 450,782
+PASS navigation mountain 1250,467
+PASS navigation mountain 900,782
+PASS navigation mountain 21,688
+PASS navigation north 1040,342
+PASS navigation north 990,1059
+PASS damage formulas
+PASS native world gate round trip forest
+PASS native world gate round trip mountain
+PASS native world gate round trip north
+PASS native NPC approach and resource cooldown
+PASS equip swap, bonus once, full bag rollback and unequip
+PASS migration preserves overflow and unknown IDs
+PASS charges independent recharge, duplicate finish and recovery
+PASS guard, iframe, double jump, pause and slow
+PASS skill execution seed-volley
+PASS skill execution root-snare
+PASS skill execution branch-sweep
+PASS skill execution trunk-rush
+PASS skill execution spore-volley
+PASS skill execution spore-field
+PASS skill execution spore-fan
+PASS skill execution cap-slam
+PASS skill execution leaf-darts
+PASS skill execution tail-sweep
+PASS skill execution fang-bite
+PASS skill execution serpent-rush
+PASS skill execution crag-wave
+PASS skill execution crag-eruption
+PASS skill execution stone-sweep
+PASS skill execution boulder-charge
+PASS native save transactions, process lease, web import, corruption preservation
+PASS audit: incomplete web inventory/ledger/profile rejected without data loss
+PASS audit: malformed legacy shapes and fractional quantities rejected
+PASS audit: native required fields cannot silently default
+PASS audit: invalid sprite directions rejected by native and return saves
+PASS audit: failed disk write preserves memory, file and backup; retry succeeds
+PASS audit: failed file replacement preserves prior save and can retry
+PASS audit: save lease excludes a second OS process
+PASS audit: interrupted native battle recovers once across two reloads
+PASS audit: equipped web save preserves identities, overflow, visits and charges
+PASS audit: inventory 100 equip/unequip cycles conserve all instance IDs
+PASS audit: full charge pool, exact boundary, duplicate reserve and retired IDs
+PASS audit: AI eligibility rejects range, cooldown and insufficient resources
+PASS audit: diagonal projectile sweep and separate ground activation sites
+PASS audit: slow affects actual travel, expires and guard prevents it
+PASS audit: combat snapshot independent from inventory and terminal states frozen
+PASS mobile safe area: desktop 16:9
+PASS mobile safe area: Android cutout
+PASS mobile safe area: iPhone landscape left
+PASS mobile safe area: iPhone landscape right
+PASS mobile safe area: iPad 4:3
+PASS mobile safe area: compact phone
+PASS mobile safe area: zero transient area falls back to display
+PASS mobile A geometry: desktop 16:9
+PASS mobile A geometry: Android cutout
+PASS mobile A geometry: iPhone landscape left
+PASS mobile A geometry: iPhone landscape right
+PASS mobile A geometry: iPad 4:3
+PASS mobile A geometry: compact phone
+PASS mobile A scaling stays usable on short phones and tablet
+RESULT: 101 checks passed. Unity rendering/editor/player execution is a separate gate.

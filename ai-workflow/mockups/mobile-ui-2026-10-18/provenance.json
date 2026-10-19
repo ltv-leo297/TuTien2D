@@ -1,0 +1,63 @@
+{
+  "generator": "ImageGen",
+  "purpose": "Mobile UI concept, not a native screenshot",
+  "date": "2026-10-18",
+  "boards": [
+    {
+      "option": "A",
+      "title": "A — Hai ngón cái",
+      "finalSource": "/workspace/generated_images/exec-1db70f96-245f-4a21-8fe9-2d261ecbc390.png",
+      "draftSource": "/workspace/generated_images/exec-29514e82-c6f7-4819-92bd-45ac54b5919a.png",
+      "file": "A.png",
+      "width": 1024,
+      "height": 1536,
+      "sha256": "13a7189cb1f94a12b289150f071d8169b6810163cbeaaeeee69113f03248ed4c",
+      "status": "selected-by-user"
+    },
+    {
+      "option": "B",
+      "title": "B — Cảnh chơi rộng",
+      "finalSource": "/workspace/generated_images/exec-b0e210e6-dfcc-4b5b-a31c-e2bbc4b326c6.png",
+      "draftSource": "/workspace/generated_images/exec-5927c35d-c588-49a6-bb58-264acb94ed6b.png",
+      "file": "B.png",
+      "width": 971,
+      "height": 1619,
+      "sha256": "d2106f9d384fd6d80973c5f30b87720e0df4940241cc1e0e693ab217547cd726",
+      "status": "proposal-not-selected"
+    },
+    {
+      "option": "C",
+      "title": "C — Thanh công cụ bên",
+      "finalSource": "/workspace/generated_images/exec-c31afdd5-d67f-447c-9c6f-91ff0f06eaa6.png",
+      "draftSource": "/workspace/generated_images/exec-639d6fed-1587-41a0-b51b-a6ba93e6520e.png",
+      "file": "C.png",
+      "width": 949,
+      "height": 1658,
+      "sha256": "f6a53fca4bf570d98a85862ade7564e93ae7b7aa2dac60a665ad21ee1153f827",
+      "status": "proposal-not-selected"
+    },
+    {
+      "option": "D",
+      "title": "D — Thanh nút phía dưới",
+      "finalSource": "/workspace/generated_images/exec-372a2a9a-e45f-4a59-a055-5352dffee8f3.png",
+      "draftSource": "/workspace/generated_images/exec-f00813d6-ea5b-459f-91fd-0de1915cb9b7.png",
+      "file": "D.png",
+      "width": 899,
+      "height": 1750,
+      "sha256": "b1028c8ce240324b2113de8a4067c26c2e46157c9e572a2e2f176ad95cade205",
+      "status": "proposal-not-selected"
+    },
+    {
+      "option": "E",
+      "title": "E — Chữ lớn, dễ chạm",
+      "finalSource": "/workspace/generated_images/exec-ed1eae45-fc5d-4c5c-a3b9-543ff0351b0c.png",
+      "draftSource": "/workspace/generated_images/exec-662d2df6-e32a-4eb4-b9f0-4541c296dfd5.png",
+      "file": "E.png",
+      "width": 974,
+      "height": 1615,
+      "sha256": "4de19960e8c1b89bcd4b6a80fbeb7698ae3fc76635e67e0b794d64139d85ee2b",
+      "status": "proposal-not-selected"
+    }
+  ],
+  "selectedOption": "A"
+}

@@ -1,0 +1,23 @@
+/Library/
+/Temp/
+/Obj/
+/Builds/
+/Logs/
+/UserSettings/
+/.vs/
+*.csproj
+!/Validation/Validation.csproj
+*.sln
+*.user
+/Validation/bin/
+/Validation/obj/
+/Validation/results/
+/TestResults/
+__pycache__/
+*.pyc
+
+# Signing material stays on the build machine.
+*.keystore
+*.jks
+*.p12
+*.mobileprovision

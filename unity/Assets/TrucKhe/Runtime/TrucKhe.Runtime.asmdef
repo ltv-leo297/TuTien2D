@@ -1,0 +1,4 @@
+{
+  "name": "TrucKhe.Runtime",
+  "references": ["TrucKhe.Core", "UnityEngine.UI"]
+}

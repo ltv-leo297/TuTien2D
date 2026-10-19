@@ -1,0 +1,20 @@
+{
+  "vi": {
+    "character": "Nhân vật",
+    "bag": "Túi đồ",
+    "tapMove": "Chạm mặt đất để đi. Chạm nhân vật để trò chuyện.",
+    "attack": "Đánh",
+    "hp": "HP",
+    "stamina": "TL",
+    "mana": "LL"
+  },
+  "en": {
+    "character": "Character",
+    "bag": "Bag",
+    "tapMove": "Tap the ground to move. Tap a character to talk.",
+    "attack": "Attack",
+    "hp": "HP",
+    "stamina": "STA",
+    "mana": "MP"
+  }
+}

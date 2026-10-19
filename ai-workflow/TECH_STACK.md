@@ -1,5 +1,11 @@
 # Stack đề xuất nếu phát hành game tiên hiệp 2D hoàn toàn trên web
 
+## Cập nhật nền tảng Unity/mobile — 2026-10-18
+
+Người dùng đã yêu cầu chuyển sang Unity và hỗ trợ Android/iOS. Bản port nằm tại `unity/`: Unity 2022.3.62f1, C#, Built-in Render Pipeline, SpriteRenderer và Unity UI; logic thuần ở `Assets/TrucKhe/Core`, adapter ở `Runtime`. Android dự kiến APK/AAB IL2CPP ARM64; iOS xuất Xcode IL2CPP ARM64. Xem `unity/MOBILE.md` và `unity/MIGRATION.md` cho trạng thái kiểm tra; chưa chạy Unity Editor/player trong cloud. Bản web bên dưới vẫn là nguồn tham chiếu, không phải bằng chứng UI Unity đã chạy.
+
+Yêu cầu thiết kế lại UI điện thoại ngày 2026-10-18: người dùng đã chọn **A — Hai ngón cái** tại `mockups/mobile-ui-2026-10-18/A.png`. Source đã có nhánh Unity UI/Text mobile, locale vi/en riêng, safe-area layout và các vùng scroll/tab riêng; xem `unity/MOBILE-UI.md` để phân biệt compile/logic check với nghiệm thu native chưa chạy. Ảnh mockup ImageGen chỉ dùng để duyệt bố cục; không đưa chữ raster hoặc nguyên bảng mockup vào runtime, không thay asset/catalog hiện có theo chi tiết minh họa trong ảnh.
+
 ## Runtime đã kiểm chứng ngày 2026-10-05
 
 `game/` dùng React 19 + TypeScript + Vite, Canvas 2D trong `src/engine/renderer.ts`; chưa dùng Phaser. Scene, navigation, simulation và camera ở `src/engine/`; HUD trong `src/App.tsx`, locale ở `src/locales/{vi,en}.json`. Lệnh thật: `npm run dev`, `npm run build`, `npm run preview`, `npm run verify` (logic, asset/locale, build và Playwright production). Node 24+ và Chrome cho harness. Không tự đổi engine theo phần đề xuất bên dưới. Tiêu chuẩn sửa scene nằm trong `SCENE_QUALITY.md`, thư viện nguồn ở `assets/manifest.json`. Kết quả chạy nằm trong `game/test-results/` và `reports/scene-01-e-2026-10-05.md`.
