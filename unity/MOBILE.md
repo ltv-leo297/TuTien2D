@@ -4,6 +4,8 @@
 
 Đã thêm cấu hình, menu build và input mobile vào source. **Chưa tạo hoặc chạy APK/AAB/IPA trong cloud:** môi trường không có Unity Editor, Android toolchain hoặc Xcode. Kết quả kiểm tra ngoài Unity ở cuối tài liệu này.
 
+**Unity hiện tại: 6.3 LTS (6000.3.26f1)**. Xem [`UNITY6.md`](UNITY6.md) cho thay đổi package/API, input, Built-in renderer và các bước nghiệm thu còn thiếu. Dùng cấu hình platform mặc định trong Build Profiles; nếu tạo profile riêng, kiểm tra lại mọi Player Settings override.
+
 ## Cấu hình mặc định
 
 | | Android | iOS |
@@ -14,13 +16,13 @@
 | Graphics | OpenGL ES 3 | Metal |
 | Màn hình | Nằm ngang, xoay hai chiều, UI theo safe area | Nằm ngang, xoay hai chiều, UI theo safe area |
 
-Bundle ID ban đầu là `com.tutien2d.truckhe`. Đổi thành ID của ứng dụng trước khi phát hành. Menu cấu hình giữ ID không rỗng và thông tin ký đã thiết lập. Android target API chọn bản cao nhất đã cài; đây không phải cam kết đáp ứng yêu cầu Google Play hiện hành. Khi phát hành, kiểm tra yêu cầu target API, hỗ trợ page size 16 KB, Xcode/iOS SDK và dùng bản Unity được vá tương thích. Project đang khai báo **2022.3.62f1**; chưa nghiệm thu trên store.
+Bundle ID ban đầu là `com.tutien2d.truckhe`. Đổi thành ID của ứng dụng trước khi phát hành. Menu cấu hình giữ ID không rỗng và thông tin ký đã thiết lập. Android target API chọn bản cao nhất đã cài; đây không phải cam kết đáp ứng yêu cầu Google Play hiện hành. Khi phát hành, kiểm tra yêu cầu target API, hỗ trợ page size 16 KB, Xcode/iOS SDK và dùng bản Unity được vá tương thích. Project đang khai báo **6000.3.26f1**; chưa nghiệm thu trên store.
 
 ## Android
 
-1. Unity Hub → Installs → Unity 2022.3.62f1 → Add modules → **Android Build Support**, gồm **Android SDK & NDK Tools** và **OpenJDK**. Dùng các công cụ đi kèm đúng bản Editor.
+1. Unity Hub → Installs → Unity 6.3 LTS (6000.3.26f1) → Add modules → **Android Build Support**, gồm **Android SDK & NDK Tools** và **OpenJDK**. Dùng các công cụ đi kèm đúng bản Editor.
 2. Mở project, đợi import; chọn **Truc Khe → Mobile → Apply Android and iOS Settings**.
-3. **File → Build Settings → Android → Switch Platform**. Chạy **Truc Khe → Validate Project**.
+3. **File → Build Profiles → Platforms → Android → Switch Platform**. Chạy **Truc Khe → Validate Project**.
 4. **Truc Khe → Build → Android APK (Development)** tạo `Builds/Android/TrucKhe-dev.apk`. APK dùng cấu hình ký hiện có, mặc định là debug keystore khi chưa bật Custom Keystore.
 5. Bật USB debugging trên điện thoại ARM64, kết nối máy và cài bằng `adb install -r Builds/Android/TrucKhe-dev.apk`, hoặc dùng Build And Run trong Unity.
 
@@ -29,7 +31,7 @@ Bundle ID ban đầu là `com.tutien2d.truckhe`. Đổi thành ID của ứng d�
 ## iOS
 
 1. Dùng **macOS**, Unity Hub với **iOS Build Support**, và Xcode tương thích. Mở project, áp dụng cấu hình mobile.
-2. **File → Build Settings → iOS → Switch Platform**, sau đó **Truc Khe → Build → iOS Xcode Project**.
+2. **File → Build Profiles → Platforms → iOS → Switch Platform**, sau đó **Truc Khe → Build → iOS Xcode Project**.
 3. Mở `Builds/iOS/Unity-iPhone.xcodeproj` bằng Xcode. Ở target **Unity-iPhone → Signing & Capabilities**, chọn Apple Development Team và Bundle Identifier phù hợp; bật Automatically manage signing nếu dùng quy trình ký tự động.
 4. Chọn iPhone/iPad thật để Run. Để phân phối: chọn thiết bị iOS chung, **Product → Archive → Distribute App** và chọn phương thức xuất/upload phù hợp tài khoản Apple.
 
@@ -42,7 +44,7 @@ Python 3 chỉ dùng để gọi Editor; player không phụ thuộc Python. Ch�
 ```sh
 python3 Tools/build-mobile.py android-apk --unity /path/to/Unity
 python3 Tools/build-mobile.py android-aab --unity /path/to/Unity
-python3 Tools/build-mobile.py ios --unity /Applications/Unity/Hub/Editor/2022.3.62f1/Unity.app/Contents/MacOS/Unity
+python3 Tools/build-mobile.py ios --unity /Applications/Unity/Hub/Editor/6000.3.26f1/Unity.app/Contents/MacOS/Unity
 ```
 
 Windows dùng `python` và đường dẫn `Unity.exe` trong dấu ngoặc kép. Có thể đặt biến `UNITY_EDITOR` thay cho `--unity`. `--output` chọn file APK/AAB hoặc thư mục Xcode; đường dẫn tương đối tính từ project Unity. Log mặc định ở `Logs/<target>.log`; `--log` nhận đường dẫn tùy chọn, tính từ thư mục gọi lệnh. `--dry-run` chỉ in tham số, không build. Script trả lỗi nếu Unity thất bại hoặc không có artifact mong đợi.
@@ -60,7 +62,7 @@ CI cần Editor đã được kích hoạt, module build phù hợp và cơ ch�
 ## Thay đổi khi chơi trên điện thoại
 
 - Chạm để đi/tương tác trên map; raycast UI chặn chạm xuyên xuống map. Combat hỗ trợ giữ nhiều nút đồng thời và nút lớn hơn; ẩn gợi ý phím desktop.
-- UI 1280×720 được co đồng đều, đặt trong vùng an toàn của màn hình; giữ bố cục/art đã duyệt. Safe area thay đổi theo xoay màn hình được cập nhật trong runtime.
+- UI mobile A dùng canvas logic theo tỉ lệ vùng an toàn, HUD gọn, cụm điều khiển hai ngón cái và hành trang chia tab. Safe area thay đổi theo xoay màn hình được cập nhật trong runtime; desktop vẫn dùng layout 1280×720.
 - Khi mất focus/đưa xuống nền, game bỏ các ngón đang giữ, dừng đi, lưu tiến trình map và pause combat. Khi quay lại, trận chờ người chơi bấm tiếp tục. Save dùng `Application.persistentDataPath`, không yêu cầu quyền đọc bộ nhớ ngoài.
 - InputField dùng bàn phím hệ thống. Ẩn nút nhập save web bằng đường dẫn desktop trên mobile và nút thoát ứng dụng trên iOS.
 - Giữ model JSON và các generic collection cần thiết cho IL2CPP qua `link.xml` và `JsonAot`. Cần xác nhận deserialize/save thực tế trong player IL2CPP.
@@ -75,4 +77,4 @@ Ngày 2026-10-18:
 - Biên dịch bổ sung Core + Runtime bằng .NET 8: **0 warning, 0 error**, dùng UnityEngine.Modules 2021.3.33, UnityEngine.UI 2018.3.5.1 và Newtonsoft AOT DLL từ package Unity 3.2.1. Log: `Validation/mobile-compile-last-run.txt`. Reference/toolchain đặt ngoài repo; bước này không compile Editor/test assembly, shader hoặc chạy IL2CPP bằng Unity 2022.3.
 - Có **13 bài Unity Play Mode**, gồm 4 bài mới về nhiều ngón, raycast, safe area và pause/focus; **chưa chạy**.
 
-Trước khi gọi là bản mobile đã nghiệm thu: import/compile bằng đúng Editor; chạy Validate Project và 13 test Play Mode; build APK và Xcode; chạy trên điện thoại thật. Kiểm tra tạo nhân vật/bàn phím, bốn map, hành trang/scroll, nhiều ngón trong combat, xoay trái/phải trên màn hình có cutout, Home/lock rồi mở lại, đóng/mở app giữ save, và khôi phục trận dang dở. Đo FPS, bộ nhớ và nhiệt trên thiết bị mục tiêu. Chưa có log build, ảnh render Unity hay số đo hiệu năng mobile trong môi trường này.
+Trước khi gọi là bản mobile đã nghiệm thu: import/compile bằng Unity 6.3; chạy Validate Project và toàn bộ 19 test Play Mode hiện có; build APK và Xcode; chạy trên điện thoại thật. Kiểm tra tạo nhân vật/bàn phím, bốn map, hành trang/scroll, nhiều ngón trong combat, xoay trái/phải trên màn hình có cutout, Home/lock rồi mở lại, đóng/mở app giữ save, và khôi phục trận dang dở. Đo FPS, bộ nhớ và nhiệt trên thiết bị mục tiêu. Chưa có log build, ảnh render Unity hay số đo hiệu năng mobile trong môi trường này.

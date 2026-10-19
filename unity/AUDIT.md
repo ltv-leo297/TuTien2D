@@ -1,5 +1,7 @@
 # Rà soát bản chuyển Unity — 2026-10-18
 
+> Báo cáo lịch sử của bản port 2022.3. Target hiện tại đã chuyển sang Unity 6.3 LTS (6000.3.26f1); xem [UNITY6.md](UNITY6.md). Kết quả bên dưới không phải nghiệm thu Unity 6.
+
 Đây là báo cáo đợt audit trước phần mobile. Cập nhật Android/iOS và kết quả kiểm tra mới nhất ở [`MOBILE.md`](MOBILE.md); các số 87 core/9 Play Mode/103 GUID bên dưới là số tại thời điểm audit.
 
 **Kết luận: chưa đủ điều kiện gọi là full project Unity đã chạy và nghiệm thu.** Mã nguồn/dữ liệu đã port, các kiểm tra thực thi ngoài Unity bên dưới đạt. Rà soát phát hiện lỗi trong bản bàn giao đầu và đã sửa; adapter, shader, hình ảnh và player vẫn cần chạy bằng đúng Unity Editor.
@@ -18,7 +20,7 @@ Nguồn web ở commit `92de8b710a1de136215b94c18fbb48ef30404140`. ZIP trước 
 | Ledger và hồi lượt | Hết lượt; biên 300.000 ms; hồi độc lập; duplicate reserve/finish; giữ ID cũ; khôi phục qua hai lần mở save | Hiển thị thẻ quái và xử lý lỗi lưu trong UI Unity |
 | Save native và import | Validation; lỗi ghi temp/lỗi replace không đổi file và memory; retry/backup; khóa giữa hai tiến trình .NET trên Linux; import parsed/raw | Hành vi I/O dưới Unity Mono trên Windows/macOS; lỗi lưu và retry bằng nút thật |
 | Locale, font, audio, hiệu ứng | Literal locale vi/en, font/audio tồn tại, metadata và hash; sửa mesh cây sai đơn vị | Shader compile, mesh thực tế, nghe audio, chữ có dấu, giảm chuyển động, FPS/bộ nhớ |
-| Project/scene/build | GUID và scene/asmdef references; Core+Runtime compile bằng reference assemblies cũ | Resolve/import và compile đúng 2022.3.62f1; Editor scripts, test assembly, Play Mode, standalone builds |
+| Project/scene/build | GUID và scene/asmdef references; Core+Runtime compile bằng reference assemblies cũ | Resolve/import và compile đúng target hiện tại 6000.3.26f1; Editor scripts, test assembly, Play Mode, standalone builds |
 | Bàn giao ZIP | Thêm script xuất save bên trong project; kiểm tra ZIP khớp toàn bộ file nguồn sau đóng gói | Đây vẫn là ZIP source, chưa phải player chạy được |
 
 ## Lỗi tìm thấy và sửa
@@ -55,6 +57,6 @@ Bộ Play Mode có 9 bài: creator/inventory/locale; encounter/pause/return; 4 m
 
 ## Điểm chặn nghiệm thu còn lại
 
-Mở project bằng **Unity 2022.3.62f1**, chạy Validate Project, chạy Test Runner, kiểm tra ảnh/input/resize/audio thực tế rồi build player. Cần ghi log và ảnh thật trước khi xác nhận từng ô còn thiếu. Chưa tạo Windows/Linux/macOS executable, chưa đo FPS/heap Unity, chưa thử mobile/WebGL.
+Mở project bằng target hiện tại **Unity 6.3 LTS — 6000.3.26f1**, chạy Validate Project, chạy Test Runner, kiểm tra ảnh/input/resize/audio thực tế rồi build player. Cần ghi log và ảnh thật trước khi xác nhận từng ô còn thiếu. Chưa tạo Windows/Linux/macOS executable, chưa đo FPS/heap Unity, chưa thử mobile/WebGL.
 
 Các tính năng nguồn chưa có vẫn chưa có: XP/loot, progression tu luyện, chọn hệ, cloud save, ngoại hình theo trang bị; quái núi vẫn là hội thoại. Bản chuyển giữ 2D trong Unity, không có mô hình 3D mới.

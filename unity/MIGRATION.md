@@ -1,5 +1,7 @@
 # Bàn giao chuyển Unity — 2026-10-17
 
+**Target hiện tại: Unity 6.3 LTS (6000.3.26f1)** theo yêu cầu nâng cấp sau bản port 2022.3. Xem [`UNITY6.md`](UNITY6.md) cho cấu hình/package/API và bằng chứng kiểm tra mới nhất. Các kết quả compiler dùng reference cũ bên dưới là lịch sử, không chứng minh Unity 6 đã import/build.
+
 ## Phạm vi nguồn thực tế
 
 Nguồn đã khảo sát: `game/src`, `game/public/assets/production` và tài liệu quy tắc của repo TuTien2D. Không tự cập nhật `ai-workflow/CONTEXT.md`.
@@ -23,7 +25,7 @@ Không biến thiết kế chưa có trong runtime thành tính năng mới: ch�
 - Core C#: đối chiếu combat với TypeScript ở 12 replay (4 quái × 3 seed), 10 snapshot mỗi replay; kiểm tra HP/tài nguyên/vị trí/cooldown/trạng thái/đạn/chuỗi quyết định.
 - Navigation: 33 đích actor/cổng trên 4 map; so điểm tới với nguồn, kiểm từng đoạn và bước đi có độ dài khác nhau.
 - Logic: công thức damage, đủ 16 skill, khóa mục tiêu, pause/đỡ/iframe/nhảy, inventory đầy/hoán đổi/overflow, ledger, save/import/corruption và các chuyến đi/về cổng bằng world simulation native.
-- C# Core + Runtime được biên dịch bằng .NET SDK với reference assemblies UnityEngine.Modules **2021.3.33**, UnityEngine.UI **2018.3.5.1**: đây là kiểm tra compiler/API bổ sung, **không phải** import/build bằng Unity 2022.3.62f1. Reference bên ngoài chỉ đặt tại `/tmp`, không nhúng vào project.
+- C# Core + Runtime được biên dịch bằng .NET SDK với reference assemblies UnityEngine.Modules **2021.3.33**, UnityEngine.UI **2018.3.5.1**: đây là kiểm tra compiler/API bổ sung, **không phải** import/build bằng Unity 2022.3.62f1. Reference/toolchain đặt ngoài repo, không nhúng vào project.
 - Kiểm tra cấu trúc: 89 hash nguồn, 61 PNG, mọi source rectangle đã dùng, GUID, liên kết scene và tên assembly. Bản sao production khớp byte nguồn.
 - Bản web tham chiếu: 74 unit test pass, 77 asset/0 pending review, TypeScript/Vite build pass. Không chạy lại Playwright vì mã web không thay đổi; kết quả web không chứng minh UI Unity chạy đúng.
 
@@ -33,7 +35,7 @@ Kết quả cuối và số ca core xem `Validation/last-run.txt`. Mọi bài Un
 
 Chưa tìm thấy Unity Editor trong cloud hiện tại; chưa thực hiện activation hay chạy Editor. Vì vậy chưa xác nhận:
 
-1. Package resolve/import, compile shader và script bằng đúng Editor 2022.3.62f1.
+1. Package resolve/import, compile shader và script bằng đúng Editor 6000.3.26f1.
 2. Play Mode: creator → map → NPC/gather → inventory → forest combat → result → đúng map/vị trí; đổi locale, reload/save lỗi và mất focus.
 3. Hình ảnh/sorting/pivot/font, camera và UI ở 1280×720, 1920×1080, resize; thông báo và nút cảm ứng. UI được dựng lại bằng Unity UI, chưa có ảnh render Unity để so trực tiếp bố cục web đã duyệt.
 4. Player build Windows/Linux/macOS, FPS, bộ nhớ, thiết bị di động và WebGL.

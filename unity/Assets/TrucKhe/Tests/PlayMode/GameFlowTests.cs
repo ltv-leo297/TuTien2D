@@ -21,7 +21,7 @@ namespace TrucKhe.Tests
         {
             directory=Path.Combine(Application.temporaryCachePath,"TrucKhe-tests-"+Guid.NewGuid().ToString("N"));GameRoot.SaveDirectoryOverride=directory;
             yield return SceneManager.LoadSceneAsync("Main");yield return null;
-            game=UnityEngine.Object.FindObjectOfType<GameRoot>();Assert.NotNull(game);Assert.IsNull(game.Error);Assert.NotNull(game.UI);
+            game=UnityEngine.Object.FindFirstObjectByType<GameRoot>();Assert.NotNull(game);Assert.IsNull(game.Error);Assert.NotNull(game.UI);
         }
         [UnityTearDown] public IEnumerator TearDown()
         {
@@ -32,7 +32,7 @@ namespace TrucKhe.Tests
         {
             game.StartGame("Vân Ly","C");yield return null;Assert.AreEqual("village",game.World.map);Assert.IsNull(game.Error);
             game.UI.Inventory();yield return null;var item=game.Saves.Current.inventory.slots.First(s=>s?.itemId=="bamboo-sword");game.Equip("equip",item.uid);yield return null;Assert.AreEqual("bamboo-sword",game.Saves.Current.inventory.equipment["weapon"].itemId);
-            game.LocaleChange("en");yield return null;Assert.AreEqual("en",game.Locale);Assert.IsTrue(UnityEngine.Object.FindObjectsOfType<Text>().Any(t=>t.text==game.T("equipment.title")));game.UI.ClosePanel();Assert.IsFalse(game.UI.ModalOpen);
+            game.LocaleChange("en");yield return null;Assert.AreEqual("en",game.Locale);Assert.IsTrue(UnityEngine.Object.FindObjectsByType<Text>(FindObjectsSortMode.None).Any(t=>t.text==game.T("equipment.title")));game.UI.ClosePanel();Assert.IsFalse(game.UI.ModalOpen);
             game.BackToCreator();yield return null;game.StartGame("Vân Ly","C");yield return null;Assert.AreEqual("bamboo-sword",game.Saves.Current.inventory.equipment["weapon"].itemId);LogAssert.NoUnexpectedReceived();
         }
         [UnityTest] public IEnumerator EncounterPauseResultPreservesWorld()
@@ -48,7 +48,7 @@ namespace TrucKhe.Tests
             foreach(string hero in new[]{"A","B","C","D"})
             {
                 game.StartGame("Vô Danh",hero);
-                foreach(var map in game.Content.scenes.Values){game.World.Restore(map.id,map.spawn,0);yield return null;Assert.IsNull(game.Error);Assert.Greater(UnityEngine.Object.FindObjectsOfType<SpriteRenderer>().Count(s=>s.sprite!=null),5);}
+                foreach(var map in game.Content.scenes.Values){game.World.Restore(map.id,map.spawn,0);yield return null;Assert.IsNull(game.Error);Assert.Greater(UnityEngine.Object.FindObjectsByType<SpriteRenderer>(FindObjectsSortMode.None).Count(s=>s.sprite!=null),5);}
                 game.BackToCreator();yield return null;
             }
             LogAssert.NoUnexpectedReceived();

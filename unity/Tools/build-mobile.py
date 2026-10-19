@@ -4,10 +4,12 @@ import argparse
 import json
 import os
 from pathlib import Path
+import re
 import subprocess
 import sys
 
 PROJECT = Path(__file__).resolve().parent.parent
+EDITOR_VERSION = re.search(r"^m_EditorVersion: (\S+)$", (PROJECT / "ProjectSettings/ProjectVersion.txt").read_text(), re.M).group(1)
 TARGETS = {
     "android-apk": ("Android", "AndroidApk", "Builds/Android/TrucKhe-dev.apk"),
     "android-aab": ("Android", "AndroidAab", "Builds/Android/TrucKhe.aab"),
@@ -37,7 +39,7 @@ def build_command(editor, target, output=None, log=None, project=PROJECT):
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("target", choices=TARGETS)
-    parser.add_argument("--unity", default=os.environ.get("UNITY_EDITOR"), help="Unity 2022.3.62f1 executable, or UNITY_EDITOR")
+    parser.add_argument("--unity", default=os.environ.get("UNITY_EDITOR"), help="Unity 6.3 LTS (" + EDITOR_VERSION + ") executable, or UNITY_EDITOR")
     parser.add_argument("--output", help="Output file/folder; relative paths resolve inside the Unity project")
     parser.add_argument("--log", help="Unity log file")
     parser.add_argument("--dry-run", action="store_true", help="Print arguments only; does not build")
@@ -50,7 +52,7 @@ def main(argv=None):
     except ValueError as error:
         parser.error(str(error))
     if args.dry_run:
-        print(json.dumps({"dryRun": True, "command": command, "output": str(output), "log": str(log)}, indent=2))
+        print(json.dumps({"dryRun": True, "requiredEditor": EDITOR_VERSION, "command": command, "output": str(output), "log": str(log)}, indent=2))
         return 0
     if not Path(editor).is_file():
         parser.error("Unity executable not found: " + editor)

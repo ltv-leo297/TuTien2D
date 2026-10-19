@@ -5,6 +5,6 @@ test_three_targets_select_platform_method_and_output (test_mobile_build.MobileBu
 test_zero_exit_without_artifact_is_not_success (test_mobile_build.MobileBuildTests.test_zero_exit_without_artifact_is_not_success) ... ok
 
 ----------------------------------------------------------------------
-Ran 5 tests in 0.019s
+Ran 5 tests in 0.053s
 
 OK

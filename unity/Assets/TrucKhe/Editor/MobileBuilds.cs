@@ -15,19 +15,20 @@ namespace TrucKhe.Editor
         [MenuItem("Truc Khe/Mobile/Apply Android and iOS Settings")]
         public static void Configure()
         {
+            Unity6Project.ValidateEnvironment();
             PlayerSettings.defaultInterfaceOrientation=UIOrientation.AutoRotation;
             PlayerSettings.allowedAutorotateToLandscapeLeft=true;
             PlayerSettings.allowedAutorotateToLandscapeRight=true;
             PlayerSettings.allowedAutorotateToPortrait=false;
             PlayerSettings.allowedAutorotateToPortraitUpsideDown=false;
             PlayerSettings.statusBarHidden=true;
-            foreach(var group in new[]{BuildTargetGroup.Android,BuildTargetGroup.iOS})
+            foreach(var target in new[]{NamedBuildTarget.Android,NamedBuildTarget.iOS})
             {
                 // Preserve the developer's store identity and signing configuration.
-                if(string.IsNullOrEmpty(PlayerSettings.GetApplicationIdentifier(group)))PlayerSettings.SetApplicationIdentifier(group,ApplicationId);
-                PlayerSettings.SetScriptingBackend(group,ScriptingImplementation.IL2CPP);
-                PlayerSettings.SetApiCompatibilityLevel(group,ApiCompatibilityLevel.NET_Standard_2_0);
-                PlayerSettings.SetManagedStrippingLevel(group,ManagedStrippingLevel.Low);
+                if(string.IsNullOrEmpty(PlayerSettings.GetApplicationIdentifier(target)))PlayerSettings.SetApplicationIdentifier(target,ApplicationId);
+                PlayerSettings.SetScriptingBackend(target,ScriptingImplementation.IL2CPP);
+                PlayerSettings.SetApiCompatibilityLevel(target,ApiCompatibilityLevel.NET_Standard);
+                PlayerSettings.SetManagedStrippingLevel(target,ManagedStrippingLevel.Low);
             }
             PlayerSettings.Android.minSdkVersion=AndroidSdkVersions.AndroidApiLevel26;
             PlayerSettings.Android.targetSdkVersion=AndroidSdkVersions.AndroidApiLevelAuto;
@@ -40,7 +41,7 @@ namespace TrucKhe.Editor
             PlayerSettings.iOS.targetDevice=iOSTargetDevice.iPhoneAndiPad;
             PlayerSettings.iOS.sdkVersion=iOSSdkVersion.DeviceSDK;
             PlayerSettings.iOS.requiresFullScreen=true;
-            PlayerSettings.SetArchitecture(BuildTargetGroup.iOS,(int)AppleMobileArchitecture.ARM64);
+            PlayerSettings.SetArchitecture(NamedBuildTarget.iOS,(int)AppleMobileArchitecture.ARM64);
             if(string.IsNullOrEmpty(PlayerSettings.iOS.buildNumber))PlayerSettings.iOS.buildNumber="1";
             PlayerSettings.SetUseDefaultGraphicsAPIs(BuildTarget.iOS,false);
             PlayerSettings.SetGraphicsAPIs(BuildTarget.iOS,new[]{GraphicsDeviceType.Metal});
@@ -60,7 +61,7 @@ namespace TrucKhe.Editor
             var group=BuildPipeline.GetBuildTargetGroup(target);
             if(!BuildPipeline.IsBuildTargetSupported(group,target))throw new BuildFailedException("Install "+target+" Build Support for this Unity Editor through Unity Hub (Android also needs SDK, NDK and OpenJDK).");
             // Switching inside an executeMethod may reload assemblies mid-build.
-            if(EditorUserBuildSettings.activeBuildTarget!=target)throw new BuildFailedException("Switch Platform to "+target+" first, or start Unity with -buildTarget "+target+" before -executeMethod.");
+            if(EditorUserBuildSettings.activeBuildTarget!=target)throw new BuildFailedException("Switch the active Build Profile platform to "+target+" first, or start Unity with -buildTarget "+target+" before -executeMethod.");
             if(bundle&&(!PlayerSettings.Android.useCustomKeystore||string.IsNullOrEmpty(PlayerSettings.Android.keystoreName)||string.IsNullOrEmpty(PlayerSettings.Android.keyaliasName)))
                 throw new BuildFailedException("Configure the release upload keystore and key alias in Player Settings > Android > Publishing Settings before building an AAB.");
             Configure();ProjectTools.Validate();
@@ -97,15 +98,16 @@ namespace TrucKhe.Editor
         }
     }
 
-    // Also protect manual File > Build Settings builds from a mismatched backend.
+    // Also protect manual File > Build Profiles builds from a mismatched backend.
     public sealed class MobileBuildGuard : IPreprocessBuildWithReport
     {
         public int callbackOrder=>0;
         public void OnPreprocessBuild(BuildReport report)
         {
+            Unity6Project.ValidateEnvironment();
             var target=report.summary.platform;if(target!=BuildTarget.Android&&target!=BuildTarget.iOS)return;
             var group=BuildPipeline.GetBuildTargetGroup(target);
-            if(PlayerSettings.GetScriptingBackend(group)!=ScriptingImplementation.IL2CPP)
+            if(PlayerSettings.GetScriptingBackend(NamedBuildTarget.FromBuildTargetGroup(group))!=ScriptingImplementation.IL2CPP)
                 throw new BuildFailedException("Truc Khe mobile requires IL2CPP. Use Truc Khe > Mobile > Apply Android and iOS Settings.");
             if(target==BuildTarget.Android&&(PlayerSettings.Android.targetArchitectures&AndroidArchitecture.ARM64)==0)
                 throw new BuildFailedException("Android ARM64 is required. Apply the Truc Khe mobile settings.");

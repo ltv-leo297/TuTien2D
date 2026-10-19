@@ -2,6 +2,8 @@
 
 Người dùng chọn **A — Hai ngón cái** ngày 2026-10-18. Source Unity đã có nhánh UI mobile riêng, tự bật trên Android/iOS. **Chưa chạy bằng Unity Editor hoặc trên điện thoại**; không coi các kiểm tra .NET là nghiệm thu native.
 
+Target hiện tại là **Unity 6.3 LTS (6000.3.26f1)**; xem [`UNITY6.md`](UNITY6.md). Kết quả compiler reference cũ bên dưới là lịch sử, không phải compile bằng Unity 6.
+
 ## Phần đã triển khai
 
 - **Layout theo màn hình:** mobile dùng canvas logic theo tỉ lệ vùng an toàn, chiều cao tham chiếu 390; màn hẹp/tablet tăng chiều cao logic để giữ đủ chiều ngang cho nội dung. Desktop giữ layout cũ. Không thu cả UI desktop 1280×720 xuống màn điện thoại. Cutout/home indicator theo `Screen.safeArea`; thêm padding bên trong các nhóm điều khiển.
@@ -15,7 +17,7 @@ Các số kích thước trên là đơn vị UI logic, chưa phải phép đo d
 
 ## Xem trong Unity
 
-1. Mở project bằng Unity 2022.3.62f1 và scene Main.
+1. Mở project bằng Unity 6.3 LTS (6000.3.26f1) và scene Main.
 2. Bật **Truc Khe → Mobile → Preview Phone UI in Editor**, rồi Play. Có thể bật/tắt trong Play Mode để kiểm tra UI. Preview này không đổi build target và không lưu tùy chọn vào bản player; Android/iOS tự dùng mobile UI.
 3. Chọn Game view landscape 844×390, 915×412, 640×360 hoặc Device Simulator để thử cutout/xoay trái-phải. Preview thường không mô phỏng bàn phím hệ thống và kích thước ngón tay thật.
 4. Chạy **Test Runner → PlayMode → Run All**. Bộ test hiện có 19 ca (13 cũ + 6 mobile A mới).
@@ -26,8 +28,8 @@ Các số kích thước trên là đơn vị UI logic, chưa phải phép đo d
 | Kiểm tra | Kết quả / phạm vi |
 |---|---|
 | Core .NET 8 | **101 PASS**, gồm replay combat đối chiếu TypeScript, inventory/save và hình học layout A cho điện thoại/cutout/tablet; `Validation/last-run.txt` |
-| Core + Runtime compile bổ sung | **0 warning / 0 error**; UnityEngine.Modules 2021.3.33, UnityEngine.UI 2018.3.5.1, Newtonsoft AOT package 3.2.1; `Validation/mobile-ui-compile-last-run.txt` |
-| Cấu trúc project | **PASS**: 89 hash nguồn, 61 PNG production, 114 GUID, scene/assembly, locale UI cũ và mobile vi/en; `Validation/structure-last-run.txt` |
+| Core + Runtime compile bổ sung trước nâng cấp Unity 6 | **0 warning / 0 error**; UnityEngine.Modules 2021.3.33, UnityEngine.UI 2018.3.5.1, Newtonsoft AOT package 3.2.1; `Validation/mobile-ui-compile-last-run.txt` |
+| Cấu trúc project | **PASS**: 89 hash nguồn, 61 PNG production, 115 GUID, scene/assembly, locale UI cũ và mobile vi/en; `Validation/structure-last-run.txt` |
 | Unity Editor / test assembly / 19 Play Mode tests / APK / iOS | **CHƯA CHẠY**; môi trường chưa có Editor/toolchain mobile |
 
 Sáu ca Play Mode mới bao phủ equip/unequip/tab/filter, cuộn tới ô cuối mà nút hành động vẫn cố định, nhiều ngón và pause, resize giữ selection/chặn xuyên chạm, lỗi lưu vẫn retry được, đổi locale giữ tab. Có source test không có nghĩa đã compile hoặc pass trong Unity.

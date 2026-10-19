@@ -2,7 +2,7 @@
 
 ## Cập nhật nền tảng Unity/mobile — 2026-10-18
 
-Người dùng đã yêu cầu chuyển sang Unity và hỗ trợ Android/iOS. Bản port nằm tại `unity/`: Unity 2022.3.62f1, C#, Built-in Render Pipeline, SpriteRenderer và Unity UI; logic thuần ở `Assets/TrucKhe/Core`, adapter ở `Runtime`. Android dự kiến APK/AAB IL2CPP ARM64; iOS xuất Xcode IL2CPP ARM64. Xem `unity/MOBILE.md` và `unity/MIGRATION.md` cho trạng thái kiểm tra; chưa chạy Unity Editor/player trong cloud. Bản web bên dưới vẫn là nguồn tham chiếu, không phải bằng chứng UI Unity đã chạy.
+Người dùng đã yêu cầu chuyển sang Unity và hỗ trợ Android/iOS. Bản port nằm tại `unity/`: Unity 6.3 LTS (6000.3.26f1), C#, Built-in Render Pipeline, SpriteRenderer và Unity UI; logic thuần ở `Assets/TrucKhe/Core`, adapter ở `Runtime`. Android dự kiến APK/AAB IL2CPP ARM64; iOS xuất Xcode IL2CPP ARM64. Xem `unity/MOBILE.md` và `unity/MIGRATION.md` cho trạng thái kiểm tra; chưa chạy Unity Editor/player trong cloud. Bản web bên dưới vẫn là nguồn tham chiếu, không phải bằng chứng UI Unity đã chạy.
 
 Yêu cầu thiết kế lại UI điện thoại ngày 2026-10-18: người dùng đã chọn **A — Hai ngón cái** tại `mockups/mobile-ui-2026-10-18/A.png`. Source đã có nhánh Unity UI/Text mobile, locale vi/en riêng, safe-area layout và các vùng scroll/tab riêng; xem `unity/MOBILE-UI.md` để phân biệt compile/logic check với nghiệm thu native chưa chạy. Ảnh mockup ImageGen chỉ dùng để duyệt bố cục; không đưa chữ raster hoặc nguyên bảng mockup vào runtime, không thay asset/catalog hiện có theo chi tiết minh họa trong ảnh.
 

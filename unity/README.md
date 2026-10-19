@@ -1,15 +1,15 @@
 # Trúc Khê — Unity
 
-Bản chuyển runtime TuTien2D sang **Unity 2022.3 LTS, C# và Built-in Render Pipeline**. Mở thư mục `unity/` bằng Unity Hub; không mở thư mục gốc repo như một project Unity.
+Bản chuyển runtime TuTien2D sang **Unity 6.3 LTS (6000.3.26f1), C# và Built-in Render Pipeline**. Mở thư mục `unity/` bằng Unity Hub; không mở thư mục gốc repo như một project Unity.
 
 Giữ art Bright Handheld 2D: khám phá top-down, chiến đấu nhìn ngang. Không có mô hình nhân vật/môi trường 3D mới. Game chạy bằng C#, SpriteRenderer và Unity UI, không nhúng bản web hay phụ thuộc Node tại runtime.
 
-**Trạng thái:** nguồn, dữ liệu, asset và harness đã được chuyển. Kiểm tra logic C# và cấu trúc project đã chạy; Unity Editor/Play Mode/player build chưa chạy trong cloud này. Đợt rà soát mới nhất ở [`AUDIT.md`](AUDIT.md). Xem `MIGRATION.md` để phân biệt kết quả đã kiểm tra với bước còn cần nghiệm thu.
+**Trạng thái:** nguồn, dữ liệu, asset và harness đã được chuyển. Kiểm tra logic C# và cấu trúc project đã chạy; Unity Editor/Play Mode/player build chưa chạy trong cloud này. Nâng cấp Unity 6 và kết quả kiểm tra hiện tại ở [`UNITY6.md`](UNITY6.md); đợt rà soát port trước đó ở [`AUDIT.md`](AUDIT.md). Xem `MIGRATION.md` để phân biệt kết quả đã kiểm tra với bước còn cần nghiệm thu.
 
 ## Mở và chơi
 
 1. Unity Hub → **Add project from disk** → chọn thư mục `unity`.
-2. Dùng **2022.3.62f1** (bản khai báo của project). Chờ Package Manager tải Unity UI, Newtonsoft JSON và Test Framework.
+2. Dùng **Unity 6.3 LTS — 6000.3.26f1** (bản khai báo của project). Chờ Package Manager tải Unity UI, Newtonsoft JSON và Test Framework.
 3. Mở `Assets/TrucKhe/Scenes/Main.unity` hoặc menu **Truc Khe → Open Main Scene**.
 4. Bấm **Play**. Chọn một trong bốn nhân vật, nhập tên và vào làng.
 

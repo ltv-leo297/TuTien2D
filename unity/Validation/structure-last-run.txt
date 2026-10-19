@@ -1,3 +1,4 @@
-PASS: 89 source hashes, 61 PNGs, measured sprite rectangles, 114 GUIDs, scenes and assembly references.
+PASS: 89 source hashes, 61 PNGs, measured sprite rectangles, 115 GUIDs, scenes and assembly references.
 PASS: portable save exporter, literal vi/en UI keys, font and ambient audio present.
+PASS: Unity 6000.3.26f1 + revision, uGUI 2.0 / Test Framework 1.6 / input modules and Built-in pipeline configuration.
 This check does not import, render, or build the project in Unity Editor.

@@ -25,6 +25,7 @@ namespace TrucKhe.Editor
         [MenuItem("Truc Khe/Validate Project")]
         public static void Validate()
         {
+            Unity6Project.ValidateEnvironment();
             var json=Resources.Load<TextAsset>("Data/content");if(!json)throw new Exception("Missing content.json");var content=Content.Parse(json.text);
             foreach(var scene in content.scenes.Values){if(new Navigation(scene).Blocked(scene.spawn))throw new Exception("Blocked spawn: "+scene.id);foreach(var gate in scene.gates)if(!content.scenes.ContainsKey(gate.to)||new Navigation(content.scenes[gate.to]).Blocked(gate.spawn))throw new Exception("Invalid gate: "+scene.id+"/"+gate.id);}
             Inventory.Create(content).Validate(content);new Ledger().Validate(content);

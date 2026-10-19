@@ -2,6 +2,7 @@
 
 Đọc hướng dẫn/context ở gốc repo như quy định. `ai-workflow/CONTEXT.md` mô tả bản web và lịch sử quyết định; yêu cầu chuyển Unity ngày 2026-10-17 được ghi riêng tại `MIGRATION.md`, không tự viết lại context.
 
+- Target hiện tại là Unity 6.3 LTS `6000.3.26f1`; đọc `UNITY6.md` khi sửa cấu hình/package/build. Giữ Built-in renderer và Input Manager hiện có.
 - Runtime thư mục này là C#/Unity; không nhúng web view hoặc thêm phụ thuộc Node vào player.
 - Giữ bố cục, art và luật chơi đã duyệt khi port/sửa lỗi. UI mới ngoài phạm vi vẫn theo quy trình duyệt ở gốc.
 - `Resources/Data/content.json` và `Resources/Art/Baked` là dữ liệu đã xuất. Chỉ chạy lại `../tools/export-unity.mjs` khi chủ động đồng bộ từ web, vì export sẽ ghi đè các chỉnh sửa riêng ở đó.

@@ -94,7 +94,20 @@ def check():
     for p in ASSETS.rglob("*.asmdef"):
         for ref in json.loads(p.read_text()).get("references", []):
             assert ref in names or ref in {"UnityEngine.UI"}, f"Unresolved assembly name: {ref}"
-    assert "com.unity.ugui" in json.loads((UNITY / "Packages/manifest.json").read_text())["dependencies"]
+    dependencies = json.loads((UNITY / "Packages/manifest.json").read_text())["dependencies"]
+    version_text = (UNITY / "ProjectSettings/ProjectVersion.txt").read_text()
+    editor = re.search(r"^m_EditorVersion: (6000\.3\.\d+f\d+)$", version_text, re.M)
+    assert editor, "Project must target a Unity 6.3 LTS release"
+    assert re.search(r"^m_EditorVersionWithRevision: " + re.escape(editor[1]) + r" \([0-9a-f]{12}\)$", version_text, re.M), "Missing Editor revision"
+    editor_guard = (ASSETS / "TrucKhe/Editor/Unity6Project.cs").read_text()
+    assert 'EditorVersion="' + editor[1] + '"' in editor_guard, "Editor guard version differs from project"
+    assert dependencies.get("com.unity.ugui") == "2.0.0", "Use the Unity 6 uGUI core package"
+    assert dependencies.get("com.unity.test-framework") == "1.6.0", "Use the Unity 6.3 Test Framework core package"
+    assert dependencies.get("com.unity.modules.inputlegacy") == "1.0.0", "UnityEngine.Input needs the legacy input module"
+    assert dependencies.get("com.unity.nuget.newtonsoft-json") == "3.2.1", "Keep the JSON AOT package"
+    assert not any(name.startswith("com.unity.render-pipelines.") for name in dependencies), "This renderer requires Built-in, not SRP"
+    settings = (UNITY / "ProjectSettings/ProjectSettings.asset").read_text()
+    assert re.search(r"^  activeInputHandler: [02]$", settings, re.M), "Enable legacy Input Manager for touch and uGUI"
     literal_keys = set()
     for path in (ASSETS / "TrucKhe/Runtime").glob("*.cs"):
         literal_keys.update(re.findall(r'\bT\("([^"\n]+)"\s*[,)]', path.read_text()))
@@ -111,6 +124,7 @@ def check():
     assert (resources / "Art/Production/nam-linh-ambience.wav").is_file()
     print(f"PASS: {len(provenance['sources'])} source hashes, {len(sizes)} PNGs, measured sprite rectangles, {len(assets)} GUIDs, scenes and assembly references.")
     print("PASS: portable save exporter, literal vi/en UI keys, font and ambient audio present.")
+    print(f"PASS: Unity {editor[1]} + revision, uGUI 2.0 / Test Framework 1.6 / input modules and Built-in pipeline configuration.")
     print("This check does not import, render, or build the project in Unity Editor.")
 
 

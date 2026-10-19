@@ -22,7 +22,7 @@ namespace TrucKhe.Tests
         [UnitySetUp] public IEnumerator Setup()
         {
             GameUI.PreviewMobileInEditor=true;directory=Path.Combine(Application.temporaryCachePath,"TrucKhe-mobile-"+Guid.NewGuid().ToString("N"));GameRoot.SaveDirectoryOverride=directory;
-            yield return SceneManager.LoadSceneAsync("Main");yield return null;game=UnityEngine.Object.FindObjectOfType<GameRoot>();Assert.IsNull(game.Error);Assert.IsTrue(game.UI.Mobile);
+            yield return SceneManager.LoadSceneAsync("Main");yield return null;game=UnityEngine.Object.FindFirstObjectByType<GameRoot>();Assert.IsNull(game.Error);Assert.IsTrue(game.UI.Mobile);
             game.StartGame("Vân Sinh","A");yield return null;
         }
         [UnityTearDown] public IEnumerator Cleanup()
