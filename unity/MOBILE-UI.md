@@ -18,7 +18,7 @@ Các số kích thước trên là đơn vị UI logic, chưa phải phép đo d
 ## Xem trong Unity
 
 1. Mở project bằng Unity 6.3 LTS (6000.3.26f1) và scene Main.
-2. Bật **Truc Khe → Mobile → Preview Phone UI in Editor**, rồi Play. Có thể bật/tắt trong Play Mode để kiểm tra UI. Preview này không đổi build target và không lưu tùy chọn vào bản player; Android/iOS tự dùng mobile UI.
+2. Bật **Truc Khe → Mobile → Preview Phone UI in Editor**, rồi Play. Có thể bật/tắt trong Play Mode để kiểm tra UI. Lựa chọn được giữ trong phiên Editor qua domain reload khi vào/thoát Play Mode. Preview này không đổi build target và không lưu tùy chọn vào bản player; Android/iOS tự dùng mobile UI.
 3. Chọn Game view landscape 844×390, 915×412, 640×360 hoặc Device Simulator để thử cutout/xoay trái-phải. Preview thường không mô phỏng bàn phím hệ thống và kích thước ngón tay thật.
 4. Chạy **Test Runner → PlayMode → Run All**. Bộ test hiện có 19 ca (13 cũ + 6 mobile A mới).
 5. Build APK hoặc Xcode theo `MOBILE.md`; kiểm tra trên thiết bị thật trước khi xác nhận hình ảnh, cảm ứng, bàn phím và hiệu năng.
